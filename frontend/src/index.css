@@ -30,6 +30,13 @@
     /* margin-top: 25px !important; */
     display: none !important;
   }
+  .signinBut{
+    /* margin-top: 20px !important; */
+    padding-top: 10px !important;
+  }
+  .walletinfo{
+    display: none;
+  }
 }
 .sidebarLogo{
   transform: rotateY(0deg) !important;

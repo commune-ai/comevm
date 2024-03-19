@@ -12,7 +12,7 @@ const menuItems = {
           type: 'item',
           icon: 'feather icon-home',
           url: '/app/dashboard/default'
-        },
+        }
       ]
     },
     {
@@ -26,8 +26,8 @@ const menuItems = {
           title: 'Announcement',
           type: 'item',
           icon: 'fa fa-bullhorn',
-          url: '/app/announcement',  
-        },
+          url: '/app/announcement'
+        }
       ]
     },
     {
@@ -41,7 +41,7 @@ const menuItems = {
           title: 'EVM Contracts',
           type: 'item',
           icon: 'feather icon-box',
-          url:'/app/Evm-Contracts',
+          url: '/app/Evm-Contracts'
           // children: [
           //   {
           //     id: 'all',
@@ -152,77 +152,39 @@ const menuItems = {
       icon: 'icon-pages',
       children: [
         {
-          id: 'my-act',
-          title: 'My activities',
-          type: 'collapse',
-          icon: 'fa fa-history',
-          badge: {
-            title: 'New',
-            type: 'label-danger'
-          },
-          children: [
-            {
-              id: 'transaction',
-              title: 'Transactions',
-              type: 'item',
-              url: '/auth/signup-1',
-              target: true,
-              breadcrumbs: false
-            },
-            {
-              id: 'history',
-              title: 'History',
-              type: 'item',
-              url: '/auth/signin-1',
-              target: true,
-              breadcrumbs: false
-            }
-          ]
-        },
-        {
-          id: 'wallet-info',
-          title: 'Wallet Info',
-          type: 'item',
-          url: '/sample-page',
-          classes: 'nav-item',
-          icon: 'fa fa-credit-card'
-        },
-        {
-          id: 'documentation',
-          title: 'Whitepaper',
-          type: 'item',
-          icon: 'fa fa-book',
-          classes: 'nav-item',
-          url: '',
-          target: true,
-          external: true
-        },
-        {
           id: 'user',
           title: 'User',
           type: 'collapse',
           icon: 'fa fa-user-circle',
           children: [
             {
-              id: 'profile',
-              title: 'Profile',
+              id: 'my-act',
+              title: 'My activities',
               type: 'item',
-              url: '#!'
+              icon: 'fa fa-history',
+              url: '',
+              classes: 'nav-item',
             },
             {
-              id: 'login',
-              title: 'Sign In',
+              id: 'wallet-info',
+              title: 'Wallet Info',
               type: 'item',
-              url: '/auth/signin-1',
+              url: '',
+              classes: 'nav-item',
+              icon: 'fa fa-credit-card'
             },
             {
-              id: 'logout',
-              title: 'Sign Out',
+              id: 'documentation',
+              title: 'Whitepaper',
               type: 'item',
-              url: '/auth/signup-1',
-            },
+              icon: 'fa fa-book',
+              classes: 'nav-item',
+              url: '',
+              target: true,
+              external: true
+            }
           ]
-        },
+        }
       ]
     },
     {
@@ -248,10 +210,9 @@ const menuItems = {
           url: '',
           target: true,
           external: true
-        },
+        }
       ]
-    },
-    
+    }
   ]
 };
 
