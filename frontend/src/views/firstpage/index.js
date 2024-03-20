@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Fade } from 'react-reveal';
+import { Fade  } from 'react-reveal';
 import { useNavigate } from "react-router-dom";
 import homepageLogo from '../../assets/images/commune.gif';
 import Switcher from '../../switcher';
