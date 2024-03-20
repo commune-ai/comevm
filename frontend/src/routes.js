@@ -71,16 +71,16 @@ const routes = [
         path: '/app/Evm-Contracts',
         element: lazy(() => import('./views/contractPage'))
       },
-      // {
-      //   exact: 'true',
-      //   path: '/app/profile',
-      //   element: lazy(() => import('./views/profilePage'))
-      // },
-      // {
-      //   exact: 'true',
-      //   path: '/app/profile/edit',
-      //   element: lazy(() => import('./views/profilePage/editProfilePage'))
-      // },
+      {
+        exact: 'true',
+        path: '/app/profile',
+        element: lazy(() => import('./views/profilePage'))
+      },
+      {
+        exact: 'true',
+        path: '/app/profile/edit',
+        element: lazy(() => import('./views/profilePage/editProfilePage'))
+      },
       {
         exact: 'true',
         path: '/basic/button',

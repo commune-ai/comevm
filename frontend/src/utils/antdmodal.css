@@ -20,6 +20,9 @@
     height: 70px;
 
 }
+.ant-modal-body{
+    margin-left: 125px !important;
+}
 .ant-collapse{
     border: none !important;
 }

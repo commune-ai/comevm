@@ -65,30 +65,30 @@ function MakerDaoModal() {
     return (
         <React.Fragment>
 
-            <div className=' ml-[-300px] bg-[#ffffff] dark:bg-[rgb(27,27,27)] transition-all px-[20px] buy-usdt flex flex-col items-center justify-center border-gray-500 rounded-[1rem] shadow-2xl w-[550px]' style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 0px 3px 8px 0px' }}>
-                <div className='bg-[#fff] dark:bg-[rgb(27,27,27)] transition-all flex flex-col items-center rounded-t-[1rem] w-full mt-3'>
-                    <div className='flex flex-col items-center justify-center px-8 py-2'>
-                        <span className='flex dark:text-white transition-all' style={{ fontFamily: 'Might', fontWeight: '700', fontSize: '22px' }}>MakerDAO - Vault Management</span>
+            <div className=' tw-ml-[-300px] tw-bg-[#ffffff] dark:tw-bg-[rgb(27,27,27)] tw-transition-all tw-px-[20px] buy-usdt tw-flex tw-flex-col tw-items-center tw-justify-center tw-border-gray-500 tw-rounded-[1rem] tw-shadow-2xl md:tw-w-[500px] tw-w-[350px]' style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 0px 3px 8px 0px' }}>
+                <div className='tw-bg-[#fff] dark:tw-bg-[rgb(27,27,27)] tw-transition-all tw-flex tw-flex-col tw-items-center tw-rounded-t-[1rem] tw-w-full tw-mt-3'>
+                    <div className='tw-flex tw-flex-col tw-items-center tw-justify-center tw-px-8 tw-py-2'>
+                        <span className='tw-flex dark:tw-text-white tw-transition-all' style={{ fontFamily: 'Might', fontWeight: '700', fontSize: '22px' }}>MakerDAO - Vault Management</span>
                     </div>
                 </div>
-                <div className='flex bg-[#fff] dark:bg-[rgb(27,27,27)] flex-col w-full mt-3'>
+                <div className='tw-flex tw-bg-[#fff] dark:tw-bg-[rgb(27,27,27)] tw-flex-col tw-w-full tw-mt-3'>
 
-                    <div className='flex bg-[#fff] dark:bg-[rgb(27,27,27)] px-6 items-center justify-between w-full mt-[0px]'>
-                        <span className=' dark:text-white' style={{ fontFamily: 'Might' }}>
+                    <div className='tw-flex tw-bg-[#fff] dark:tw-bg-[rgb(27,27,27)] tw-px-6 tw-items-center tw-justify-between tw-w-full tw-mt-[0px]'>
+                        <span className=' dark:tw-text-white' style={{ fontFamily: 'Might' }}>
                             MakerDAO - Vault Management
                         </span>
                     </div>
 
-                    <div className='flex bg-slate-300 dark:bg-gray-500 my-2 mx-auto items-center justify-between w-[100%] h-[1px]' />
+                    <div className='tw-flex tw-bg-slate-300 dark:tw-bg-gray-500 tw-my-2 tw-mx-auto tw-items-center tw-justify-between tw-w-[100%] tw-h-[1px]' />
 
-                    <div className='flex flex-col items-center justify-center w-full max-sm:flex-col'>
-                        <div className='flex flex-col items-center justify-center md:w-80% mb-4 w-[70%]'>
-                            <span className=' text-[14px] text-start items-start w-full ml-[25px] text-gray-500' style={{ fontFamily: 'Smack' }}>Collateral Type</span>
+                    <div className='tw-flex tw-flex-col tw-items-center tw-justify-center tw-w-full max-sm:tw-flex-col'>
+                        <div className='tw-flex tw-flex-col tw-items-center tw-justify-center md:tw-w-[80%] tw-mb-4 tw-w-[70%]'>
+                            <span className=' tw-text-[14px] tw-text-start tw-items-start tw-w-full tw-ml-[25px] tw-text-gray-500' style={{ fontFamily: 'Smack' }}>Collateral Type</span>
 
-                            <div className='flex w-full flex-col rounded-[0.5rem] bg-[#fff] dark:bg-[rgb(30,31,34)] py-1.5 px-3' style={{ boxShadow: 'rgb(109 177 255 / 98%) 0.5px 0.5px 3.5px 0.5px' }}>
+                            <div className='tw-flex tw-w-full tw-flex-col tw-rounded-[0.5rem] tw-bg-[#fff] dark:tw-bg-[rgb(30,31,34)] tw-py-1.5 tw-px-3' style={{ boxShadow: 'rgb(109 177 255 / 98%) 0.5px 0.5px 3.5px 0.5px' }}>
 
-                                <div className='flex flex-row items-center justify-center w-full'>
-                                    <input value={stakeAmount} className='border-none outline-none appearance-none w-[90%] dark:text-white dark:bg-[rgb(30,31,34)]' type='text' onChange={({ target: { value } }) => {
+                                <div className='tw-flex tw-flex-row tw-items-center tw-justify-center tw-w-full'>
+                                    <input value={stakeAmount} className='tw-border-none tw-outline-none tw-appearance-none tw-w-[90%] dark:tw-text-white dark:tw-bg-[rgb(30,31,34)]' type='text' onChange={({ target: { value } }) => {
                                         if (!isNaN(value)) {
                                             setStakeAmount(value);
                                         }
@@ -96,13 +96,13 @@ function MakerDaoModal() {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-col items-center justify-center md:w-80% mb-4 w-[70%]'>
-                            <span className=' text-[14px] text-start items-start w-full ml-[25px] text-gray-500' style={{ fontFamily: 'Smack' }}>Collateral Amount</span>
+                        <div className='tw-flex tw-flex-col tw-items-center tw-justify-center md:tw-w-[80%] tw-mb-4 tw-w-[70%]'>
+                            <span className=' tw-text-[14px] tw-text-start tw-items-start tw-w-full tw-ml-[25px] tw-text-gray-500' style={{ fontFamily: 'Smack' }}>Collateral Amount</span>
 
-                            <div className='flex w-full flex-col rounded-[0.5rem] bg-[#fff] dark:bg-[rgb(30,31,34)] py-1.5 px-3' style={{ boxShadow: 'rgb(109 177 255 / 98%) 0.5px 0.5px 3.5px 0.5px' }}>
+                            <div className='tw-flex tw-w-full tw-flex-col tw-rounded-[0.5rem] tw-bg-[#fff] dark:tw-bg-[rgb(30,31,34)] tw-py-1.5 tw-px-3' style={{ boxShadow: 'rgb(109 177 255 / 98%) 0.5px 0.5px 3.5px 0.5px' }}>
 
-                                <div className='flex flex-row items-center justify-center w-full'>
-                                    <input value={stakeAmount} className='border-none outline-none appearance-none w-[90%] dark:text-white dark:bg-[rgb(30,31,34)]' type='text' inputMode='numeric' onChange={({ target: { value } }) => {
+                                <div className='tw-flex tw-flex-row tw-items-center tw-justify-center tw-w-full'>
+                                    <input value={stakeAmount} className='tw-border-none tw-outline-none tw-appearance-none tw-w-[90%] dark:tw-text-white dark:tw-bg-[rgb(30,31,34)]' type='text' inputMode='numeric' onChange={({ target: { value } }) => {
                                         if (!isNaN(value)) {
                                             setStakeAmount(value);
                                         }
@@ -110,13 +110,13 @@ function MakerDaoModal() {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-col items-center justify-center md:w-80% mb-4 w-[70%]'>
-                            <span className=' text-[14px] text-start items-start w-full ml-[25px] text-gray-500' style={{ fontFamily: 'Smack' }}>Dai Amount</span>
+                        <div className='tw-flex tw-flex-col tw-items-center tw-justify-center md:tw-w-[80%] tw-mb-4 tw-w-[70%]'>
+                            <span className=' tw-text-[14px] tw-text-start tw-items-start tw-w-full tw-ml-[25px] tw-text-gray-500' style={{ fontFamily: 'Smack' }}>Dai Amount</span>
 
-                            <div className='flex w-full flex-col rounded-[0.5rem] bg-[#fff] dark:bg-[rgb(30,31,34)] py-1.5 px-3' style={{ boxShadow: 'rgb(109 177 255 / 98%) 0.5px 0.5px 3.5px 0.5px' }}>
+                            <div className='tw-flex tw-w-full tw-flex-col tw-rounded-[0.5rem] tw-bg-[#fff] dark:tw-bg-[rgb(30,31,34)] tw-py-1.5 tw-px-3' style={{ boxShadow: 'rgb(109 177 255 / 98%) 0.5px 0.5px 3.5px 0.5px' }}>
 
-                                <div className='flex flex-row items-center justify-center w-full'>
-                                    <input value={stakeAmount} className='border-none outline-none appearance-none w-[90%] dark:text-white dark:bg-[rgb(30,31,34)]' type='text' inputMode='numeric' onChange={({ target: { value } }) => {
+                                <div className='tw-flex tw-flex-row tw-items-center tw-justify-center tw-w-full'>
+                                    <input value={stakeAmount} className='tw-border-none tw-outline-none tw-appearance-none tw-w-[90%] dark:tw-text-white dark:tw-bg-[rgb(30,31,34)]' type='text' inputMode='numeric' onChange={({ target: { value } }) => {
                                         if (!isNaN(value)) {
                                             setStakeAmount(value);
                                         }
@@ -124,13 +124,13 @@ function MakerDaoModal() {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-col items-center justify-center md:w-80% mb-4 w-[70%]'>
-                            <span className=' text-[14px] text-start items-start w-full ml-[25px] text-gray-500' style={{ fontFamily: 'Smack' }}>transactionStatus</span>
+                        <div className='tw-flex tw-flex-col tw-items-center tw-justify-center md:tw-w-[80%] tw-mb-4 tw-w-[70%]'>
+                            <span className=' tw-text-[14px] tw-text-start tw-items-start tw-w-full tw-ml-[25px] tw-text-gray-500' style={{ fontFamily: 'Smack' }}>transactionStatus</span>
 
-                            <div className='flex w-full flex-col rounded-[0.5rem] bg-[#fff] dark:bg-[rgb(30,31,34)] py-1.5 px-3' style={{ boxShadow: 'rgb(109 177 255 / 98%) 0.5px 0.5px 3.5px 0.5px' }}>
+                            <div className='tw-flex tw-w-full tw-flex-col tw-rounded-[0.5rem] tw-bg-[#fff] dark:tw-bg-[rgb(30,31,34)] tw-py-1.5 tw-px-3' style={{ boxShadow: 'rgb(109 177 255 / 98%) 0.5px 0.5px 3.5px 0.5px' }}>
 
-                                <div className='flex flex-row items-center justify-center w-full'>
-                                    <input value={stakeAmount} disabled className='border-none outline-none appearance-none w-[90%] dark:text-white dark:bg-[rgb(30,31,34)]' type='text' inputMode='numeric' onChange={({ target: { value } }) => {
+                                <div className='tw-flex tw-flex-row tw-items-center tw-justify-center tw-w-full'>
+                                    <input value={stakeAmount} disabled className='tw-border-none tw-outline-none tw-appearance-none tw-w-[90%] dark:tw-text-white dark:tw-bg-[rgb(30,31,34)]' type='text' inputMode='numeric' onChange={({ target: { value } }) => {
                                         if (!isNaN(value)) {
                                             setStakeAmount(value);
                                         }
@@ -138,16 +138,16 @@ function MakerDaoModal() {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-col items-center justify-center mb-4 w-[70%] mt-[22px]'>
+                        <div className='tw-flex tw-flex-col tw-items-center tw-justify-center tw-mb-4 tw-w-[70%] tw-mt-[22px]'>
                             {/* <button onClick={() => console.log('1')} type="button" style={{ fontFamily: 'Might', fontSize: '18px' }} className="flex p-2 bg-[#256fc4] dark:bg-[rgb(18,18,18)] text-white items-center justify-center focus:outline-none rounded-[0.5rem] w-full hover:bg-[#6db1ff]">
                                                     Stake Now
                                                 </button> */}
-                            <a style={{ fontFamily: 'Might', width: '100%', fontSize: '20px', transition: '0.1s' }} className="relative rounded-[0.5rem] cursor-pointer group font-medium no-underline flex p-2 text-white items-center justify-center content-center focus:outline-none">
-                                <span className="absolute top-0 left-0 w-full h-full rounded opacity-50 filter blur-sm bg-gradient-to-br from-[#256fc4] to-[#256fc4] dark:from-[rgb(18,18,18)] dark:to-[rgb(18,18,18)]"  ></span>
-                                <span className="h-full w-full inset-0 absolute mt-0.5 ml-0.5 bg-gradient-to-br filter group-active:opacity-0 rounded opacity-50 from-[#256fc4] to-[#256fc4] dark:from-[rgb(18,18,18)] dark:to-[rgb(18,18,18)]"></span>
-                                <span className="absolute inset-0 w-full h-full transition-all duration-200 ease-out rounded shadow-xl bg-gradient-to-br filter group-active:opacity-0 group-hover:blur-sm from-[#256fc4] to-[#256fc4] dark:from-[rgb(18,18,18)] dark:to-[rgb(18,18,18)]"></span>
-                                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out rounded bg-gradient-to-br to-[#256fc4] from-[#256fc4] dark:from-[rgb(18,18,18)] dark:to-[rgb(18,18,18)]"></span>
-                                <span className="relative">Manage Vault</span>
+                            <a style={{ fontFamily: 'Might', width: '100%', fontSize: '20px', transition: '0.1s' }} className="tw-relative tw-rounded-[0.5rem] tw-cursor-pointer tw-group tw-font-medium tw-no-underline tw-flex tw-p-2 tw-text-white tw-items-center tw-justify-center tw-content-center focus:tw-outline-none">
+                                <span className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-rounded tw-opacity-50 tw-filter tw-blur-sm tw-bg-gradient-to-br tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"  ></span>
+                                <span className="tw-h-full tw-w-full tw-inset-0 tw-absolute tw-mt-0.5 tw-ml-0.5 tw-bg-gradient-to-br tw-filter group-active:tw-opacity-0 tw-rounded tw-opacity-50 tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"></span>
+                                <span className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-transition-all tw-duration-200 tw-ease-out tw-rounded tw-shadow-xl tw-bg-gradient-to-br tw-filter group-active:tw-opacity-0 group-hover:tw-blur-sm tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"></span>
+                                <span className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-transition tw-duration-200 tw-ease-out tw-rounded tw-bg-gradient-to-br tw-to-[#256fc4] tw-from-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"></span>
+                                <span className="tw-relative">Manage Vault</span>
                             </a>
                         </div>
                     </div>

@@ -35,38 +35,38 @@ function SupplyModal() {
     return (
     <React.Fragment>
 
-        <div className=' bg-[#fff] dark:bg-[rgb(27,27,27)] ml-[-300px] transition-all px-[20px] buy-usdt flex flex-col items-center justify-center border-gray-500 rounded-[1rem] shadow-2xl w-[550px]' style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 0px 3px 8px 0px' }}>
-            <div className='bg-[#fff] dark:bg-[rgb(27,27,27)] transition-all flex flex-col items-center rounded-t-[1rem] w-full mt-3'>
-                <div className='flex flex-col items-center justify-center px-8 py-2 mt-2'>
-                    <span className='flex dark:text-white transition-all' style={{ fontFamily: 'Might', fontWeight: '700', fontSize: '22px' }}>Supply Information</span>
+        <div className=' tw-bg-[#fff] dark:tw-bg-[rgb(27,27,27)] tw-ml-[-300px] tw-transition-all tw-px-[20px] buy-usdt tw-flex tw-flex-col tw-items-center tw-justify-center tw-border-gray-500 tw-rounded-[1rem] tw-shadow-2xl md:tw-w-[500px] tw-w-[350px]' style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 0px 3px 8px 0px' }}>
+            <div className='tw-bg-[#fff] dark:tw-bg-[rgb(27,27,27)] tw-transition-all tw-flex tw-flex-col tw-items-center tw-rounded-t-[1rem] tw-w-full tw-mt-3'>
+                <div className='tw-flex tw-flex-col tw-items-center tw-justify-center tw-px-8 tw-py-2 tw-mt-2'>
+                    <span className='tw-flex dark:tw-text-white tw-transition-all' style={{ fontFamily: 'Might', fontWeight: '700', fontSize: '22px' }}>Supply Information</span>
                 </div>
             </div>
-            <div className='flex bg-[#fff] dark:bg-[rgb(27,27,27)] flex-col w-full'>
+            <div className='tw-flex tw-bg-[#fff] dark:tw-bg-[rgb(27,27,27)] tw-flex-col tw-w-full'>
 
-                <div className='flex bg-[#fff] dark:bg-[rgb(27,27,27)] px-6 items-center justify-between w-full mt-[20px]'>
-                    <span className='  dark:text-white' style={{ fontFamily: 'Might' }}>
+                <div className='tw-flex tw-bg-[#fff] dark:tw-bg-[rgb(27,27,27)] tw-px-6 tw-items-center tw-justify-between tw-w-full tw-mt-[20px]'>
+                    <span className='  dark:tw-text-white' style={{ fontFamily: 'Might' }}>
                         Supply Information
                     </span>
                 </div>
 
-                <div className='flex bg-slate-300 dark:bg-gray-500 my-2 mx-auto items-center justify-between w-[100%] h-[1px] ' />
-                <div className='flex flex-col items-center justify-between w-full sm:flex-row gap-4 dark:bg-[rgb(27,27,27)]'>
-                    <div className='flex flex-col items-center justify-center md:w-80% mt-3 mb-5 w-[48%]'>
-                        <span className=' text-[14px] ml-[25px] w-full items-start text-gray-500' style={{ fontFamily: 'Smack' }}>TOTAL SUPPLY</span>
-                        <div className='flex flex-col rounded-[0.5rem] bg-[#fff] dark:bg-[rgb(30,31,34)] py-2 px-4 dark:shadow-none' style={{ boxShadow: 'rgb(109 177 255 / 98%) 0.5px 0.5px 3.5px 0.5px' }}>
+                <div className='tw-flex tw-bg-slate-300 dark:tw-bg-gray-500 tw-my-2 tw-mx-auto tw-items-center tw-justify-between tw-w-[100%] tw-h-[1px] ' />
+                <div className='tw-flex tw-flex-col tw-items-center tw-justify-center tw-w-full sm:tw-flex-row tw-gap-4 dark:tw-bg-[rgb(27,27,27)]'>
+                    <div className='tw-flex tw-flex-col tw-items-center tw-justify-center md:tw-w-[80%] tw-mt-3 tw-mb-5 tw-w-[48%]'>
+                        <span className=' tw-text-[14px] tw-ml-[25px] tw-w-full tw-items-start tw-text-gray-500' style={{ fontFamily: 'Smack' }}>TOTAL SUPPLY</span>
+                        <div className='tw-flex tw-flex-col tw-rounded-[0.5rem] tw-bg-[#fff] dark:tw-bg-[rgb(30,31,34)] tw-py-2 tw-px-4 dark:tw-shadow-none' style={{ boxShadow: 'rgb(109 177 255 / 98%) 0.5px 0.5px 3.5px 0.5px' }}>
 
-                            <div className='flex flex-row items-center justify-center'>
-                                <input value={totalSupplyValue} disabled className='border-none dark:bg-[rgb(30,31,34)]  dark:text-white outline-none appearance-none w-[90%]' type='text' inputMode='numeric' onChange={({ target: { value } }) => {
+                            <div className='tw-flex tw-flex-row tw-items-center tw-justify-center'>
+                                <input value={totalSupplyValue} disabled className='tw-border-none dark:tw-bg-[rgb(30,31,34)]  dark:tw-text-white tw-outline-none tw-appearance-none tw-w-[90%]' type='text' inputMode='numeric' onChange={({ target: { value } }) => {
                                 }} />
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col items-center justify-center md:w-80% mt-3 mb-5 w-[48%]'>
-                        <span className=' text-[14px] ml-[25px] w-full items-start text-gray-500' style={{ fontFamily: 'Smack' }}>MAXIUM SUPPLY</span>
-                        <div className='flex flex-col rounded-[0.5rem] bg-[#fff] dark:bg-[rgb(30,31,34)] py-2 px-4' style={{ boxShadow: 'rgb(109 177 255 / 98%) 0.5px 0.5px 3.5px 0.5px' }}>
+                    <div className='tw-flex tw-flex-col tw-items-center tw-justify-center md:tw-w-[80%] tw-mt-3 tw-mb-5 tw-w-[48%]'>
+                        <span className=' tw-text-[14px] tw-ml-[25px] tw-w-full tw-items-start tw-text-gray-500' style={{ fontFamily: 'Smack' }}>MAXIUM SUPPLY</span>
+                        <div className='tw-flex tw-flex-col tw-rounded-[0.5rem] tw-bg-[#fff] dark:tw-bg-[rgb(30,31,34)] tw-py-2 tw-px-4' style={{ boxShadow: 'rgb(109 177 255 / 98%) 0.5px 0.5px 3.5px 0.5px' }}>
 
-                            <div className='flex flex-row items-center justify-center'>
-                                <input value={maxiumSupplyValue} disabled className='border-none dark:bg-[rgb(30,31,34)] dark:text-white outline-none appearance-none w-[90%]' type='text' inputMode='numeric' onChange={({ target: { value } }) => {
+                            <div className='tw-flex tw-flex-row tw-items-center tw-justify-center'>
+                                <input value={maxiumSupplyValue} disabled className='tw-border-none dark:tw-bg-[rgb(30,31,34)] dark:tw-text-white tw-outline-none tw-appearance-none tw-tw-w-[90%]' type='text' inputMode='numeric' onChange={({ target: { value } }) => {
                                 }} />
                             </div>
                         </div>

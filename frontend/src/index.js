@@ -13,7 +13,7 @@ import './index.scss';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import store from './store';
+import store from './redux/store';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
