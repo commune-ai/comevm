@@ -23,6 +23,9 @@
 .ant-modal-body{
     margin-left: 125px !important;
 }
+.ant-modal-content{
+    /* margin-left: 150px !important; */
+}
 .ant-collapse{
     border: none !important;
 }
