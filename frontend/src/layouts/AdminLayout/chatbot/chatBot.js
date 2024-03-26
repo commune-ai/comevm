@@ -54,7 +54,6 @@ function ChatBot() {
   async function processMessageToChatGPT(chatMessages) {
     // const API_KEY = process.env.OPENAI_API_KEY;
     const API_KEY = OPENAI_API_KEY;
-    console.log('aaaaa', API_KEY)
     let apiMessages = chatMessages.map((messageObject) => {
       let role = '';
       if (messageObject.sender === 1) {
