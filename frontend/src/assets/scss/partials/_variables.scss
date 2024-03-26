@@ -85,7 +85,7 @@ $color-title-color: $primary-color, #ff5252, #9575cd, #23b7e5, lighten($dark-lay
 // layout-6 background color
 $layout-6-bg-color: #23b7e5;
 
-$theme-font-family: "Open Sans", sans-serif;
+$theme-font-family: 'Open Sans', sans-serif;
 $theme-font-size: 14px;
 $theme-background: #f4f7fa;
 $theme-font-color: #888;
@@ -102,14 +102,14 @@ $form-bg: #f0f3f6;
 $theme-colors: () !default;
 $theme-colors: map-merge(
   (
-    "primary": $primary-color,
-    "secondary": $secondary-color,
-    "success": $success-color,
-    "info": $info-color,
-    "warning": $warning-color,
-    "danger": $danger-color,
-    "light": $light-color,
-    "dark": $dark-color
+    'primary': $primary-color,
+    'secondary': $secondary-color,
+    'success': $success-color,
+    'info': $info-color,
+    'warning': $warning-color,
+    'danger': $danger-color,
+    'light': $light-color,
+    'dark': $dark-color
   ),
   $theme-colors
 ); // Color contrast

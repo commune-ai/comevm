@@ -67,24 +67,24 @@ function ChatBot() {
     const systemMessage = {
       role: 'system',
       content: `This platform is about a EVM contracts marketplace. The platform facilitates trading of various smart contracts on the Ethereum blockchain.This platform contains all smart contracts on EVM and users can trade via these contracts on this platform.
-      Don"t answer for any question not related with this platform amd use emoticons much.
-      User Query: A user asks, "Can you explain how to trade smart contracts on this platform?"
+      Don't answer for any question not related with this platform amd use emoticons much.
+      User Query: A user asks, 'Can you explain how to trade smart contracts on this platform?'
       
       Bot Response:
       
-      "Absolutely! Trading smart contracts on our platform is straightforward. Here"s a step-by-step guide to get you started:
+      'Absolutely! Trading smart contracts on our platform is straightforward. Here's a step-by-step guide to get you started:
       
       •Browse Contracts: Start by browsing through our extensive collection of smart contracts listed on the platform. You can use the search bar or filters to narrow down your options based on categories, functionalities, or keywords.
       
-      •Select Contract: Once you"ve found a contract that interests you, click on it to view detailed information, including its features, specifications, and trading history. Take your time to understand the contract"s purpose and dynamics before proceeding.
+      •Select Contract: Once you've found a contract that interests you, click on it to view detailed information, including its features, specifications, and trading history. Take your time to understand the contract's purpose and dynamics before proceeding.
       
-      •Initiate Trade: To initiate a trade, simply select the "Trade" button associated with the contract. This will prompt you to specify the quantity you wish to buy or sell and review the current market conditions, including prices and liquidity.
+      •Initiate Trade: To initiate a trade, simply select the 'Trade' button associated with the contract. This will prompt you to specify the quantity you wish to buy or sell and review the current market conditions, including prices and liquidity.
       
       •Confirm Transaction: After reviewing the transaction details, confirm your trade to execute the transaction. Our platform ensures secure and seamless transactions powered by blockchain technology, providing transparency and reliability throughout the process.
       
       •Monitor Portfolio: Once the transaction is completed, you can monitor your portfolio and track the performance of your contracts in real-time. Our intuitive interface provides comprehensive insights into your holdings, profits, and transaction history.
       
-      That"s it! You"re now ready to explore and trade smart contracts on our EVM marketplace. If you have any further questions or need assistance at any step along the way, feel free to ask!"`
+      That's it! You're now ready to explore and trade smart contracts on our EVM marketplace. If you have any further questions or need assistance at any step along the way, feel free to ask!'`
     };
 
     const apiRequestBody = {
@@ -117,65 +117,65 @@ function ChatBot() {
 
   return (
     <div>
-      <button onClick={openChatbot} className="fixed tw-right-8 tw-bottom-8 tw-cursor-pointer">
-        <img className=" tw-w-[120px]" src={chatbotImg} alt="" />
+      <button onClick={openChatbot} className='fixed tw-right-8 tw-bottom-8 tw-cursor-pointer'>
+        <img className=' tw-w-[120px]' src={chatbotImg} alt='' />
       </button>
       <Bounce bottom>
         <div
           className={isShowChatbotClicked ? `header-chat tw-fixed chatbot tw-h-screen` : `header-chat tw-hidden chatbot tw-h-screen`}
           style={{ right: '0', top: '0' }}
         >
-          {/* <div className="header-chat tw-fixed" style={ {right:"0px"}}> */}
-          <div className="h-list-header">
+          {/* <div className='header-chat tw-fixed' style={ {right:'0px'}}> */}
+          <div className='h-list-header'>
             <h6>Welcome to Chatbot</h6>
-            <button onClick={closeChatbot} className="h-back-user-list tw-cursor-pointer">
-              <i className="feather icon-chevron-left text-muted" />
+            <button onClick={closeChatbot} className='h-back-user-list tw-cursor-pointer'>
+              <i className='feather icon-chevron-left text-muted' />
             </button>
           </div>
-          <div className="h-list-body" style={{ height: '91%' }}>
-            <div className="main-chat-cont">
+          <div className='h-list-body' style={{ height: '91%' }}>
+            <div className='main-chat-cont'>
               <PerfectScrollbar>
-                <div className="main-friend-chat" style={{ paddingLeft: '15px' }}>
+                <div className='main-friend-chat' style={{ paddingLeft: '15px' }}>
                   {messages.map((msg, index) => {
                     return (
-                        <Messages key={index} message={msg} name="Ninja" photo="" />
+                        <Messages key={index} message={msg} name='Ninja' photo='' />
                     );
                   })}
                 </div>
               </PerfectScrollbar>
             </div>
           </div>
-          <div className="h-list-footer">
+          <div className='h-list-footer'>
             <InputGroup>
-              <Button variant="success" className="btn-attach">
-                <i className="feather icon-paperclip" />
+              <Button variant='success' className='btn-attach'>
+                <i className='feather icon-paperclip' />
               </Button>
               <FormControl
-                type="text"
-                name="h-chat-text"
-                className="h-send-chat"
+                type='text'
+                name='h-chat-text'
+                className='h-send-chat'
                 value={input}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
-                placeholder="Write hear . . "
+                placeholder='Write hear . . '
               />
-              <Button type="submit" className="input-group-append btn-send" onClick={handleSend}>
-                {/* <i className="feather icon"  /> */}
+              <Button type='submit' className='input-group-append btn-send' onClick={handleSend}>
+                {/* <i className='feather icon'  /> */}
 
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="20"
-                  height="20"
-                  className="main-grid-item-icon"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
+                  xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 24 24'
+                  width='20'
+                  height='20'
+                  className='main-grid-item-icon'
+                  fill='none'
+                  stroke='currentColor'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
                 >
-                  <line x1="22" x2="11" y1="2" y2="13" />
-                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                  <line x1='22' x2='11' y1='2' y2='13' />
+                  <polygon points='22 2 15 22 11 13 2 9 22 2' />
                 </svg>
               </Button>
             </InputGroup>

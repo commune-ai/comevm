@@ -1,13 +1,13 @@
-import PropTypes from "prop-types";
-import React, { useContext, useEffect, useRef } from "react";
-import Navigation from "./Navigation";
-import NavBar from "./NavBar";
-import Breadcrumb from "./Breadcrumb";
-import useWindowSize from "../../hooks/useWindowSize";
-import useOutsideClick from "../../hooks/useOutsideClick";
-import { ConfigContext } from "../../contexts/ConfigContext";
-import * as actionType from "../../store/actions";
-import ChatBot from "./chatbot/chatBot";
+import PropTypes from 'prop-types';
+import React, { useContext, useEffect, useRef } from 'react';
+import Navigation from './Navigation';
+import NavBar from './NavBar';
+import Breadcrumb from './Breadcrumb';
+import useWindowSize from '../../hooks/useWindowSize';
+import useOutsideClick from '../../hooks/useOutsideClick';
+import { ConfigContext } from '../../contexts/ConfigContext';
+import * as actionType from '../../store/actions';
+import ChatBot from './chatbot/chatBot';
 
 const AdminLayout = ({ children }) => {
   const windowSize = useWindowSize();
@@ -22,7 +22,7 @@ const AdminLayout = ({ children }) => {
     }
 
     if (windowSize.width < 992) {
-      dispatch({ type: actionType.CHANGE_LAYOUT, layout: "vertical" });
+      dispatch({ type: actionType.CHANGE_LAYOUT, layout: 'vertical' });
     }
   }, [dispatch, windowSize]);
 
@@ -38,7 +38,7 @@ const AdminLayout = ({ children }) => {
     }
   };
 
-  let mainClass = ["pcoded-wrapper"];
+  let mainClass = ['pcoded-wrapper'];
 
   let common = (
     <React.Fragment>
@@ -49,10 +49,10 @@ const AdminLayout = ({ children }) => {
 
   let mainContainer = (
     <React.Fragment>
-      <div className="pcoded-main-container dark:tw-bg-[rgb(18,18,18)] ">
-        <div className={mainClass.join(" ")}>
-          <div className="pcoded-content tw-px-0 tw-pb-0 tw-overflow-x-hidden dark:tw-bg-[rgb(18,18,18)] ">
-            <div className="pcoded-inner-content">
+      <div className='pcoded-main-container dark:tw-bg-[rgb(18,18,18)] '>
+        <div className={mainClass.join(' ')}>
+          <div className='pcoded-content tw-px-0 tw-pb-0 tw-overflow-x-hidden dark:tw-bg-[rgb(18,18,18)] '>
+            <div className='pcoded-inner-content'>
               <Breadcrumb />
               {children}
             </div>
@@ -63,25 +63,25 @@ const AdminLayout = ({ children }) => {
   );
 
   if (windowSize.width < 992) {
-    let outSideClass = ["nav-outside"];
+    let outSideClass = ['nav-outside'];
     if (collapseMenu) {
-      outSideClass = [...outSideClass, "mob-backdrop"];
+      outSideClass = [...outSideClass, 'mob-backdrop'];
     }
     if (headerFixedLayout) {
-      outSideClass = [...outSideClass, "mob-fixed"];
+      outSideClass = [...outSideClass, 'mob-fixed'];
     }
 
     common = (
-      <div className={outSideClass.join(" ")} ref={ref}>
+      <div className={outSideClass.join(' ')} ref={ref}>
         {common}
       </div>
     );
 
     mainContainer = (
       <div
-        role="button"
-        tabIndex="0"
-        className="pcoded-outside "
+        role='button'
+        tabIndex='0'
+        className='pcoded-outside '
         onClick={() => mobileOutClickHandler}
         onKeyDown={() => mobileOutClickHandler}
       >

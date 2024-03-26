@@ -1,11 +1,11 @@
-import React from "react";
-import { Row, Col, Card } from "react-bootstrap";
+import React from 'react';
+import { Row, Col, Card } from 'react-bootstrap';
 
-import LineChart from "./chart/LineChart";
-import BarDiscreteChart from "./chart/BarDiscreteChart";
-import PieDonutChart from "./chart/PieDonutChart";
-import PieBasicChart from "./chart/PieBasicChart";
-import MultiBarChart from "./chart/MultiBarChart";
+import LineChart from './chart/LineChart';
+import BarDiscreteChart from './chart/BarDiscreteChart';
+import PieDonutChart from './chart/PieDonutChart';
+import PieBasicChart from './chart/PieBasicChart';
+import MultiBarChart from './chart/MultiBarChart';
 
 const Nvd3Chart = () => {
   return (
@@ -14,7 +14,7 @@ const Nvd3Chart = () => {
         <Col md={6}>
           <Card>
             <Card.Header>
-              <Card.Title as="h5">Line Chart</Card.Title>
+              <Card.Title as='h5'>Line Chart</Card.Title>
             </Card.Header>
             <Card.Body>
               <LineChart />
@@ -24,7 +24,7 @@ const Nvd3Chart = () => {
         <Col md={6}>
           <Card>
             <Card.Header>
-              <Card.Title as="h5">Discrete Bar Chart</Card.Title>
+              <Card.Title as='h5'>Discrete Bar Chart</Card.Title>
             </Card.Header>
             <Card.Body>
               <BarDiscreteChart />
@@ -34,7 +34,7 @@ const Nvd3Chart = () => {
         <Col sm={12}>
           <Card>
             <Card.Header>
-              <Card.Title as="h5">Stacked/Grouped Multi-Bar Chart</Card.Title>
+              <Card.Title as='h5'>Stacked/Grouped Multi-Bar Chart</Card.Title>
             </Card.Header>
             <Card.Body>
               <MultiBarChart />
@@ -44,9 +44,9 @@ const Nvd3Chart = () => {
         <Col md={6}>
           <Card>
             <Card.Header>
-              <Card.Title as="h5">Pie Basic Chart</Card.Title>
+              <Card.Title as='h5'>Pie Basic Chart</Card.Title>
             </Card.Header>
-            <Card.Body className="text-center">
+            <Card.Body className='text-center'>
               <PieBasicChart />
             </Card.Body>
           </Card>
@@ -54,9 +54,9 @@ const Nvd3Chart = () => {
         <Col md={6}>
           <Card>
             <Card.Header>
-              <Card.Title as="h5">Donut Chart</Card.Title>
+              <Card.Title as='h5'>Donut Chart</Card.Title>
             </Card.Header>
-            <Card.Body className="text-center">
+            <Card.Body className='text-center'>
               <PieDonutChart />
             </Card.Body>
           </Card>

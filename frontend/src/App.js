@@ -1,12 +1,12 @@
-import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
 // auth provider
 
-import routes, { renderRoutes } from "./routes";
-// import "bootstrap/dist/css/bootstrap.min.css";
-import "@rainbow-me/rainbowkit/styles.css";
-import { RainbowKitProvider, darkTheme, connectorsForWallets } from "@rainbow-me/rainbowkit";
+import routes, { renderRoutes } from './routes';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import '@rainbow-me/rainbowkit/styles.css';
+import { RainbowKitProvider, darkTheme, connectorsForWallets } from '@rainbow-me/rainbowkit';
 import {
   rainbowWallet,
   walletConnectWallet,
@@ -15,12 +15,12 @@ import {
   okxWallet,
   ledgerWallet,
   metaMaskWallet
-} from "@rainbow-me/rainbowkit/wallets";
-import { configureChains, createConfig, sepolia, WagmiConfig } from "wagmi";
-import { mainnet, polygon, optimism, arbitrum, base, zora, goerli } from "wagmi/chains";
-import { alchemyProvider } from "wagmi/providers/alchemy";
-import { publicProvider } from "wagmi/providers/public";
-import { ALCHEMY_API_KEY, PROJECT_ID } from "./utils/env";
+} from '@rainbow-me/rainbowkit/wallets';
+import { configureChains, createConfig, sepolia, WagmiConfig } from 'wagmi';
+import { mainnet, polygon, optimism, arbitrum, base, zora, goerli } from 'wagmi/chains';
+import { alchemyProvider } from 'wagmi/providers/alchemy';
+import { publicProvider } from 'wagmi/providers/public';
+import { ALCHEMY_API_KEY, PROJECT_ID } from './utils/env';
 const { chains, publicClient } = configureChains(
   [mainnet, polygon, optimism, arbitrum, base, zora, sepolia, goerli],
   [alchemyProvider({ apiKey: ALCHEMY_API_KEY }), publicProvider()]
@@ -30,7 +30,7 @@ const projectId = PROJECT_ID;
 
 const connectors = connectorsForWallets([
   {
-    groupName: "Recommended",
+    groupName: 'Recommended',
     wallets: [
       metaMaskWallet({ projectId, chains }), // Metamask
       ...(projectId ? [walletConnectWallet({ projectId, chains })] : []),
@@ -41,7 +41,7 @@ const connectors = connectorsForWallets([
     ]
   },
   {
-    groupName: "Other",
+    groupName: 'Other',
     wallets: [
       ...(projectId ? [rainbowWallet({ projectId, chains })] : []),
       ...(projectId ? [coinbaseWallet({ projectId, chains })] : []),
@@ -52,7 +52,7 @@ const connectors = connectorsForWallets([
       // coinbaseWallet({ projectId, chains }),
       // okxWallet({ projectId, chains }),
       // ledgerWallet({ projectId, chains }),
-      // Add other wallets to the "Other" group
+      // Add other wallets to the 'Other' group
     ]
   }
 ]);

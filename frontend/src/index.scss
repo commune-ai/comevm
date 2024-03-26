@@ -1,4 +1,4 @@
-@import "assets/scss/style.scss";
+@import 'assets/scss/style.scss';
 
 
 .nav-outside.mob-backdrop {
@@ -7,7 +7,7 @@
   }
   ~ .pcoded-outside {
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
@@ -170,7 +170,7 @@ header.navbar.pcoded-header.navbar-expand-lg.header-default .mobile-menu.on span
   overflow: visible;
   z-index: 1050;
 }
-.form-control[type="file"] {
+.form-control[type='file'] {
   height: auto;
   padding-left: 0.45rem;
 }
@@ -209,7 +209,7 @@ header.navbar.pcoded-header.navbar-expand-lg.header-default .mobile-menu.on span
 }
 
 @media (max-width: 575px) {
-  .row.justify-content-between > *[class*="col-"],
+  .row.justify-content-between > *[class*='col-'],
   .row.justify-content-between > .col {
     flex: 100%;
     .pagination {

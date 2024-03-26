@@ -1,23 +1,23 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
-    font-family: "Smack";
+    font-family: 'Smack';
     font-style: normal;
     font-weight: 600;
-    src: local("Smack"), url("/public/fonts/NotoSans-Bold.ttf") format("woff");
+    src: local('Smack'), url('/public/fonts/NotoSans-Bold.ttf') format('woff');
   }
 
 @media only screen and (max-width: 991px) {
   
   #navbar-right{
      display: block !important;
-     margin-top: "0" !important;
+     margin-top: '0' !important;
   }
   #setting_icon{
     display:inline !important;
@@ -73,43 +73,43 @@
 } */
 
 @font-face {
-  font-family: "Genty Demo";
+  font-family: 'Genty Demo';
   font-style: normal;
   font-weight: 600;
-  src: local("Genty Demo"), url("https://fonts.cdnfonts.com/s/59891/GentyDemo-Regular.woff") format("woff");
+  src: local('Genty Demo'), url('https://fonts.cdnfonts.com/s/59891/GentyDemo-Regular.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Evermore";
+  font-family: 'Evermore';
   font-style: normal;
   font-weight: 600;
-  src: local("Evermore"), url("https://fonts.cdnfonts.com/s/96082/Evermore-WyDmO.woff") format("woff");
+  src: local('Evermore'), url('https://fonts.cdnfonts.com/s/96082/Evermore-WyDmO.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Exorcist";
+  font-family: 'Exorcist';
   font-style: normal;
   font-weight: 600;
-  src: local("Exorcist"), url("/public/fonts/Exorcist.woff") format("woff");
+  src: local('Exorcist'), url('/public/fonts/Exorcist.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Smack";
+  font-family: 'Smack';
   font-style: normal;
   font-weight: 600;
-  src: local("Smack"), url("/public/fonts/NotoSans-Bold.ttf") format("woff");
+  src: local('Smack'), url('/public/fonts/NotoSans-Bold.ttf') format('woff');
 }
 
 @font-face {
-  font-family:"Mansalva";
+  font-family:'Mansalva';
   font-style: normal;
   font-weight: 600;
-  src: local("Mansalva"), url("/public/fonts/Gudea-Regular.ttf") format("woff");
+  src: local('Mansalva'), url('/public/fonts/Gudea-Regular.ttf') format('woff');
 }
 
 @font-face {
-  font-family: "Might";
+  font-family: 'Might';
   font-style: normal;
   font-weight: 600;
-  src: local("Might"), url("/public/fonts/NotoSans-Bold.ttf") format("woff");
+  src: local('Might'), url('/public/fonts/NotoSans-Bold.ttf') format('woff');
 }

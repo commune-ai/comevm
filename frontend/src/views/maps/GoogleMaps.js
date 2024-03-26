@@ -35,8 +35,8 @@ const GoogleMaps = () => {
       <Row>
         <Col sm={12}>
           <ModuleNotification
-            message="For more info please check the components's official documentation"
-            link="https://www.npmjs.com/package/react-google-maps"
+            message='For more info please check the components official documentation'
+            link='https://www.npmjs.com/package/react-google-maps'
           />
         </Col>
       </Row>
@@ -44,11 +44,11 @@ const GoogleMaps = () => {
         <Col xl={6}>
           <Card>
             <Card.Header>
-              <Card.Title as="h5">Default Marker</Card.Title>
+              <Card.Title as='h5'>Default Marker</Card.Title>
             </Card.Header>
             <Card.Body>
               <Marker
-                googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAChufWiMfwsmyX3Se1dRaN4t31z0xmIMo&v=3.exp&libraries=geometry,drawing,places"
+                googleMapURL='https://maps.googleapis.com/maps/api/js?key=AIzaSyAChufWiMfwsmyX3Se1dRaN4t31z0xmIMo&v=3.exp&libraries=geometry,drawing,places'
                 loadingElement={<div style={{ height: `100%` }} />}
                 containerElement={<div style={{ height: `400px` }} />}
                 mapElement={<div style={{ height: `100%` }} />}
@@ -59,7 +59,7 @@ const GoogleMaps = () => {
         <Col xl={6}>
           <Card>
             <Card.Header>
-              <Card.Title as="h5">Infobox</Card.Title>
+              <Card.Title as='h5'>Infobox</Card.Title>
             </Card.Header>
             <Card.Body>
               <InfoBox />
@@ -69,7 +69,7 @@ const GoogleMaps = () => {
         <Col xl={6}>
           <Card>
             <Card.Header>
-              <Card.Title as="h5">Marker Clusterer</Card.Title>
+              <Card.Title as='h5'>Marker Clusterer</Card.Title>
             </Card.Header>
             <Card.Body>
               <MarkerClusterer markers={markers} />
@@ -79,7 +79,7 @@ const GoogleMaps = () => {
         <Col xl={6}>
           <Card>
             <Card.Header>
-              <Card.Title as="h5">Street View Panorma</Card.Title>
+              <Card.Title as='h5'>Street View Panorma</Card.Title>
             </Card.Header>
             <Card.Body>
               <StreetViewPanorma />

@@ -1,9 +1,9 @@
-import PropTypes from "prop-types";
-import React, { useState } from "react";
-import { Dropdown, Card, Collapse } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
+import React, { useState } from 'react';
+import { Dropdown, Card, Collapse } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-import useWindowSize from "../../hooks/useWindowSize";
+import useWindowSize from '../../hooks/useWindowSize';
 
 const MainCard = (props) => {
   const { isOption, title, children, cardClass, optionClass } = props;
@@ -27,32 +27,32 @@ const MainCard = (props) => {
   };
 
   let fullScreenStyle, loader, cardHeaderRight, cardHeader;
-  let card = "";
+  let card = '';
   let mainCardClass = [];
 
   if (isOption) {
     cardHeaderRight = (
-      <div className={"card-header-right " + optionClass}>
-        <Dropdown align="end" className="btn-group card-option">
-          <Dropdown.Toggle id="dropdown-basic" className="btn-icon">
-            <i className="feather icon-more-horizontal" />
+      <div className={'card-header-right ' + optionClass}>
+        <Dropdown align='end' className='btn-group card-option'>
+          <Dropdown.Toggle id='dropdown-basic' className='btn-icon'>
+            <i className='feather icon-more-horizontal' />
           </Dropdown.Toggle>
-          <Dropdown.Menu as="ul" className="list-unstyled card-option">
-            <Dropdown.Item as="li" className="dropdown-item" onClick={() => setFullCard(!fullCard)}>
-              <i className={fullCard ? "feather icon-minimize" : "feather icon-maximize"} />
-              <Link to="#"> {fullCard ? "Restore" : "Maximize"} </Link>
+          <Dropdown.Menu as='ul' className='list-unstyled card-option'>
+            <Dropdown.Item as='li' className='dropdown-item' onClick={() => setFullCard(!fullCard)}>
+              <i className={fullCard ? 'feather icon-minimize' : 'feather icon-maximize'} />
+              <Link to='#'> {fullCard ? 'Restore' : 'Maximize'} </Link>
             </Dropdown.Item>
-            <Dropdown.Item as="li" className="dropdown-item" onClick={() => setCollapseCard(!collapseCard)}>
-              <i className={collapseCard ? "feather icon-plus" : "feather icon-minus"} />
-              <Link to="#"> {collapseCard ? "Expand" : "Collapse"} </Link>
+            <Dropdown.Item as='li' className='dropdown-item' onClick={() => setCollapseCard(!collapseCard)}>
+              <i className={collapseCard ? 'feather icon-plus' : 'feather icon-minus'} />
+              <Link to='#'> {collapseCard ? 'Expand' : 'Collapse'} </Link>
             </Dropdown.Item>
-            <Dropdown.Item as="li" className="dropdown-item" onClick={cardReloadHandler}>
-              <i className="feather icon-refresh-cw" />
-              <Link to="#"> Reload </Link>
+            <Dropdown.Item as='li' className='dropdown-item' onClick={cardReloadHandler}>
+              <i className='feather icon-refresh-cw' />
+              <Link to='#'> Reload </Link>
             </Dropdown.Item>
-            <Dropdown.Item as="li" className="dropdown-item" onClick={cardRemoveHandler}>
-              <i className="feather icon-trash" />
-              <Link to="#"> Remove </Link>
+            <Dropdown.Item as='li' className='dropdown-item' onClick={cardRemoveHandler}>
+              <i className='feather icon-trash' />
+              <Link to='#'> Remove </Link>
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
@@ -62,27 +62,27 @@ const MainCard = (props) => {
 
   cardHeader = (
     <Card.Header>
-      <Card.Title as="h5">{title}</Card.Title>
+      <Card.Title as='h5'>{title}</Card.Title>
       {cardHeaderRight}
     </Card.Header>
   );
 
   if (fullCard) {
-    mainCardClass = [...mainCardClass, "full-card"];
-    fullScreenStyle = { position: "fixed", top: 0, left: 0, right: 0, width: windowSize.width, height: windowSize.height };
+    mainCardClass = [...mainCardClass, 'full-card'];
+    fullScreenStyle = { position: 'fixed', top: 0, left: 0, right: 0, width: windowSize.width, height: windowSize.height };
   }
 
   if (loadCard) {
-    mainCardClass = [...mainCardClass, "card-load"];
+    mainCardClass = [...mainCardClass, 'card-load'];
     loader = (
-      <div className="card-loader">
-        <i className="pct-loader1 anim-rotate" />
+      <div className='card-loader'>
+        <i className='pct-loader1 anim-rotate' />
       </div>
     );
   }
 
   if (cardRemove) {
-    mainCardClass = [...mainCardClass, "d-none"];
+    mainCardClass = [...mainCardClass, 'd-none'];
   }
 
   if (cardClass) {
@@ -90,7 +90,7 @@ const MainCard = (props) => {
   }
 
   card = (
-    <Card className={mainCardClass.join(" ")} style={fullScreenStyle}>
+    <Card className={mainCardClass.join(' ')} style={fullScreenStyle}>
       {cardHeader}
       <Collapse in={!collapseCard}>
         <div>

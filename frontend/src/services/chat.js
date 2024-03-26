@@ -200,7 +200,7 @@ let chat = [
     messages: [
       {
         type: 1,
-        msg: "I'm just looking around. Will you tell me something about yourself?",
+        msg: 'I am just looking around. Will you tell me something about yourself?',
         time: '8:20 a.m'
       },
       {
@@ -273,7 +273,7 @@ let chat = [
     messages: [
       {
         type: 1,
-        msg: "I'm just looking around. Will you tell me something about yourself?",
+        msg: 'I am just looking around. Will you tell me something about yourself?',
         time: '8:20 a.m'
       },
       {
@@ -294,7 +294,7 @@ let chat = [
     messages: [
       {
         type: 1,
-        msg: "I'm just looking around. Will you tell me something about yourself?",
+        msg: 'I am just looking around. Will you tell me something about yourself?',
         time: '8:20 a.m'
       },
       {
@@ -309,7 +309,7 @@ let chat = [
       },
       {
         type: 1,
-        msg: "I'm just looking around. Will you tell me something about yourself?",
+        msg: 'I am just looking around. Will you tell me something about yourself?',
         time: '8:20 a.m'
       },
       {
@@ -324,7 +324,7 @@ let chat = [
       },
       {
         type: 1,
-        msg: "I'm just looking around. Will you tell me something about yourself?",
+        msg: 'I am just looking around. Will you tell me something about yourself?',
         time: '8:20 a.m'
       },
       {
@@ -339,7 +339,7 @@ let chat = [
       },
       {
         type: 1,
-        msg: "I'm just looking around. Will you tell me something about yourself?",
+        msg: 'I am just looking around. Will you tell me something about yourself?',
         time: '8:20 a.m'
       },
       {
@@ -354,7 +354,7 @@ let chat = [
       },
       {
         type: 1,
-        msg: "I'm just looking around. Will you tell me something about yourself?",
+        msg: 'I am just looking around. Will you tell me something about yourself?',
         time: '8:20 a.m'
       },
       {
@@ -401,7 +401,7 @@ let chat = [
     messages: [
       {
         type: 1,
-        msg: "I'm just looking around. Will you tell me something about yourself?",
+        msg: 'I am just looking around. Will you tell me something about yourself?',
         time: '8:20 a.m'
       },
       {
@@ -448,7 +448,7 @@ let chat = [
     messages: [
       {
         type: 1,
-        msg: "I'm just looking around. Will you tell me something about yourself?",
+        msg: 'I am just looking around. Will you tell me something about yourself?',
         time: '8:20 a.m'
       },
       {
@@ -469,7 +469,7 @@ let chat = [
     messages: [
       {
         type: 1,
-        msg: "I'm just looking around. Will you tell me something about yourself?",
+        msg: 'I am just looking around. Will you tell me something about yourself?',
         time: '8:20 a.m'
       },
       {
@@ -516,7 +516,7 @@ let chat = [
     messages: [
       {
         type: 1,
-        msg: "I'm just looking around. Will you tell me something about yourself?",
+        msg: 'I am just looking around. Will you tell me something about yourself?',
         time: '8:20 a.m'
       },
       {
@@ -563,7 +563,7 @@ let chat = [
     messages: [
       {
         type: 1,
-        msg: "I'm just looking around. Will you tell me something about yourself?",
+        msg: 'I am just looking around. Will you tell me something about yourself?',
         time: '8:20 a.m'
       },
       {
@@ -584,7 +584,7 @@ let chat = [
     messages: [
       {
         type: 1,
-        msg: "I'm just looking around. Will you tell me something about yourself?",
+        msg: 'I am just looking around. Will you tell me something about yourself?',
         time: '8:20 a.m'
       },
       {
@@ -631,7 +631,7 @@ let chat = [
     messages: [
       {
         type: 1,
-        msg: "I'm just looking around. Will you tell me something about yourself?",
+        msg: 'I am just looking around. Will you tell me something about yourself?',
         time: '8:20 a.m'
       },
       {
@@ -678,7 +678,7 @@ let chat = [
     messages: [
       {
         type: 1,
-        msg: "I'm just looking around. Will you tell me something about yourself?",
+        msg: 'I am just looking around. Will you tell me something about yourself?',
         time: '8:20 a.m'
       },
       {
@@ -699,7 +699,7 @@ let chat = [
     messages: [
       {
         type: 1,
-        msg: "I'm just looking around. Will you tell me something about yourself?",
+        msg: 'I am just looking around. Will you tell me something about yourself?',
         time: '8:20 a.m'
       },
       {

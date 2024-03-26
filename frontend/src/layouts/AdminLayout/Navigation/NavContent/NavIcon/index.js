@@ -1,11 +1,11 @@
-import PropTypes from "prop-types";
-import React from "react";
+import PropTypes from 'prop-types';
+import React from 'react';
 
 const NavIcon = ({ items }) => {
   let navIcons = false;
   if (items.icon) {
     navIcons = (
-      <span className="pcoded-micon">
+      <span className='pcoded-micon'>
         <i className={items.icon} />
       </span>
     );

@@ -36,16 +36,16 @@ const BasicBreadcrumbPagination = () => {
       <Row>
         <Col sm={12}>
           <ModuleNotification
-            message="For more info please check the components's official documentation"
-            link="https://react-bootstrap.github.io/components/pagination/"
+            message='For more info please check the components official documentation'
+            link='https://react-bootstrap.github.io/components/pagination/'
           />
         </Col>
       </Row>
       <Row>
         <Col>
-          <Card title="Pagination">
+          <Card title='Pagination'>
             <Pagination>{items}</Pagination>
-            <h5 className="mt-5">Working With Icons</h5>
+            <h5 className='mt-5'>Working With Icons</h5>
             <hr />
             <Pagination>
               <Pagination.First />
@@ -54,9 +54,9 @@ const BasicBreadcrumbPagination = () => {
               <Pagination.Next />
               <Pagination.Last />
             </Pagination>
-            <h5 className="mt-5">More Options</h5>
+            <h5 className='mt-5'>More Options</h5>
             <hr />
-            <div className="table-responsive">
+            <div className='table-responsive'>
               <Pagination>
                 <Pagination.Prev />
                 <Pagination.Item>{1}</Pagination.Item>
@@ -70,17 +70,17 @@ const BasicBreadcrumbPagination = () => {
               </Pagination>
             </div>
 
-            <h5 className="mt-5">Active</h5>
+            <h5 className='mt-5'>Active</h5>
             <hr />
             <Pagination>{activeItems}</Pagination>
-            <h5 className="mt-5">Disabled</h5>
+            <h5 className='mt-5'>Disabled</h5>
             <hr />
             <Pagination>{disabledItems}</Pagination>
-            <h5 className="mt-5">Sizing</h5>
+            <h5 className='mt-5'>Sizing</h5>
             <hr />
             <Pagination>{items}</Pagination>
-            <Pagination size="lg">{items}</Pagination>
-            <Pagination size="sm">{items}</Pagination>
+            <Pagination size='lg'>{items}</Pagination>
+            <Pagination size='sm'>{items}</Pagination>
           </Card>
         </Col>
       </Row>

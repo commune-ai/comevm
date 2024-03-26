@@ -1,4 +1,4 @@
-import { Chance } from "chance";
+import { Chance } from 'chance';
 
 const chance = new Chance();
 const range = (len) => {
@@ -17,7 +17,7 @@ const newPerson = () => {
     age: Math.floor(Math.random() * 30),
     visits: Math.floor(Math.random() * 100),
     progress: Math.floor(Math.random() * 100),
-    status: statusChance > 0.66 ? "relationship" : statusChance > 0.33 ? "complicated" : "single"
+    status: statusChance > 0.66 ? 'relationship' : statusChance > 0.33 ? 'complicated' : 'single'
   };
 };
 

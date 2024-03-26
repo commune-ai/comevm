@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { ListGroup } from "react-bootstrap";
-import { Link, useLocation } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { ListGroup } from 'react-bootstrap';
+import { Link, useLocation } from 'react-router-dom';
 
-import navigation from "../../../menu-items";
-import { BASE_TITLE } from "../../../config/constant";
+import navigation from '../../../menu-items';
+import { BASE_TITLE } from '../../../config/constant';
 
 const Breadcrumb = () => {
   const location = useLocation();
@@ -13,7 +13,7 @@ const Breadcrumb = () => {
 
   useEffect(() => {
     navigation.items.map((item, index) => {
-      if (item.type && item.type === "group") {
+      if (item.type && item.type === 'group') {
         getCollapse(item, index);
       }
       return false;
@@ -23,9 +23,9 @@ const Breadcrumb = () => {
   const getCollapse = (item, index) => {
     if (item.children) {
       item.children.filter((collapse) => {
-        if (collapse.type && collapse.type === "collapse") {
+        if (collapse.type && collapse.type === 'collapse') {
           getCollapse(collapse, index);
-        } else if (collapse.type && collapse.type === "item") {
+        } else if (collapse.type && collapse.type === 'item') {
           if (location.pathname === collapse.url) {
             setMain(item);
             setItem(collapse);
@@ -37,24 +37,24 @@ const Breadcrumb = () => {
   };
 
   let mainContent, itemContent;
-  let breadcrumbContent = "";
-  let title = "";
+  let breadcrumbContent = '';
+  let title = '';
 
-  if (main && main.type === "collapse") {
+  if (main && main.type === 'collapse') {
     mainContent = (
-      <ListGroup.Item as="li" bsPrefix=" " className="breadcrumb-item dark:tw-text-white">
-        <Link to="#" className="dark:tw-text-white">
+      <ListGroup.Item as='li' bsPrefix=' ' className='breadcrumb-item dark:tw-text-white'>
+        <Link to='#' className='dark:tw-text-white'>
           {main.title}
         </Link>
       </ListGroup.Item>
     );
   }
 
-  if (item && item.type === "item") {
+  if (item && item.type === 'item') {
     title = item.title;
     itemContent = (
-      <ListGroup.Item as="li" bsPrefix=" " className="breadcrumb-item dark:tw-text-white">
-        <Link to="#" className="dark:tw-text-white">
+      <ListGroup.Item as='li' bsPrefix=' ' className='breadcrumb-item dark:tw-text-white'>
+        <Link to='#' className='dark:tw-text-white'>
           {title}
         </Link>
       </ListGroup.Item>
@@ -62,17 +62,17 @@ const Breadcrumb = () => {
 
     if (item.breadcrumbs !== false) {
       breadcrumbContent = (
-        <div className="page-header">
-          <div className="page-block">
-            <div className="row align-items-center">
-              <div className="col-md-12">
-                <div className="page-header-title">
-                  <h5 className="m-b-10 dark:tw-text-white">{title}</h5>
+        <div className='page-header'>
+          <div className='page-block'>
+            <div className='row align-items-center'>
+              <div className='col-md-12'>
+                <div className='page-header-title'>
+                  <h5 className='m-b-10 dark:tw-text-white'>{title}</h5>
                 </div>
-                <ListGroup as="ul" bsPrefix=" " className="breadcrumb dark:tw-text-white">
-                  <ListGroup.Item as="li" bsPrefix=" " className="breadcrumb-item dark:tw-text-white">
-                    <Link to="/">
-                      <i className="feather icon-home dark:tw-text-white" />
+                <ListGroup as='ul' bsPrefix=' ' className='breadcrumb dark:tw-text-white'>
+                  <ListGroup.Item as='li' bsPrefix=' ' className='breadcrumb-item dark:tw-text-white'>
+                    <Link to='/'>
+                      <i className='feather icon-home dark:tw-text-white' />
                     </Link>
                   </ListGroup.Item>
                   {mainContent}
