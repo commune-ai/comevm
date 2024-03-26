@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Suspense } from 'react';
 import { Card, ListGroup, Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import PerfectScrollbar from 'react-perfect-scrollbar';

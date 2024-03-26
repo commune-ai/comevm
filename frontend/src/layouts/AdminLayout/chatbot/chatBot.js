@@ -5,6 +5,7 @@ import { FormControl, Button, InputGroup } from 'react-bootstrap';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import Messages from '../NavBar/NavRight/ChatList/Friends/Chat/Messages';
 import chatbotImg from '../../../assets/images/ChatBot.svg';
+import { OPENAI_API_KEY } from '../../../utils/env';
 
 function ChatBot() {
   const [isShowChatbotClicked, setIsShowChatbotClicked] = useState(false);
@@ -51,7 +52,9 @@ function ChatBot() {
   };
 
   async function processMessageToChatGPT(chatMessages) {
-    const API_KEY = process.env.API_KEY;
+    // const API_KEY = process.env.OPENAI_API_KEY;
+    const API_KEY = OPENAI_API_KEY;
+    console.log('aaaaa', API_KEY)
     let apiMessages = chatMessages.map((messageObject) => {
       let role = '';
       if (messageObject.sender === 1) {
