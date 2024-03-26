@@ -11,7 +11,7 @@ const Messages = ({ message, photo, name }) => {
   if (message.type && photo) {
     image = (
       <Link to="#" className="media-left photo-table">
-        <img className="media-object img-radius img-radius m-t-5" style={{ visibility: 'visible' }} src={images(`./${photo}`)} alt={name} />
+        <img className="media-object img-radius img-radius m-t-5" src={images(`./${photo}`)} alt={name} />
       </Link>
     );
   }
