@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 import {
   PUBKEY,
   UPDATE_USERS_FAILURE,
@@ -10,13 +10,13 @@ import {
   POST_USERS_FAILURE,
   POST_USERS_REQUEST,
   POST_USERS_SUCCESS
-} from '../constants/constant';
+} from "../constants/constant";
 
 // make a action to gets all users
 export const getUser = (payload) => async (dispatch) => {
   dispatch({ type: GET_USERS_REQUEST });
   try {
-    const res = await axios.get(process.env.REACT_APP_API_BASE_URL + '/user/' + payload);
+    const res = await axios.get(process.env.REACT_APP_API_BASE_URL + "/user/" + payload);
     dispatch({ type: GET_USERS_SUCCESS, payload: res.data });
   } catch (error) {
     dispatch({ type: GET_USERS_FAILURE, payload: error });
@@ -27,7 +27,7 @@ export const getUser = (payload) => async (dispatch) => {
 export const createUser = (payload) => async (dispatch) => {
   dispatch({ type: POST_USERS_REQUEST });
   try {
-    const res = await axios.post(process.env.REACT_APP_API_BASE_URL + '/user/new', {
+    const res = await axios.post(process.env.REACT_APP_API_BASE_URL + "/user/new", {
       payload
     });
     dispatch({ type: POST_USERS_SUCCESS, payload: res.data });
@@ -45,7 +45,7 @@ export const UpdateUser = (payload) => async (dispatch) => {
   dispatch({ type: UPDATE_USERS_REQUEST });
 
   try {
-    const res = await axios.put(process.env.REACT_APP_API_BASE_URL + '/user/' + payload.userId);
+    const res = await axios.put(process.env.REACT_APP_API_BASE_URL + "/user/" + payload.userId);
     dispatch({ type: UPDATE_USERS_SUCCESS, payload: res.data });
   } catch (error) {
     dispatch({ type: UPDATE_USERS_FAILURE, payload: error });

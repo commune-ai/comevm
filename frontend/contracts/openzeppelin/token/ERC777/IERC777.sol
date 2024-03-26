@@ -68,7 +68,7 @@ interface IERC777 {
     function balanceOf(address owner) external view returns (uint256);
 
     /**
-     * @dev Moves `amount` tokens from the caller's account to `recipient`.
+     * @dev Moves `amount` tokens from the caller"s account to `recipient`.
      *
      * If send or receive hooks are registered for the caller and `recipient`,
      * the corresponding functions will be called with `data` and empty
@@ -90,7 +90,7 @@ interface IERC777 {
     ) external;
 
     /**
-     * @dev Destroys `amount` tokens from the caller's account, reducing the
+     * @dev Destroys `amount` tokens from the caller"s account, reducing the
      * total supply.
      *
      * If a send hook is registered for the caller, the corresponding function
@@ -127,7 +127,7 @@ interface IERC777 {
     function authorizeOperator(address operator) external;
 
     /**
-     * @dev Revoke an account's operator status for the caller.
+     * @dev Revoke an account"s operator status for the caller.
      *
      * See {isOperatorFor} and {defaultOperators}.
      *

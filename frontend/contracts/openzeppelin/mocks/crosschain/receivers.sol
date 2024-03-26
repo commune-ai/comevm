@@ -10,7 +10,7 @@ import "../../crosschain/optimism/CrossChainEnabledOptimism.sol";
 import "../../crosschain/polygon/CrossChainEnabledPolygonChild.sol";
 
 abstract contract Receiver is CrossChainEnabled {
-    // we don't use Ownable because it messes up testing for the upgradeable contracts
+    // we don"t use Ownable because it messes up testing for the upgradeable contracts
     /// @custom:oz-upgrades-unsafe-allow state-variable-immutable state-variable-assignment
     address public immutable owner = msg.sender;
 

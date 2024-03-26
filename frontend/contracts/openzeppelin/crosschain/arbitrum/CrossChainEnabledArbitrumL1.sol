@@ -15,7 +15,7 @@ import "./LibArbitrumL1.sol";
  *
  * The bridge contract is provided and maintained by the arbitrum team. You can
  * find the address of this contract on the rinkeby testnet in
- * https://developer.offchainlabs.com/docs/useful_addresses[Arbitrum's developer documentation].
+ * https://developer.offchainlabs.com/docs/useful_addresses[Arbitrum"s developer documentation].
  *
  * _Available since v4.6._
  */

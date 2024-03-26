@@ -1,5 +1,5 @@
-import React from 'react';
-import NVD3Chart from 'react-nvd3';
+import React from "react";
+import NVD3Chart from "react-nvd3";
 
 function getDatum() {
   var sin = [],
@@ -22,18 +22,18 @@ function getDatum() {
   return [
     {
       values: sin,
-      key: 'Sine Wave',
-      color: '#A389D4'
+      key: "Sine Wave",
+      color: "#A389D4"
     },
     {
       values: cos,
-      key: 'Cosine Wave',
-      color: '#04a9f5'
+      key: "Cosine Wave",
+      color: "#04a9f5"
     },
     {
       values: sin2,
-      key: 'Another sine wave',
-      color: '#1de9b6',
+      key: "Another sine wave",
+      color: "#1de9b6",
       area: true
     }
   ];
@@ -48,21 +48,21 @@ const LineChart = () => {
           tickFormat: function (d) {
             return d;
           },
-          axisLabel: 'Time (ms)'
+          axisLabel: "Time (ms)"
         },
         yAxis: {
-          axisLabel: 'Voltage (v)',
+          axisLabel: "Voltage (v)",
           tickFormat: function (d) {
             return parseFloat(d).toFixed(2);
           }
         },
-        type: 'lineChart',
+        type: "lineChart",
         datum: data,
-        x: 'x',
-        y: 'y',
+        x: "x",
+        y: "y",
         height: 300,
         renderEnd: function () {
-          console.log('renderEnd');
+          console.log("renderEnd");
         }
       })}
     </React.Fragment>

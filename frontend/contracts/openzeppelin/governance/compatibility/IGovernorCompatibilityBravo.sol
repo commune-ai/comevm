@@ -43,12 +43,12 @@ abstract contract IGovernorCompatibilityBravo is IGovernor {
     }
 
     /**
-     * @dev Part of the Governor Bravo's interface.
+     * @dev Part of the Governor Bravo"s interface.
      */
     function quorumVotes() public view virtual returns (uint256);
 
     /**
-     * @dev Part of the Governor Bravo's interface: _"The official record of all proposals ever proposed"_.
+     * @dev Part of the Governor Bravo"s interface: _"The official record of all proposals ever proposed"_.
      */
     function proposals(uint256)
         public
@@ -68,7 +68,7 @@ abstract contract IGovernorCompatibilityBravo is IGovernor {
         );
 
     /**
-     * @dev Part of the Governor Bravo's interface: _"Function used to propose a new proposal"_.
+     * @dev Part of the Governor Bravo"s interface: _"Function used to propose a new proposal"_.
      */
     function propose(
         address[] memory targets,
@@ -79,12 +79,12 @@ abstract contract IGovernorCompatibilityBravo is IGovernor {
     ) public virtual returns (uint256);
 
     /**
-     * @dev Part of the Governor Bravo's interface: _"Queues a proposal of state succeeded"_.
+     * @dev Part of the Governor Bravo"s interface: _"Queues a proposal of state succeeded"_.
      */
     function queue(uint256 proposalId) public virtual;
 
     /**
-     * @dev Part of the Governor Bravo's interface: _"Executes a queued proposal if eta has passed"_.
+     * @dev Part of the Governor Bravo"s interface: _"Executes a queued proposal if eta has passed"_.
      */
     function execute(uint256 proposalId) public payable virtual;
 
@@ -94,7 +94,7 @@ abstract contract IGovernorCompatibilityBravo is IGovernor {
     function cancel(uint256 proposalId) public virtual;
 
     /**
-     * @dev Part of the Governor Bravo's interface: _"Gets actions of a proposal"_.
+     * @dev Part of the Governor Bravo"s interface: _"Gets actions of a proposal"_.
      */
     function getActions(uint256 proposalId)
         public
@@ -108,7 +108,7 @@ abstract contract IGovernorCompatibilityBravo is IGovernor {
         );
 
     /**
-     * @dev Part of the Governor Bravo's interface: _"Gets the receipt for a voter on a given proposal"_.
+     * @dev Part of the Governor Bravo"s interface: _"Gets the receipt for a voter on a given proposal"_.
      */
     function getReceipt(uint256 proposalId, address voter) public view virtual returns (Receipt memory);
 }

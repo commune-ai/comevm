@@ -1,22 +1,22 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import { Row, Col, Button, Alert } from 'react-bootstrap';
+import PropTypes from "prop-types";
+import React from "react";
+import { Row, Col, Button, Alert } from "react-bootstrap";
 
-import * as Yup from 'yup';
-import { Formik } from 'formik';
+import * as Yup from "yup";
+import { Formik } from "formik";
 
 const FirebaseLogin = ({ className, ...rest }) => {
   return (
     <React.Fragment>
       <Formik
         initialValues={{
-          email: 'info@codedthemes.com',
-          password: '123456',
+          email: "info@codedthemes.com",
+          password: "123456",
           submit: null
         }}
         validationSchema={Yup.object().shape({
-          email: Yup.string().email('Must be a valid email').max(255).required('Email is required'),
-          password: Yup.string().max(255).required('Password is required')
+          email: Yup.string().email("Must be a valid email").max(255).required("Email is required"),
+          password: Yup.string().max(255).required("Password is required")
         })}
       >
         {({ errors, handleBlur, handleChange, handleSubmit, isSubmitting, touched, values }) => (

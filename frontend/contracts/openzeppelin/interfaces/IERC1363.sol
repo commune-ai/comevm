@@ -10,17 +10,17 @@ interface IERC1363 is IERC165, IERC20 {
     /*
      * Note: the ERC-165 identifier for this interface is 0x4bbee2df.
      * 0x4bbee2df ===
-     *   bytes4(keccak256('transferAndCall(address,uint256)')) ^
-     *   bytes4(keccak256('transferAndCall(address,uint256,bytes)')) ^
-     *   bytes4(keccak256('transferFromAndCall(address,address,uint256)')) ^
-     *   bytes4(keccak256('transferFromAndCall(address,address,uint256,bytes)'))
+     *   bytes4(keccak256("transferAndCall(address,uint256)")) ^
+     *   bytes4(keccak256("transferAndCall(address,uint256,bytes)")) ^
+     *   bytes4(keccak256("transferFromAndCall(address,address,uint256)")) ^
+     *   bytes4(keccak256("transferFromAndCall(address,address,uint256,bytes)"))
      */
 
     /*
      * Note: the ERC-165 identifier for this interface is 0xfb9ec8ce.
      * 0xfb9ec8ce ===
-     *   bytes4(keccak256('approveAndCall(address,uint256)')) ^
-     *   bytes4(keccak256('approveAndCall(address,uint256,bytes)'))
+     *   bytes4(keccak256("approveAndCall(address,uint256)")) ^
+     *   bytes4(keccak256("approveAndCall(address,uint256,bytes)"))
      */
 
     /**

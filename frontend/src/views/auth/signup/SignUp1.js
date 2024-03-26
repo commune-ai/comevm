@@ -1,8 +1,8 @@
-import React from 'react';
-import { Card, Row, Col } from 'react-bootstrap';
-import { NavLink, Link } from 'react-router-dom';
+import React from "react";
+import { Card, Row, Col } from "react-bootstrap";
+import { NavLink, Link } from "react-router-dom";
 
-import Breadcrumb from '../../../layouts/AdminLayout/Breadcrumb';
+import Breadcrumb from "../../../layouts/AdminLayout/Breadcrumb";
 
 const SignUp1 = () => {
   return (
@@ -41,7 +41,7 @@ const SignUp1 = () => {
                   </div>
                   <button className="btn btn-primary mb-4">Sign up</button>
                   <p className="mb-2">
-                    Already have an account?{' '}
+                    Already have an account?{" "}
                     <NavLink to="/auth/signin-1" className="f-w-400">
                       Login
                     </NavLink>

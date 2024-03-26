@@ -1,12 +1,12 @@
-import React from 'react';
-import { Card, Button, Alert } from 'react-bootstrap';
-import { NavLink, Link } from 'react-router-dom';
+import React from "react";
+import { Card, Button, Alert } from "react-bootstrap";
+import { NavLink, Link } from "react-router-dom";
 
-import Breadcrumb from '../../../layouts/AdminLayout/Breadcrumb';
+import Breadcrumb from "../../../layouts/AdminLayout/Breadcrumb";
 
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
-import AuthLogin from './FirebaseLogin';
+import AuthLogin from "./FirebaseLogin";
 
 const Signin1 = () => {
   return (
@@ -27,13 +27,13 @@ const Signin1 = () => {
               </div>
               <AuthLogin />
               <p className="mb-2 text-muted">
-                Forgot password?{' '}
+                Forgot password?{" "}
                 <NavLink to="/auth/reset-password-1" className="f-w-400">
                   Reset
                 </NavLink>
               </p>
               <p className="mb-0 text-muted">
-                Don’t have an account?{' '}
+                Don’t have an account?{" "}
                 <NavLink to="/auth/signup-1" className="f-w-400">
                   Signup
                 </NavLink>

@@ -10,12 +10,12 @@ import "../../../utils/math/SafeCast.sol";
 import "../../../utils/cryptography/ECDSA.sol";
 
 /**
- * @dev Extension of ERC20 to support Compound-like voting and delegation. This version is more generic than Compound's,
+ * @dev Extension of ERC20 to support Compound-like voting and delegation. This version is more generic than Compound"s,
  * and supports token supply up to 2^224^ - 1, while COMP is limited to 2^96^ - 1.
  *
  * NOTE: If exact COMP compatibility is required, use the {ERC20VotesComp} variant of this module.
  *
- * This extension keeps a history (checkpoints) of each account's vote power. Vote power can be delegated either
+ * This extension keeps a history (checkpoints) of each account"s vote power. Vote power can be delegated either
  * by calling the {delegate} function directly, or by providing a signature to be used with {delegateBySig}. Voting
  * power can be queried through the public accessors {getVotes} and {getPastVotes}.
  *
@@ -104,10 +104,10 @@ abstract contract ERC20Votes is IVotes, ERC20Permit {
         // With each iteration, either `low` or `high` is moved towards the middle of the range to maintain the invariant.
         // - If the middle checkpoint is after `blockNumber`, we look in [low, mid)
         // - If the middle checkpoint is before or equal to `blockNumber`, we look in [mid+1, high)
-        // Once we reach a single value (when low == high), we've found the right checkpoint at the index high-1, if not
-        // out of bounds (in which case we're looking too far in the past and the result is 0).
+        // Once we reach a single value (when low == high), we"ve found the right checkpoint at the index high-1, if not
+        // out of bounds (in which case we"re looking too far in the past and the result is 0).
         // Note that if the latest checkpoint available is exactly for `blockNumber`, we end up with an index that is
-        // past the end of the array, so we technically don't find a checkpoint after `blockNumber`, but it works out
+        // past the end of the array, so we technically don"t find a checkpoint after `blockNumber`, but it works out
         // the same.
         uint256 length = ckpts.length;
 

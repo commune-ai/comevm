@@ -116,7 +116,7 @@ library Math {
             // four bits. That is, denominator * inv = 1 mod 2^4.
             uint256 inverse = (3 * denominator) ^ 2;
 
-            // Use the Newton-Raphson iteration to improve the precision. Thanks to Hensel's lifting lemma, this also works
+            // Use the Newton-Raphson iteration to improve the precision. Thanks to Hensel"s lifting lemma, this also works
             // in modular arithmetic, doubling the correct bits in each step.
             inverse *= 2 - denominator * inverse; // inverse mod 2^8
             inverse *= 2 - denominator * inverse; // inverse mod 2^16
@@ -127,7 +127,7 @@ library Math {
 
             // Because the division is now exact we can divide by multiplying with the modular inverse of denominator.
             // This will give us the correct result modulo 2^256. Since the preconditions guarantee that the outcome is
-            // less than 2^256, this is the final result. We don't need to compute the high bits of the result and prod1
+            // less than 2^256, this is the final result. We don"t need to compute the high bits of the result and prod1
             // is no longer required.
             result = prod0 * inverse;
             return result;
@@ -153,7 +153,7 @@ library Math {
     /**
      * @dev Returns the square root of a number. If the number is not a perfect square, the value is rounded down.
      *
-     * Inspired by Henry S. Warren, Jr.'s "Hacker's Delight" (Chapter 11).
+     * Inspired by Henry S. Warren, Jr."s "Hacker"s Delight" (Chapter 11).
      */
     function sqrt(uint256 a) internal pure returns (uint256) {
         if (a == 0) {
@@ -173,7 +173,7 @@ library Math {
         uint256 result = 1 << (log2(a) >> 1);
 
         // At this point `result` is an estimation with one bit of precision. We know the true value is a uint128,
-        // since it is the square root of a uint256. Newton's method converges quadratically (precision doubles at
+        // since it is the square root of a uint256. Newton"s method converges quadratically (precision doubles at
         // every iteration). We thus need at most 7 iteration to turn our partial result with one bit of precision
         // into the expected uint128 result.
         unchecked {

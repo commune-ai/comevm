@@ -14,7 +14,7 @@ interface IVotes {
     event DelegateChanged(address indexed delegator, address indexed fromDelegate, address indexed toDelegate);
 
     /**
-     * @dev Emitted when a token transfer or delegate change results in changes to a delegate's number of votes.
+     * @dev Emitted when a token transfer or delegate change results in changes to a delegate"s number of votes.
      */
     event DelegateVotesChanged(address indexed delegate, uint256 previousBalance, uint256 newBalance);
 

@@ -26,7 +26,7 @@ import "../../utils/Context.sol";
  * Additionally, an {Approval} event is emitted on calls to {transferFrom}.
  * This allows applications to reconstruct the allowance for all accounts just
  * by listening to said events. Other implementations of the EIP may not emit
- * these events, as it isn't required by the specification.
+ * these events, as it isn"t required by the specification.
  *
  * Finally, the non-standard {decreaseAllowance} and {increaseAllowance}
  * functions have been added to mitigate the well-known issues around setting
@@ -152,7 +152,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
      *
      * - `from` and `to` cannot be the zero address.
      * - `from` must have a balance of at least `amount`.
-     * - the caller must have allowance for ``from``'s tokens of at least
+     * - the caller must have allowance for ``from``"s tokens of at least
      * `amount`.
      */
     function transferFrom(
@@ -353,10 +353,10 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
      *
      * Calling conditions:
      *
-     * - when `from` and `to` are both non-zero, `amount` of ``from``'s tokens
+     * - when `from` and `to` are both non-zero, `amount` of ``from``"s tokens
      * will be transferred to `to`.
      * - when `from` is zero, `amount` tokens will be minted for `to`.
-     * - when `to` is zero, `amount` of ``from``'s tokens will be burned.
+     * - when `to` is zero, `amount` of ``from``"s tokens will be burned.
      * - `from` and `to` are never both zero.
      *
      * To learn more about hooks, head to xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].
@@ -373,10 +373,10 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
      *
      * Calling conditions:
      *
-     * - when `from` and `to` are both non-zero, `amount` of ``from``'s tokens
+     * - when `from` and `to` are both non-zero, `amount` of ``from``"s tokens
      * has been transferred to `to`.
      * - when `from` is zero, `amount` tokens have been minted for `to`.
-     * - when `to` is zero, `amount` of ``from``'s tokens have been burned.
+     * - when `to` is zero, `amount` of ``from``"s tokens have been burned.
      * - `from` and `to` are never both zero.
      *
      * To learn more about hooks, head to xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].

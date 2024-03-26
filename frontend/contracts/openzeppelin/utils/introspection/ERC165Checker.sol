@@ -40,7 +40,7 @@ library ERC165Checker {
 
     /**
      * @dev Returns a boolean array where each value corresponds to the
-     * interfaces passed in and whether they're supported or not. This allows
+     * interfaces passed in and whether they"re supported or not. This allows
      * you to batch check interfaces for a contract where your expectation
      * is that some interfaces may not be supported.
      *
@@ -53,7 +53,7 @@ library ERC165Checker {
         view
         returns (bool[] memory)
     {
-        // an array of booleans corresponding to interfaceIds and whether they're supported or not
+        // an array of booleans corresponding to interfaceIds and whether they"re supported or not
         bool[] memory interfaceIdsSupported = new bool[](interfaceIds.length);
 
         // query support of ERC165 itself

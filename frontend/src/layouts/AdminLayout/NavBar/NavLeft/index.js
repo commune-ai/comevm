@@ -1,27 +1,27 @@
-import React from 'react';
-import { ListGroup } from 'react-bootstrap';
-// import { Link } from 'react-router-dom';
-// import logo from '../../../../assets/images/commune.gif';
+import React from "react";
+import { ListGroup } from "react-bootstrap";
+// import { Link } from "react-router-dom";
+// import logo from "../../../../assets/images/commune.gif";
 
-import useWindowSize from '../../../../hooks/useWindowSize';
-import NavSearch from './NavSearch';
+import useWindowSize from "../../../../hooks/useWindowSize";
+import NavSearch from "./NavSearch";
 
 const NavLeft = () => {
   const windowSize = useWindowSize();
 
-  // let dropdownAlign = 'start';
+  // let dropdownAlign = "start";
 
-  // let navItemClass = ['nav-item'];
+  // let navItemClass = ["nav-item"];
   // if (windowSize.width <= 575) {
-  //   navItemClass = [...navItemClass, 'd-none'];
+  //   navItemClass = [...navItemClass, "d-none"];
   // }
 
   return (
     <React.Fragment>
       <ListGroup as="ul" bsPrefix=" " className="navbar-nav mr-auto ">
-        {/* <ListGroup.Item as="li" bsPrefix=" " className={navItemClass.join(' ')}>
+        {/* <ListGroup.Item as="li" bsPrefix=" " className={navItemClass.join(" ")}>
           <Dropdown align={dropdownAlign}>
-            <Dropdown.Toggle variant={'link'} id="dropdown-basic">
+            <Dropdown.Toggle variant={"link"} id="dropdown-basic">
               Dropdown
             </Dropdown.Toggle>
             <ul>
@@ -45,7 +45,7 @@ const NavLeft = () => {
             </ul>
           </Dropdown>
         </ListGroup.Item> */}
-        {/* <div className=' tw-flex tw-gap-5'>
+        {/* <div className=" tw-flex tw-gap-5">
           <img className=" tw-w-[70px]" src={logo} alt=""></img>
           <span className="b-title">Commune</span>
         </div> */}

@@ -10,7 +10,7 @@ import { ApiPromise, WsProvider } from '@polkadot/api';
 import { web3Enable, web3Accounts } from '@polkadot/extension-dapp';
 import polkadotImg from '../../../../assets/images/polkadot-new-dot-logo.svg';
 import ChatList from './ChatList';
-// import PolkadotWalletButton from '../../../../components/polkadot-wallet-button';
+// import PolkadotWalletButton from "../../../../components/polkadot-wallet-button";
 import avatar1 from '../../../../assets/images/user/avatar-1.jpg';
 import avatar2 from '../../../../assets/images/user/avatar-2.jpg';
 import avatar3 from '../../../../assets/images/user/avatar-3.jpg';
@@ -254,7 +254,7 @@ address: ${address}
                                   >
                                     <img className=" tw-w-[80px] hover:tw-scale-[1.1] tw-transition-all" src={metamaskImg} alt="" />
                                   </button>
-                                  {/* <img className=' tw-w-[80px] tw-cursor-pointer' src={polkadotImg} alt='' /> */}
+                                  {/* <img className=" tw-w-[80px] tw-cursor-pointer" src={polkadotImg} alt="" /> */}
                                   {/* <PolkadotWalletButton/> */}
                                   <button
                                     onClick={() => connectWallet()}
@@ -286,7 +286,7 @@ address: ${address}
                             style={{ fontFamily: 'Smack' }}
                           >
                             <span className=" tw-text-[15px] tw-uppercase tw-text-[rgb(18,18,18)] dark:tw-text-white">
-                              {/* {account.displayBalance ? account.displayBalance : ''} */}
+                              {/* {account.displayBalance ? account.displayBalance : ""} */}
                             </span>
                             <span className=" tw-text-[15px] first-letter:tw-uppercase tw-lowercase tw-text-[rgb(18,18,18)] dark:tw-text-white">
                               {polkadotAddress}
@@ -353,7 +353,7 @@ address: ${address}
                       <div className="tw-flex tw-justify-center tw-items-center">
                         <div className=" tw-flex tw-gap-[15px] tw-justify-center tw-items-center -tw-mt-[10px] walletinfo">
                           {/* <svg class="h-8 w-8 text-[#256fc4] dark:text-[white]" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />  <path d="M7 12h14l-3 -3m0 6l3 -3" /></svg>
-                          <button onClick={() => handleBuyButton(account.address, selectedCurrency)} type="button" className='dark:text-white text-[#256fc4] text-[18px] sm:text-base md:text-[18px] transition-all evermore hover:opacity-[0.7] no-underline rounded-full dark:hover:text-white hover:text-blue-800' style={{ fontFamily: 'Smack' }}>
+                          <button onClick={() => handleBuyButton(account.address, selectedCurrency)} type="button" className="dark:text-white text-[#256fc4] text-[18px] sm:text-base md:text-[18px] transition-all evermore hover:opacity-[0.7] no-underline rounded-full dark:hover:text-white hover:text-blue-800" style={{ fontFamily: "Smack" }}>
                             SignOut
                           </button> */}
 

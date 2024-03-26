@@ -66,7 +66,7 @@ interface IERC1155 is IERC165 {
         returns (uint256[] memory);
 
     /**
-     * @dev Grants or revokes permission to `operator` to transfer the caller's tokens, according to `approved`,
+     * @dev Grants or revokes permission to `operator` to transfer the caller"s tokens, according to `approved`,
      *
      * Emits an {ApprovalForAll} event.
      *
@@ -77,7 +77,7 @@ interface IERC1155 is IERC165 {
     function setApprovalForAll(address operator, bool approved) external;
 
     /**
-     * @dev Returns true if `operator` is approved to transfer ``account``'s tokens.
+     * @dev Returns true if `operator` is approved to transfer ``account``"s tokens.
      *
      * See {setApprovalForAll}.
      */
@@ -91,7 +91,7 @@ interface IERC1155 is IERC165 {
      * Requirements:
      *
      * - `to` cannot be the zero address.
-     * - If the caller is not `from`, it must have been approved to spend ``from``'s tokens via {setApprovalForAll}.
+     * - If the caller is not `from`, it must have been approved to spend ``from``"s tokens via {setApprovalForAll}.
      * - `from` must have a balance of tokens of type `id` of at least `amount`.
      * - If `to` refers to a smart contract, it must implement {IERC1155Receiver-onERC1155Received} and return the
      * acceptance magic value.

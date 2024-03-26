@@ -1,12 +1,12 @@
-import React from 'react';
-import { Fade } from 'react-reveal';
-import { useNavigate } from 'react-router-dom';
-import homepageLogo from '../../assets/images/commune.gif';
-import Switcher from '../../switcher';
+import React from "react";
+import { Fade } from "react-reveal";
+import { useNavigate } from "react-router-dom";
+import homepageLogo from "../../assets/images/commune.gif";
+import Switcher from "../../switcher";
 const HomePage = () => {
   const navigate = useNavigate();
   const OpenDashboard = () => {
-    navigate('/app/dashboard/default');
+    navigate("/app/dashboard/default");
   };
   return (
     <React.Fragment>
@@ -22,15 +22,15 @@ const HomePage = () => {
                   <div className="tw-pt-[0px] tw-w-full tw-flex tw-justify-center tw-items-center tw-flex-col tw-gap-2">
                     <h1
                       className=" tw-text-[2rem] tw-w-full sm:tw-text-[3rem] tw-pb-3 dark:tw-text-white tw-text-center"
-                      style={{ fontFamily: 'Smack' }}
+                      style={{ fontFamily: "Smack" }}
                     >
-                      Welcome to the{' '}
+                      Welcome to the{" "}
                       <span className="tw-text-[#ffb4ed] dark:tw-text-[#FFD6F5] hover:tw-animate-pulse tw-duration-500">commune</span>!
                     </h1>
                     <p className="hero__subtitle sm:tw-text-2xl tw-text-xl tw-text-center dark:tw-text-white">
-                      The most <span className="tw-text-[#ffb4ed] dark:tw-text-[#FFD6F5]">popular</span>{' '}
-                      <span className="tw-text-[#6db1ff] dark:text-[#6db1ff]">smart</span>{' '}
-                      <span className="tw-text-[#FF8F8F]  dark:tw-text-[#FF8F8F]">contracts</span> on{' '}
+                      The most <span className="tw-text-[#ffb4ed] dark:tw-text-[#FFD6F5]">popular</span>{" "}
+                      <span className="tw-text-[#6db1ff] dark:text-[#6db1ff]">smart</span>{" "}
+                      <span className="tw-text-[#FF8F8F]  dark:tw-text-[#FF8F8F]">contracts</span> on{" "}
                       <span className="tw-text-[#ffef40] dark:tw-text-[#FFF7A1]">evm</span>.
                     </p>
                     <button

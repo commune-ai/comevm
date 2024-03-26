@@ -13,7 +13,7 @@ import "./ERC165.sol";
  */
 abstract contract ERC165Storage is ERC165 {
     /**
-     * @dev Mapping of interface ids to whether or not it's supported.
+     * @dev Mapping of interface ids to whether or not it"s supported.
      */
     mapping(bytes4 => bool) private _supportedInterfaces;
 

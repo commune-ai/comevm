@@ -9,7 +9,7 @@ import {
   UPDATE_USERS_REQUEST,
   UPDATE_USERS_SUCCESS,
   PUBKEY
-} from '../constants/constant';
+} from "../constants/constant";
 
 const initialState = {
   // initialState for get all users
@@ -17,7 +17,7 @@ const initialState = {
   users: [],
   user: null,
   error: null,
-  pubkey: '',
+  pubkey: "",
 
   // initialState for create a user
   isLoadingPost: false,

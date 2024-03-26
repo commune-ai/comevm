@@ -81,13 +81,13 @@ library EnumerableSet {
      * present.
      */
     function _remove(Set storage set, bytes32 value) private returns (bool) {
-        // We read and store the value's index to prevent multiple reads from the same storage slot
+        // We read and store the value"s index to prevent multiple reads from the same storage slot
         uint256 valueIndex = set._indexes[value];
 
         if (valueIndex != 0) {
             // Equivalent to contains(set, value)
             // To delete an element from the _values array in O(1), we swap the element to delete with the last one in
-            // the array, and then remove the last element (sometimes called as 'swap and pop').
+            // the array, and then remove the last element (sometimes called as "swap and pop").
             // This modifies the order of the array, as noted in {at}.
 
             uint256 toDeleteIndex = valueIndex - 1;
@@ -99,7 +99,7 @@ library EnumerableSet {
                 // Move the last value to the index where the value to delete is
                 set._values[toDeleteIndex] = lastValue;
                 // Update the index for the moved value
-                set._indexes[lastValue] = valueIndex; // Replace lastValue's index to valueIndex
+                set._indexes[lastValue] = valueIndex; // Replace lastValue"s index to valueIndex
             }
 
             // Delete the slot where the moved value was stored

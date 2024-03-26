@@ -41,7 +41,7 @@ contract ERC777 is Context, IERC777, IERC20 {
     bytes32 private constant _TOKENS_SENDER_INTERFACE_HASH = keccak256("ERC777TokensSender");
     bytes32 private constant _TOKENS_RECIPIENT_INTERFACE_HASH = keccak256("ERC777TokensRecipient");
 
-    // This isn't ever read from - it's only used to respond to the defaultOperators query.
+    // This isn"t ever read from - it"s only used to respond to the defaultOperators query.
     address[] private _defaultOperatorsArray;
 
     // Immutable, but accounts may revoke them (tracked in __revokedDefaultOperators).
@@ -530,10 +530,10 @@ contract ERC777 is Context, IERC777, IERC20 {
      *
      * Calling conditions:
      *
-     * - when `from` and `to` are both non-zero, `amount` of ``from``'s tokens
+     * - when `from` and `to` are both non-zero, `amount` of ``from``"s tokens
      * will be to transferred to `to`.
      * - when `from` is zero, `amount` tokens will be minted for `to`.
-     * - when `to` is zero, `amount` of ``from``'s tokens will be burned.
+     * - when `to` is zero, `amount` of ``from``"s tokens will be burned.
      * - `from` and `to` are never both zero.
      *
      * To learn more about hooks, head to xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].

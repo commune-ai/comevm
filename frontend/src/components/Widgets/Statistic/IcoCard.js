@@ -1,12 +1,12 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import { Col, Card } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import PropTypes from "prop-types";
+import React from "react";
+import { Col, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const IcoCard = (props) => {
   const { icon, title, caption, category, totalAmount, amount, percentage, time } = props;
 
-  let iconClass = ['cc f-36 mr-3'];
+  let iconClass = ["cc f-36 mr-3"];
   if (icon) {
     iconClass = [...iconClass, icon];
   }
@@ -20,7 +20,7 @@ const IcoCard = (props) => {
               {icon && (
                 <div className="text-center">
                   <Link to="#">
-                    <i className={iconClass.join(' ')} title={icon} />
+                    <i className={iconClass.join(" ")} title={icon} />
                   </Link>
                 </div>
               )}

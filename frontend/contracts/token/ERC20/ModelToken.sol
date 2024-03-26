@@ -135,15 +135,15 @@ contract ModelToken is Context, IERC20, IERC20Metadata {
 
     function set_alpha(uint256 alpha) public {
         // set alpha
-        require(alpha < PERCENT_BASE, 'ALPHA needs to be Lower than Percent Base');  
+        require(alpha < PERCENT_BASE, "ALPHA needs to be Lower than Percent Base");  
         ALPHA = alpha;
     }
 
     function set_votes(uint256[] memory votes,  address[] memory devs) public {
         
-        require(votes.length == devs.length, 'votes and devs have to be same length bro');
-        require(votes.length<PERCENT_BASE, 'the size of you voters is too big fam');
-        require(dev2state[msg.sender].stake>0, 'you need to stake greater than 0');
+        require(votes.length == devs.length, "votes and devs have to be same length bro");
+        require(votes.length<PERCENT_BASE, "the size of you voters is too big fam");
+        require(dev2state[msg.sender].stake>0, "you need to stake greater than 0");
 
         uint256 total_score = 0;
         uint256 current_score;
@@ -292,7 +292,7 @@ contract ModelToken is Context, IERC20, IERC20Metadata {
      *
      * - `from` and `to` cannot be the zero address.
      * - `from` must have a balance of at least `amount`.
-     * - the caller must have allowance for ``from``'s tokens of at least
+     * - the caller must have allowance for ``from``"s tokens of at least
      * `amount`.
      */
     function transferFrom(
@@ -499,10 +499,10 @@ contract ModelToken is Context, IERC20, IERC20Metadata {
      *
      * Calling conditions:
      *
-     * - when `from` and `to` are both non-zero, `amount` of ``from``'s tokens
+     * - when `from` and `to` are both non-zero, `amount` of ``from``"s tokens
      * will be transferred to `to`.
      * - when `from` is zero, `amount` tokens will be minted for `to`.
-     * - when `to` is zero, `amount` of ``from``'s tokens will be burned.
+     * - when `to` is zero, `amount` of ``from``"s tokens will be burned.
      * - `from` and `to` are never both zero.
      *
      * To learn more about hooks, head to xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].
@@ -519,10 +519,10 @@ contract ModelToken is Context, IERC20, IERC20Metadata {
      *
      * Calling conditions:
      *
-     * - when `from` and `to` are both non-zero, `amount` of ``from``'s tokens
+     * - when `from` and `to` are both non-zero, `amount` of ``from``"s tokens
      * has been transferred to `to`.
      * - when `from` is zero, `amount` tokens have been minted for `to`.
-     * - when `to` is zero, `amount` of ``from``'s tokens have been burned.
+     * - when `to` is zero, `amount` of ``from``"s tokens have been burned.
      * - `from` and `to` are never both zero.
      *
      * To learn more about hooks, head to xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].

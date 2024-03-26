@@ -45,10 +45,10 @@ interface IERC1820Registry {
     function getManager(address account) external view returns (address);
 
     /**
-     * @dev Sets the `implementer` contract as ``account``'s implementer for
+     * @dev Sets the `implementer` contract as ``account``"s implementer for
      * `interfaceHash`.
      *
-     * `account` being the zero address is an alias for the caller's address.
+     * `account` being the zero address is an alias for the caller"s address.
      * The zero address can also be used in `implementer` to remove an old one.
      *
      * See {interfaceHash} to learn how these are created.
@@ -77,7 +77,7 @@ interface IERC1820Registry {
      * If `interfaceHash` is an {IERC165} interface id (i.e. it ends with 28
      * zeroes), `account` will be queried for support of it.
      *
-     * `account` being the zero address is an alias for the caller's address.
+     * `account` being the zero address is an alias for the caller"s address.
      */
     function getInterfaceImplementer(address account, bytes32 _interfaceHash) external view returns (address);
 

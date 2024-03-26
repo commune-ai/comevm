@@ -211,7 +211,7 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
     }
 
     /**
-     * @dev Returns the owner of the `tokenId`. Does NOT revert if token doesn't exist
+     * @dev Returns the owner of the `tokenId`. Does NOT revert if token doesn"t exist
      */
     function _ownerOf(uint256 tokenId) internal view virtual returns (address) {
         return _owners[tokenId];
@@ -370,7 +370,7 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
 
         unchecked {
             // `_balances[from]` cannot overflow for the same reason as described in `_burn`:
-            // `from`'s balance is the number of token held, which is at least one before the current
+            // `from`"s balance is the number of token held, which is at least one before the current
             // transfer.
             // `_balances[to]` could overflow in the conditions described in `_mint`. That would require
             // all 2**256 token ids to be minted, which in practice is impossible.
@@ -456,9 +456,9 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
      *
      * Calling conditions:
      *
-     * - When `from` and `to` are both non-zero, ``from``'s tokens will be transferred to `to`.
+     * - When `from` and `to` are both non-zero, ``from``"s tokens will be transferred to `to`.
      * - When `from` is zero, the tokens will be minted for `to`.
-     * - When `to` is zero, ``from``'s tokens will be burned.
+     * - When `to` is zero, ``from``"s tokens will be burned.
      * - `from` and `to` are never both zero.
      * - `batchSize` is non-zero.
      *
@@ -486,9 +486,9 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
      *
      * Calling conditions:
      *
-     * - When `from` and `to` are both non-zero, ``from``'s tokens were transferred to `to`.
+     * - When `from` and `to` are both non-zero, ``from``"s tokens were transferred to `to`.
      * - When `from` is zero, the tokens were minted for `to`.
-     * - When `to` is zero, ``from``'s tokens were burned.
+     * - When `to` is zero, ``from``"s tokens were burned.
      * - `from` and `to` are never both zero.
      * - `batchSize` is non-zero.
      *

@@ -1,11 +1,11 @@
-import React from 'react';
-import { Row, Col, Card } from 'react-bootstrap';
+import React from "react";
+import { Row, Col, Card } from "react-bootstrap";
 
-import LineChart from './chart/LineChart';
-import BarDiscreteChart from './chart/BarDiscreteChart';
-import PieDonutChart from './chart/PieDonutChart';
-import PieBasicChart from './chart/PieBasicChart';
-import MultiBarChart from './chart/MultiBarChart';
+import LineChart from "./chart/LineChart";
+import BarDiscreteChart from "./chart/BarDiscreteChart";
+import PieDonutChart from "./chart/PieDonutChart";
+import PieBasicChart from "./chart/PieBasicChart";
+import MultiBarChart from "./chart/MultiBarChart";
 
 const Nvd3Chart = () => {
   return (

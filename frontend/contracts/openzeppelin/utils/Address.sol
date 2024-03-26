@@ -26,7 +26,7 @@ library Address {
      *
      * [IMPORTANT]
      * ====
-     * You shouldn't rely on `isContract` to protect against flash loan attacks!
+     * You shouldn"t rely on `isContract` to protect against flash loan attacks!
      *
      * Preventing calls from contracts is highly discouraged. It breaks composability, breaks support for smart wallets
      * like Gnosis Safe, and does not provide security since it can be circumvented by calling from a contract
@@ -42,7 +42,7 @@ library Address {
     }
 
     /**
-     * @dev Replacement for Solidity's `transfer`: sends `amount` wei to
+     * @dev Replacement for Solidity"s `transfer`: sends `amount` wei to
      * `recipient`, forwarding all available gas and reverting on errors.
      *
      * https://eips.ethereum.org/EIPS/eip-1884[EIP1884] increases the gas cost
@@ -211,7 +211,7 @@ library Address {
     }
 
     /**
-     * @dev Tool to verify that a low level call was successful, and revert if it wasn't, either by bubbling the
+     * @dev Tool to verify that a low level call was successful, and revert if it wasn"t, either by bubbling the
      * revert reason or using the provided one.
      *
      * _Available since v4.3._

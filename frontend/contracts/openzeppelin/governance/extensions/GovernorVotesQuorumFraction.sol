@@ -22,7 +22,7 @@ abstract contract GovernorVotesQuorumFraction is GovernorVotes {
     event QuorumNumeratorUpdated(uint256 oldQuorumNumerator, uint256 newQuorumNumerator);
 
     /**
-     * @dev Initialize quorum as a fraction of the token's total supply.
+     * @dev Initialize quorum as a fraction of the token"s total supply.
      *
      * The fraction is specified as `numerator / denominator`. By default the denominator is 100, so quorum is
      * specified as a percent: a numerator of 10 corresponds to quorum being 10% of total supply. The denominator can be

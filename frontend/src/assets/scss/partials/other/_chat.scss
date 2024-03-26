@@ -53,8 +53,8 @@
       }
 
       &:after {
-        content: '\61';
-        font-family: 'pct';
+        content: "\61";
+        font-family: "pct";
         z-index: 1001;
         font-size: 150px;
         line-height: 0;
@@ -96,7 +96,7 @@
     position: relative;
 
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 20px;
@@ -246,8 +246,8 @@
       }
 
       &:after {
-        content: '\67';
-        font-family: 'pct';
+        content: "\67";
+        font-family: "pct";
         z-index: 1001;
         font-size: 35px;
         line-height: 0;
@@ -317,8 +317,8 @@
         }
 
         &:before {
-          content: '\66';
-          font-family: 'pct';
+          content: "\66";
+          font-family: "pct";
           z-index: 5;
           font-size: 30px;
           line-height: 0;
@@ -352,8 +352,8 @@
         }
 
         &:before {
-          content: '\68';
-          font-family: 'pct';
+          content: "\68";
+          font-family: "pct";
           z-index: 1001;
           font-size: 30px;
           line-height: 0;

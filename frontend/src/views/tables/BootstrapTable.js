@@ -1,5 +1,5 @@
-import React from 'react';
-import { Row, Col, Card, Table } from 'react-bootstrap';
+import React from "react";
+import { Row, Col, Card, Table } from "react-bootstrap";
 
 const BootstrapTable = () => {
   return (

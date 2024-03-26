@@ -1,5 +1,5 @@
-import { combineReducers } from '@reduxjs/toolkit';
-import { reducer as formReducer } from 'redux-form';
+import { combineReducers } from "@reduxjs/toolkit";
+import { reducer as formReducer } from "redux-form";
 
 const reducers = combineReducers({
   form: formReducer

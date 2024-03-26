@@ -1,5 +1,5 @@
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
-import { compose } from 'recompose';
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps";
+import { compose } from "recompose";
 
 const MapWithAMarker = compose(
   withScriptjs,

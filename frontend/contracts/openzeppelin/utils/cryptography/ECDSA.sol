@@ -28,7 +28,7 @@ library ECDSA {
         } else if (error == RecoverError.InvalidSignatureLength) {
             revert("ECDSA: invalid signature length");
         } else if (error == RecoverError.InvalidSignatureS) {
-            revert("ECDSA: invalid signature 's' value");
+            revert("ECDSA: invalid signature "s" value");
         }
     }
 

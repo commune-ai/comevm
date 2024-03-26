@@ -415,11 +415,11 @@ contract ERC1155 is Context, ERC165, IERC1155, IERC1155MetadataURI {
      *
      * Calling conditions (for each `id` and `amount` pair):
      *
-     * - When `from` and `to` are both non-zero, `amount` of ``from``'s tokens
+     * - When `from` and `to` are both non-zero, `amount` of ``from``"s tokens
      * of token type `id` will be  transferred to `to`.
      * - When `from` is zero, `amount` tokens of token type `id` will be minted
      * for `to`.
-     * - when `to` is zero, `amount` of ``from``'s tokens of token type `id`
+     * - when `to` is zero, `amount` of ``from``"s tokens of token type `id`
      * will be burned.
      * - `from` and `to` are never both zero.
      * - `ids` and `amounts` have the same, non-zero length.
@@ -444,11 +444,11 @@ contract ERC1155 is Context, ERC165, IERC1155, IERC1155MetadataURI {
      *
      * Calling conditions (for each `id` and `amount` pair):
      *
-     * - When `from` and `to` are both non-zero, `amount` of ``from``'s tokens
+     * - When `from` and `to` are both non-zero, `amount` of ``from``"s tokens
      * of token type `id` will be  transferred to `to`.
      * - When `from` is zero, `amount` tokens of token type `id` will be minted
      * for `to`.
-     * - when `to` is zero, `amount` of ``from``'s tokens of token type `id`
+     * - when `to` is zero, `amount` of ``from``"s tokens of token type `id`
      * will be burned.
      * - `from` and `to` are never both zero.
      * - `ids` and `amounts` have the same, non-zero length.

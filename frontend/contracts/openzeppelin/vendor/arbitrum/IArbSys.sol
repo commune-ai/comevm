@@ -23,7 +23,7 @@ interface IArbSys {
     function arbBlockHash(uint256 arbBlockNum) external view returns (bytes32);
 
     /**
-     * @notice Gets the rollup's unique chain identifier
+     * @notice Gets the rollup"s unique chain identifier
      * @return Chain identifier as int
      */
     function arbChainID() external view returns (uint256);
@@ -57,13 +57,13 @@ interface IArbSys {
 
     /**
      * @notice check if the caller (of this caller of this) is an aliased L1 contract address
-     * @return true iff the caller's address is an alias for an L1 contract address
+     * @return true iff the caller"s address is an alias for an L1 contract address
      */
     function wasMyCallersAddressAliased() external view returns (bool);
 
     /**
      * @notice return the address of the caller (of this caller of this), without applying L1 contract address aliasing
-     * @return address of the caller's caller, without applying L1 contract address aliasing
+     * @return address of the caller"s caller, without applying L1 contract address aliasing
      */
     function myCallersAddressWithoutAliasing() external view returns (address);
 
@@ -132,7 +132,7 @@ interface IArbSys {
 
     /**
      * @notice logs a merkle branch for proof synthesis
-     * @param reserved an index meant only to align the 4th index with L2ToL1Transaction's 4th event
+     * @param reserved an index meant only to align the 4th index with L2ToL1Transaction"s 4th event
      * @param hash the merkle hash
      * @param position = (level << 192) + leaf
      */

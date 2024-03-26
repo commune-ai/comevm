@@ -1,20 +1,20 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import { ListGroup } from 'react-bootstrap';
-import NavCollapse from '../NavCollapse';
-import NavItem from '../NavItem';
+import PropTypes from "prop-types";
+import React from "react";
+import { ListGroup } from "react-bootstrap";
+import NavCollapse from "../NavCollapse";
+import NavItem from "../NavItem";
 
 const NavGroup = ({ layout, group }) => {
-  let navItems = '';
+  let navItems = "";
 
   if (group.children) {
     const groups = group.children;
     navItems = Object.keys(groups).map((item) => {
       item = groups[item];
       switch (item.type) {
-        case 'collapse':
+        case "collapse":
           return <NavCollapse key={item.id} collapse={item} type="main" />;
-        case 'item':
+        case "item":
           return <NavItem layout={layout} key={item.id} item={item} />;
         default:
           return false;

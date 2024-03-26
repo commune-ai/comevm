@@ -110,7 +110,7 @@ contract TimelockController is AccessControl, IERC721Receiver, IERC1155Receiver 
 
     /**
      * @dev Modifier to make a function callable only by a certain role. In
-     * addition to checking the sender's role, `address(0)` 's role is also
+     * addition to checking the sender"s role, `address(0)` "s role is also
      * considered. Granting a role to `address(0)` is equivalent to enabling
      * this role for everyone.
      */
@@ -215,7 +215,7 @@ contract TimelockController is AccessControl, IERC721Receiver, IERC1155Receiver 
      *
      * Requirements:
      *
-     * - the caller must have the 'proposer' role.
+     * - the caller must have the "proposer" role.
      */
     function schedule(
         address target,
@@ -237,7 +237,7 @@ contract TimelockController is AccessControl, IERC721Receiver, IERC1155Receiver 
      *
      * Requirements:
      *
-     * - the caller must have the 'proposer' role.
+     * - the caller must have the "proposer" role.
      */
     function scheduleBatch(
         address[] calldata targets,
@@ -271,7 +271,7 @@ contract TimelockController is AccessControl, IERC721Receiver, IERC1155Receiver 
      *
      * Requirements:
      *
-     * - the caller must have the 'canceller' role.
+     * - the caller must have the "canceller" role.
      */
     function cancel(bytes32 id) public virtual onlyRole(CANCELLER_ROLE) {
         require(isOperationPending(id), "TimelockController: operation cannot be cancelled");
@@ -287,9 +287,9 @@ contract TimelockController is AccessControl, IERC721Receiver, IERC1155Receiver 
      *
      * Requirements:
      *
-     * - the caller must have the 'executor' role.
+     * - the caller must have the "executor" role.
      */
-    // This function can reenter, but it doesn't pose a risk because _afterCall checks that the proposal is pending,
+    // This function can reenter, but it doesn"t pose a risk because _afterCall checks that the proposal is pending,
     // thus any modifications to the operation during reentrancy should be caught.
     // slither-disable-next-line reentrancy-eth
     function execute(
@@ -314,7 +314,7 @@ contract TimelockController is AccessControl, IERC721Receiver, IERC1155Receiver 
      *
      * Requirements:
      *
-     * - the caller must have the 'executor' role.
+     * - the caller must have the "executor" role.
      */
     function executeBatch(
         address[] calldata targets,
@@ -340,7 +340,7 @@ contract TimelockController is AccessControl, IERC721Receiver, IERC1155Receiver 
     }
 
     /**
-     * @dev Execute an operation's call.
+     * @dev Execute an operation"s call.
      */
     function _execute(
         address target,
@@ -352,7 +352,7 @@ contract TimelockController is AccessControl, IERC721Receiver, IERC1155Receiver 
     }
 
     /**
-     * @dev Checks before execution of an operation's calls.
+     * @dev Checks before execution of an operation"s calls.
      */
     function _beforeCall(bytes32 id, bytes32 predecessor) private view {
         require(isOperationReady(id), "TimelockController: operation is not ready");
@@ -360,7 +360,7 @@ contract TimelockController is AccessControl, IERC721Receiver, IERC1155Receiver 
     }
 
     /**
-     * @dev Checks after execution of an operation's calls.
+     * @dev Checks after execution of an operation"s calls.
      */
     function _afterCall(bytes32 id) private {
         require(isOperationReady(id), "TimelockController: operation is not ready");

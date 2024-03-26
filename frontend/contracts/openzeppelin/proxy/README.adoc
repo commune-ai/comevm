@@ -26,7 +26,7 @@ A different family of proxies are beacon proxies. This pattern, popularized by D
 - {BeaconProxy}: A proxy that retrieves its implementation from a beacon contract.
 - {UpgradeableBeacon}: A beacon contract with a built in admin that can upgrade the {BeaconProxy} pointing to it.
 
-In this pattern, the proxy contract doesn't hold the implementation address in storage like an ERC1967 proxy. Instead, the address is stored in a separate beacon contract. The `upgrade` operations are sent to the beacon instead of to the proxy contract, and all proxies that follow that beacon are automatically upgraded.
+In this pattern, the proxy contract doesn"t hold the implementation address in storage like an ERC1967 proxy. Instead, the address is stored in a separate beacon contract. The `upgrade` operations are sent to the beacon instead of to the proxy contract, and all proxies that follow that beacon are automatically upgraded.
 
 Outside the realm of upgradeability, proxies can also be useful to make cheap contract clones, such as those created by an on-chain factory contract that creates many instances of the same contract. These instances are designed to be both cheap to deploy, and cheap to call.
 
@@ -39,11 +39,11 @@ The original proxies included in OpenZeppelin followed the https://blog.openzepp
 
 While both of these share the same interface for upgrades, in UUPS proxies the upgrade is handled by the implementation, and can eventually be removed. Transparent proxies, on the other hand, include the upgrade and admin logic in the proxy itself. This means {TransparentUpgradeableProxy} is more expensive to deploy than what is possible with UUPS proxies.
 
-UUPS proxies are implemented using an {ERC1967Proxy}. Note that this proxy is not by itself upgradeable. It is the role of the implementation to include, alongside the contract's logic, all the code necessary to update the implementation's address that is stored at a specific slot in the proxy's storage space. This is where the {UUPSUpgradeable} contract comes in. Inheriting from it (and overriding the {xref-UUPSUpgradeable-_authorizeUpgrade-address-}[`_authorizeUpgrade`] function with the relevant access control mechanism) will turn your contract into a UUPS compliant implementation.
+UUPS proxies are implemented using an {ERC1967Proxy}. Note that this proxy is not by itself upgradeable. It is the role of the implementation to include, alongside the contract"s logic, all the code necessary to update the implementation"s address that is stored at a specific slot in the proxy"s storage space. This is where the {UUPSUpgradeable} contract comes in. Inheriting from it (and overriding the {xref-UUPSUpgradeable-_authorizeUpgrade-address-}[`_authorizeUpgrade`] function with the relevant access control mechanism) will turn your contract into a UUPS compliant implementation.
 
 Note that since both proxies use the same storage slot for the implementation address, using a UUPS compliant implementation with a {TransparentUpgradeableProxy} might allow non-admins to perform upgrade operations.
 
-By default, the upgrade functionality included in {UUPSUpgradeable} contains a security mechanism that will prevent any upgrades to a non UUPS compliant implementation. This prevents upgrades to an implementation contract that wouldn't contain the necessary upgrade mechanism, as it would lock the upgradeability of the proxy forever. This security mechanism can be bypassed by either of:
+By default, the upgrade functionality included in {UUPSUpgradeable} contains a security mechanism that will prevent any upgrades to a non UUPS compliant implementation. This prevents upgrades to an implementation contract that wouldn"t contain the necessary upgrade mechanism, as it would lock the upgradeability of the proxy forever. This security mechanism can be bypassed by either of:
 
 - Adding a flag mechanism in the implementation that will disable the upgrade function when triggered.
 - Upgrading to an implementation that features an upgrade mechanism without the additional security check, and then upgrading again to another implementation without the upgrade mechanism.

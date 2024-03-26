@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import { Card, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import PropTypes from "prop-types";
+import React from "react";
+import { Card, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const ProductOrderCard = (props) => {
   const { image, orderId, name, rating, price, delivered, description, ordered, total } = props;

@@ -233,8 +233,8 @@
       }
 
       &:after {
-        content: '\e842';
-        font-family: 'feather';
+        content: "\e842";
+        font-family: "feather";
         font-size: 15px;
         border: none;
         position: absolute;
@@ -276,8 +276,8 @@
 
     &.show {
       &:before {
-        content: '\63';
-        font-family: 'pct';
+        content: "\63";
+        font-family: "pct";
         position: absolute;
         left: -9px;
         top: $header-height - 8;
@@ -461,7 +461,7 @@
 
     &:after,
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       height: 2.8px;
@@ -511,7 +511,7 @@
 .pcoded-header,
 .pcoded-main-container {
   &:before {
-    content: '';
+    content: "";
     transition: all 0.3s ease-in-out;
   }
 
@@ -592,7 +592,7 @@
 
       &:after,
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         height: 2.8px;
@@ -691,8 +691,8 @@
       &.pcoded-hasmenu {
         > a {
           &:after {
-            content: '\e844';
-            font-family: 'feather';
+            content: "\e844";
+            font-family: "feather";
             font-size: 15px;
             border: none;
             position: absolute;
@@ -741,7 +741,7 @@
               display: block;
 
               &:before {
-                content: '';
+                content: "";
                 border-radius: 50%;
                 position: absolute;
                 top: 16px;
@@ -854,7 +854,7 @@
       }
 
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         top: 25px;
         left: 15px;
@@ -891,7 +891,7 @@
         &.pcoded-trigger {
           .pcoded-submenu {
             &:after {
-              content: '';
+              content: "";
               position: absolute;
               top: 49px;
               left: calc(calc(#{$Menu-collapsed-width} / 2) - 3px);
@@ -1066,7 +1066,7 @@
       &.active,
       &.pcoded-trigger {
         &:after {
-          content: '';
+          content: "";
           background-color: #1dc4e9;
           z-index: 1027;
           position: absolute;
@@ -1465,7 +1465,7 @@
   $i: index($color-menu-name, $value);
 
   .nav-link {
-    &.active.h-#{'' + $value} {
+    &.active.h-#{"" + $value} {
       background: nth($color-menu-color, $i) !important;
     }
   }

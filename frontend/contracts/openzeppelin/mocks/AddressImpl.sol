@@ -41,6 +41,6 @@ contract AddressImpl {
         emit CallReturnValue(abi.decode(returnData, (string)));
     }
 
-    // sendValue's tests require the contract to hold Ether
+    // sendValue"s tests require the contract to hold Ether
     receive() external payable {}
 }

@@ -12,7 +12,7 @@ import "../../../utils/Counters.sol";
  * total supply at the time are recorded for later access.
  *
  * This can be used to safely create mechanisms based on token balances such as trustless dividends or weighted voting.
- * In naive implementations it's possible to perform a "double spend" attack by reusing the same balance from different
+ * In naive implementations it"s possible to perform a "double spend" attack by reusing the same balance from different
  * accounts. By using snapshots to calculate dividends or voting power, those attacks no longer apply. It can also be
  * used to create an efficient ERC20 forking mechanism.
  *
@@ -40,7 +40,7 @@ import "../../../utils/Counters.sol";
  */
 
 abstract contract ERC20Snapshot is ERC20 {
-    // Inspired by Jordi Baylina's MiniMeToken to record historical balances:
+    // Inspired by Jordi Baylina"s MiniMeToken to record historical balances:
     // https://github.com/Giveth/minime/blob/ea04d950eea153a04c51fa510b068b9dded390cb/contracts/MiniMeToken.sol
 
     using Arrays for uint256[];
@@ -82,7 +82,7 @@ abstract contract ERC20Snapshot is ERC20 {
      * specific accounts and increase the cost of ERC20 transfers for them, in the ways specified in the Gas Costs
      * section above.
      *
-     * We haven't measured the actual numbers; if this is something you're interested in please reach out to us.
+     * We haven"t measured the actual numbers; if this is something you"re interested in please reach out to us.
      * ====
      */
     function _snapshot() internal virtual returns (uint256) {
@@ -157,7 +157,7 @@ abstract contract ERC20Snapshot is ERC20 {
         //  larger than the requested one.
         //
         // In summary, we need to find an element in an array, returning the index of the smallest value that is larger if
-        // it is not found, unless said value doesn't exist (e.g. when all values are smaller). Arrays.findUpperBound does
+        // it is not found, unless said value doesn"t exist (e.g. when all values are smaller). Arrays.findUpperBound does
         // exactly this.
 
         uint256 index = snapshots.ids.findUpperBound(snapshotId);

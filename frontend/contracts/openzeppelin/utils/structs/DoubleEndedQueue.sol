@@ -20,12 +20,12 @@ import "../math/SafeCast.sol";
  */
 library DoubleEndedQueue {
     /**
-     * @dev An operation (e.g. {front}) couldn't be completed due to the queue being empty.
+     * @dev An operation (e.g. {front}) couldn"t be completed due to the queue being empty.
      */
     error Empty();
 
     /**
-     * @dev An operation (e.g. {at}) couldn't be completed due to an index being out of bounds.
+     * @dev An operation (e.g. {at}) couldn"t be completed due to an index being out of bounds.
      */
     error OutOfBounds();
 

@@ -1,15 +1,15 @@
-import React from 'react';
-import { Row, Col, Card, Table } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Row, Col, Card, Table } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
-import avatar1 from '../../assets/images/user/avatar-1.jpg';
-import avatar2 from '../../assets/images/user/avatar-2.jpg';
-import avatar3 from '../../assets/images/user/avatar-3.jpg';
+import avatar1 from "../../assets/images/user/avatar-1.jpg";
+import avatar2 from "../../assets/images/user/avatar-2.jpg";
+import avatar3 from "../../assets/images/user/avatar-3.jpg";
 
 const dashSalesData = [
-  { title: 'Daily Sales', amount: '$249.95', icon: 'icon-arrow-up text-c-green', value: 50, class: 'progress-c-theme' },
-  { title: 'Monthly Sales', amount: '$2.942.32', icon: 'icon-arrow-down text-c-red', value: 36, class: 'progress-c-theme2' },
-  { title: 'Yearly Sales', amount: '$8.638.32', icon: 'icon-arrow-up text-c-green', value: 70, color: 'progress-c-theme' }
+  { title: "Daily Sales", amount: "$249.95", icon: "icon-arrow-up text-c-green", value: 50, class: "progress-c-theme" },
+  { title: "Monthly Sales", amount: "$2.942.32", icon: "icon-arrow-down text-c-red", value: 36, class: "progress-c-theme2" },
+  { title: "Yearly Sales", amount: "$8.638.32", icon: "icon-arrow-up text-c-green", value: 70, color: "progress-c-theme" }
 ];
 
 const DashDefault = () => {
@@ -32,7 +32,7 @@ const DashDefault = () => {
                       <p className="m-b-0 dark:tw-text-white">{data.value}%</p>
                     </div>
                   </div>
-                  <div className="progress m-t-30" style={{ height: '7px' }}>
+                  <div className="progress m-t-30" style={{ height: "7px" }}>
                     <div
                       className={`progress-bar ${data.class}`}
                       role="progressbar"
@@ -62,11 +62,11 @@ const DashDefault = () => {
                   <p className="m-b-0">36%</p>
                 </div>
               </div>
-              <div className="progress m-t-30" style={{ height: '7px' }}>
+              <div className="progress m-t-30" style={{ height: "7px" }}>
                 <div
                   className="progress-bar progress-c-theme2"
                   role="progressbar"
-                  style={{ width: '35%' }}
+                  style={{ width: "35%" }}
                   aria-valuenow="35"
                   aria-valuemin="0"
                   aria-valuemax="100"
@@ -90,11 +90,11 @@ const DashDefault = () => {
                   <p className="m-b-0">70%</p>
                 </div>
               </div>
-              <div className="progress m-t-30" style={{ height: '7px' }}>
+              <div className="progress m-t-30" style={{ height: "7px" }}>
                 <div
                   className="progress-bar progress-c-theme"
                   role="progressbar"
-                  style={{ width: '70%' }}
+                  style={{ width: "70%" }}
                   aria-valuenow="70"
                   aria-valuemin="0"
                   aria-valuemax="100"
@@ -115,7 +115,7 @@ const DashDefault = () => {
                 <tbody>
                   <tr className="unread dark:tw-bg-[rgb(33,33,33)]">
                     <td className="dark:tw-bg-[rgb(33,33,33)]">
-                      <img className="rounded-circle" style={{ width: '40px' }} src={avatar1} alt="activity-user" />
+                      <img className="rounded-circle" style={{ width: "40px" }} src={avatar1} alt="activity-user" />
                     </td>
                     <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <h6 className="mb-1 dark:tw-text-white">Isabella Christensen</h6>
@@ -138,7 +138,7 @@ const DashDefault = () => {
                   </tr>
                   <tr className="unread">
                     <td className="dark:tw-bg-[rgb(33,33,33)]">
-                      <img className="rounded-circle" style={{ width: '40px' }} src={avatar2} alt="activity-user" />
+                      <img className="rounded-circle" style={{ width: "40px" }} src={avatar2} alt="activity-user" />
                     </td>
                     <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <h6 className="mb-1 dark:tw-text-white">Mathilde Andersen</h6>
@@ -161,7 +161,7 @@ const DashDefault = () => {
                   </tr>
                   <tr className="unread">
                     <td className="dark:tw-bg-[rgb(33,33,33)]">
-                      <img className="rounded-circle" style={{ width: '40px' }} src={avatar3} alt="activity-user" />
+                      <img className="rounded-circle" style={{ width: "40px" }} src={avatar3} alt="activity-user" />
                     </td>
                     <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <h6 className="mb-1 dark:tw-text-white">Karla Sorensen</h6>
@@ -183,7 +183,7 @@ const DashDefault = () => {
                   </tr>
                   <tr className="unread">
                     <td className="dark:tw-bg-[rgb(33,33,33)]">
-                      <img className="rounded-circle" style={{ width: '40px' }} src={avatar1} alt="activity-user" />
+                      <img className="rounded-circle" style={{ width: "40px" }} src={avatar1} alt="activity-user" />
                     </td>
                     <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <h6 className="mb-1 dark:tw-text-white">Ida Jorgensen</h6>
@@ -206,7 +206,7 @@ const DashDefault = () => {
                   </tr>
                   <tr className="unread">
                     <td className="dark:tw-bg-[rgb(33,33,33)]">
-                      <img className="rounded-circle" style={{ width: '40px' }} src={avatar2} alt="activity-user" />
+                      <img className="rounded-circle" style={{ width: "40px" }} src={avatar2} alt="activity-user" />
                     </td>
                     <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <h6 className="mb-1 dark:tw-text-white">Albert Andersen</h6>
@@ -300,7 +300,7 @@ const DashDefault = () => {
                     <div
                       className="progress-bar progress-c-theme"
                       role="progressbar"
-                      style={{ width: '60%', height: '6px' }}
+                      style={{ width: "60%", height: "6px" }}
                       aria-valuenow="60"
                       aria-valuemin="0"
                       aria-valuemax="100"
@@ -315,7 +315,7 @@ const DashDefault = () => {
                     <div
                       className="progress-bar progress-c-theme2"
                       role="progressbar"
-                      style={{ width: '45%', height: '6px' }}
+                      style={{ width: "45%", height: "6px" }}
                       aria-valuenow="45"
                       aria-valuemin="0"
                       aria-valuemax="100"
@@ -351,7 +351,7 @@ const DashDefault = () => {
                     <div
                       className="progress-bar progress-c-green"
                       role="progressbar"
-                      style={{ width: '40%', height: '6px' }}
+                      style={{ width: "40%", height: "6px" }}
                       aria-valuenow="40"
                       aria-valuemin="0"
                       aria-valuemax="100"
@@ -366,7 +366,7 @@ const DashDefault = () => {
                     <div
                       className="progress-bar progress-c-blue"
                       role="progressbar"
-                      style={{ width: '70%', height: '6px' }}
+                      style={{ width: "70%", height: "6px" }}
                       aria-valuenow="70"
                       aria-valuemin="0"
                       aria-valuemax="100"
@@ -402,7 +402,7 @@ const DashDefault = () => {
                     <div
                       className="progress-bar progress-c-theme"
                       role="progressbar"
-                      style={{ width: '80%', height: '6px' }}
+                      style={{ width: "80%", height: "6px" }}
                       aria-valuenow="80"
                       aria-valuemin="0"
                       aria-valuemax="100"
@@ -417,7 +417,7 @@ const DashDefault = () => {
                     <div
                       className="progress-bar progress-c-theme2"
                       role="progressbar"
-                      style={{ width: '50%', height: '6px' }}
+                      style={{ width: "50%", height: "6px" }}
                       aria-valuenow="50"
                       aria-valuemin="0"
                       aria-valuemax="100"
@@ -455,11 +455,11 @@ const DashDefault = () => {
                     <i className="fa fa-star f-10 m-r-10 text-c-yellow" />5
                   </h6>
                   <h6 className="align-items-center float-end dark:tw-text-white">384</h6>
-                  <div className="progress m-t-30 m-b-20" style={{ height: '6px' }}>
+                  <div className="progress m-t-30 m-b-20" style={{ height: "6px" }}>
                     <div
                       className="progress-bar progress-c-theme"
                       role="progressbar"
-                      style={{ width: '70%' }}
+                      style={{ width: "70%" }}
                       aria-valuenow="70"
                       aria-valuemin="0"
                       aria-valuemax="100"
@@ -472,11 +472,11 @@ const DashDefault = () => {
                     <i className="fa fa-star f-10 m-r-10 text-c-yellow" />4
                   </h6>
                   <h6 className="align-items-center float-end dark:tw-text-white">145</h6>
-                  <div className="progress m-t-30  m-b-20" style={{ height: '6px' }}>
+                  <div className="progress m-t-30  m-b-20" style={{ height: "6px" }}>
                     <div
                       className="progress-bar progress-c-theme"
                       role="progressbar"
-                      style={{ width: '35%' }}
+                      style={{ width: "35%" }}
                       aria-valuenow="35"
                       aria-valuemin="0"
                       aria-valuemax="100"
@@ -489,11 +489,11 @@ const DashDefault = () => {
                     <i className="fa fa-star f-10 m-r-10 text-c-yellow" />3
                   </h6>
                   <h6 className="align-items-center float-end dark:tw-text-white">24</h6>
-                  <div className="progress m-t-30  m-b-20" style={{ height: '6px' }}>
+                  <div className="progress m-t-30  m-b-20" style={{ height: "6px" }}>
                     <div
                       className="progress-bar progress-c-theme"
                       role="progressbar"
-                      style={{ width: '25%' }}
+                      style={{ width: "25%" }}
                       aria-valuenow="25"
                       aria-valuemin="0"
                       aria-valuemax="100"
@@ -506,11 +506,11 @@ const DashDefault = () => {
                     <i className="fa fa-star f-10 m-r-10 text-c-yellow" />2
                   </h6>
                   <h6 className="align-items-center float-end dark:tw-text-white">1</h6>
-                  <div className="progress m-t-30  m-b-20" style={{ height: '6px' }}>
+                  <div className="progress m-t-30  m-b-20" style={{ height: "6px" }}>
                     <div
                       className="progress-bar progress-c-theme"
                       role="progressbar"
-                      style={{ width: '10%' }}
+                      style={{ width: "10%" }}
                       aria-valuenow="10"
                       aria-valuemin="0"
                       aria-valuemax="100"
@@ -522,11 +522,11 @@ const DashDefault = () => {
                     <i className="fa fa-star f-10 m-r-10 text-c-yellow" />1
                   </h6>
                   <h6 className="align-items-center float-end dark:tw-text-white">0</h6>
-                  <div className="progress m-t-30  m-b-5" style={{ height: '6px' }}>
+                  <div className="progress m-t-30  m-b-5" style={{ height: "6px" }}>
                     <div
                       className="progress-bar"
                       role="progressbar"
-                      style={{ width: '0%' }}
+                      style={{ width: "0%" }}
                       aria-valuenow="0"
                       aria-valuemin="0"
                       aria-valuemax="100"
@@ -558,7 +558,7 @@ const DashDefault = () => {
                 <tbody>
                   <tr className=" dark:tw-bg-[rgb(30,30,30)]">
                     <td className=" dark:tw-bg-[rgb(30,30,30)]">
-                      <img className="rounded-circle" style={{ width: '40px' }} src={avatar1} alt="activity-user" />
+                      <img className="rounded-circle" style={{ width: "40px" }} src={avatar1} alt="activity-user" />
                     </td>
                     <td className=" dark:tw-bg-[rgb(30,30,30)]">
                       <h6 className="mb-1 dark:tw-text-white">Social Media App</h6>
@@ -579,7 +579,7 @@ const DashDefault = () => {
 
                   <tr>
                     <td className=" dark:tw-bg-[rgb(30,30,30)]">
-                      <img className="rounded-circle" style={{ width: '40px' }} src={avatar2} alt="activity-user" />
+                      <img className="rounded-circle" style={{ width: "40px" }} src={avatar2} alt="activity-user" />
                     </td>
                     <td className=" dark:tw-bg-[rgb(30,30,30)]">
                       <h6 className="mb-1 dark:tw-text-white">Newspaper Wordpress Web</h6>
@@ -600,7 +600,7 @@ const DashDefault = () => {
 
                   <tr>
                     <td className=" dark:tw-bg-[rgb(30,30,30)]">
-                      <img className="rounded-circle" style={{ width: '40px' }} src={avatar3} alt="activity-user" />
+                      <img className="rounded-circle" style={{ width: "40px" }} src={avatar3} alt="activity-user" />
                     </td>
                     <td className=" dark:tw-bg-[rgb(30,30,30)]">
                       <h6 className="mb-1 dark:tw-text-white">Dashboard UI Kit Design</h6>
@@ -620,7 +620,7 @@ const DashDefault = () => {
                   </tr>
                   <tr>
                     <td className=" dark:tw-bg-[rgb(30,30,30)]">
-                      <img className="rounded-circle" style={{ width: '40px' }} src={avatar1} alt="activity-user" />
+                      <img className="rounded-circle" style={{ width: "40px" }} src={avatar1} alt="activity-user" />
                     </td>
                     <td className=" dark:tw-bg-[rgb(30,30,30)]">
                       <h6 className="mb-1 dark:tw-text-white">Social Media App</h6>

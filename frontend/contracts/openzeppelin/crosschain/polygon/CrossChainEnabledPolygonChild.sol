@@ -19,7 +19,7 @@ address constant DEFAULT_SENDER = 0x000000000000000000000000000000000000dEaD;
  *
  * The fxChild contract is provided and maintained by the polygon team. You can
  * find the address of this contract polygon and mumbai in
- * https://docs.polygon.technology/docs/develop/l1-l2-communication/fx-portal/#contract-addresses[Polygon's Fx-Portal documentation].
+ * https://docs.polygon.technology/docs/develop/l1-l2-communication/fx-portal/#contract-addresses[Polygon"s Fx-Portal documentation].
  *
  * _Available since v4.6._
  */

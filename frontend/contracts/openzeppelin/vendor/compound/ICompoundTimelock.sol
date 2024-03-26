@@ -4,7 +4,7 @@
 pragma solidity ^0.8.0;
 
 /**
- * https://github.com/compound-finance/compound-protocol/blob/master/contracts/Timelock.sol[Compound's timelock] interface
+ * https://github.com/compound-finance/compound-protocol/blob/master/contracts/Timelock.sol[Compound"s timelock] interface
  */
 interface ICompoundTimelock {
     event NewAdmin(address indexed newAdmin);

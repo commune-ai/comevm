@@ -21,7 +21,7 @@ abstract contract ERC20Capped is ERC20 {
     }
 
     /**
-     * @dev Returns the cap on the token's total supply.
+     * @dev Returns the cap on the token"s total supply.
      */
     function cap() public view virtual returns (uint256) {
         return _cap;

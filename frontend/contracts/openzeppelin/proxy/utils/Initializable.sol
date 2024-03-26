@@ -7,7 +7,7 @@ import "../../utils/Address.sol";
 
 /**
  * @dev This is a base contract to aid in writing upgradeable contracts, or any kind of contract that will be deployed
- * behind a proxy. Since proxied contracts do not make use of a constructor, it's common to move constructor logic to an
+ * behind a proxy. Since proxied contracts do not make use of a constructor, it"s common to move constructor logic to an
  * external initializer function, usually called `initialize`. It then becomes necessary to protect this initializer
  * function so it can only be called once. The {initializer} modifier provided by this contract will have this effect.
  *
@@ -99,7 +99,7 @@ abstract contract Initializable {
 
     /**
      * @dev A modifier that defines a protected reinitializer function that can be invoked at most once, and only if the
-     * contract hasn't been initialized to a greater version before. In its scope, `onlyInitializing` functions can be
+     * contract hasn"t been initialized to a greater version before. In its scope, `onlyInitializing` functions can be
      * used to initialize parent contracts.
      *
      * A reinitializer may be used after the original initialization step. This is essential to configure modules that

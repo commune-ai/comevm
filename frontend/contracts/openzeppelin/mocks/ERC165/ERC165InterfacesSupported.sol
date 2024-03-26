@@ -11,17 +11,17 @@ import "../../utils/introspection/IERC165.sol";
  * throw an exception.
  * > These operations include [...], LOG0, LOG1, LOG2, [...]
  *
- * therefore, because this contract is staticcall'd we need to not emit events (which is how solidity-coverage works)
+ * therefore, because this contract is staticcall"d we need to not emit events (which is how solidity-coverage works)
  * solidity-coverage ignores the /mocks folder, so we duplicate its implementation here to avoid instrumenting it
  */
 contract SupportsInterfaceWithLookupMock is IERC165 {
     /*
-     * bytes4(keccak256('supportsInterface(bytes4)')) == 0x01ffc9a7
+     * bytes4(keccak256("supportsInterface(bytes4)")) == 0x01ffc9a7
      */
     bytes4 public constant INTERFACE_ID_ERC165 = 0x01ffc9a7;
 
     /**
-     * @dev A mapping of interface id to whether or not it's supported.
+     * @dev A mapping of interface id to whether or not it"s supported.
      */
     mapping(bytes4 => bool) private _supportedInterfaces;
 

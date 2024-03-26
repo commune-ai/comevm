@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @dev Implementation contract with an admin() function made to clash with
- * @dev TransparentUpgradeableProxy's to test correct functioning of the
+ * @dev TransparentUpgradeableProxy"s to test correct functioning of the
  * @dev Transparent Proxy feature.
  */
 contract ClashingImplementation {

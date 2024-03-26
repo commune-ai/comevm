@@ -1,15 +1,15 @@
-import React from 'react'
-import SupplyModal from '../contractModel/supplyModal';
-import TransferModal from '../contractModel/transfer';
-import StakingModal from '../contractModel/StakingModal';
-import MintModal from '../contractModel/mintModal';
-import UniswapModal from '../contractModel/uniswapModal';
-import CurveModal from '../contractModel/curveModal';
-import MakerDaoModal from '../contractModel/MakerDaoModal';
-import AaveModal from '../contractModel/AaveModal';
+import React from "react"
+import SupplyModal from "../contractModel/supplyModal";
+import TransferModal from "../contractModel/transfer";
+import StakingModal from "../contractModel/StakingModal";
+import MintModal from "../contractModel/mintModal";
+import UniswapModal from "../contractModel/uniswapModal";
+import CurveModal from "../contractModel/curveModal";
+import MakerDaoModal from "../contractModel/MakerDaoModal";
+import AaveModal from "../contractModel/AaveModal";
 import * as antdModel from "../../../utils/antdmodal.css";
 import { Modal } from "antd";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 function ContractModel(props) {
 
@@ -80,14 +80,14 @@ function ContractModel(props) {
     };
     const OpenModel = () => {
         switch (props.click) {
-            case 'handleUniswapModalShow': handleUniswapModalShow(); break
-            case 'handleCurveModalShow': handleCurveModalShow(); break
-            case 'handleMakerDaoModalShow': handleMakerDaoModalShow(); break
-            case 'handleAaveModalShow': handleAaveModalShow(); break
-            case 'handleSupplyModalShow': handleSupplyModalShow(); break
-            case 'handleTransferModalShow': handleTransferModalShow(); break
-            case 'handleStakeModalShow': handleStakeModalShow(); break
-            case 'handleMintModalShow': handleMintModalShow(); break
+            case "handleUniswapModalShow": handleUniswapModalShow(); break
+            case "handleCurveModalShow": handleCurveModalShow(); break
+            case "handleMakerDaoModalShow": handleMakerDaoModalShow(); break
+            case "handleAaveModalShow": handleAaveModalShow(); break
+            case "handleSupplyModalShow": handleSupplyModalShow(); break
+            case "handleTransferModalShow": handleTransferModalShow(); break
+            case "handleStakeModalShow": handleStakeModalShow(); break
+            case "handleMintModalShow": handleMintModalShow(); break
         }
     };
     return (
@@ -96,8 +96,8 @@ function ContractModel(props) {
             <div>
 
 
-                <div className='tw-w-[270px]'>
-                    <div className='tw-flex tw-max-w-sm tw-w-full tw-shadow-md tw-rounded-lg tw-overflow-hidden tw-mx-auto'>
+                <div className="tw-w-[270px]">
+                    <div className="tw-flex tw-max-w-sm tw-w-full tw-shadow-md tw-rounded-lg tw-overflow-hidden tw-mx-auto">
                         <div className="tw-w-full tw-overflow-hidden tw-group tw-rounded-xl tw-relative tw-transform hover:-tw-translate-y-2 tw-transition tw-ease-in-out tw-duration-500 tw-shadow-lg hover:tw-shadow-2xl movie-item tw-text-white movie-card" data-movie-id="438631">
                             <div className="tw-absolute tw-inset-0 tw-z-10 tw-transition tw-duration-300 tw-ease-in-out tw-bg-gradient-to-t tw-from-[#3067ff] dark:tw-from-[rgb(27,27,27)] tw-via-[#6db1ff] dark:tw-via-[rgb(27,27,27)] tw-to-transparent"></div>
                             <div className="tw-relative tw-z-10 tw-px-6 tw-pt-6 tw-space-y-6">
@@ -108,8 +108,8 @@ function ContractModel(props) {
                                                 {/* <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10" viewBox="0 0 20 20" fill="currentColor">
                                                                         <path fillRule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2z" clipRule="evenodd"></path>
                                                                     </svg> */}
-                                                <div className='tw-z-10 tw-w-[100px] tw-h-[100px] tw-ml-[-20px]'>
-                                                    <img src={props.imgSrc} className=' tw-w-full' alt="" />
+                                                <div className="tw-z-10 tw-w-[100px] tw-h-[100px] tw-ml-[-20px]">
+                                                    <img src={props.imgSrc} className=" tw-w-full" alt="" />
                                                 </div>
                                                 <div className="tw-absolute tw-transition tw-w-[200px] group-hover:tw-opacity-100 tw-opacity-[0.1%] tw-duration-500 tw-ease-in-out tw-transform group-hover:tw-translate-x-[3.6rem] tw-text-[17px] tw-font-bold tw-text-white group-hover:tw-pr-2">{props.contractTitle}</div>
                                             </a>

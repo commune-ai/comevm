@@ -147,7 +147,7 @@ contract ERC777SenderRecipientMock is Context, IERC777Sender, IERC777Recipient, 
         uint256 amount,
         bytes memory data
     ) public {
-        // This is 777's send function, not the Solidity send function
+        // This is 777"s send function, not the Solidity send function
         token.send(to, amount, data); // solhint-disable-line check-send-result
     }
 

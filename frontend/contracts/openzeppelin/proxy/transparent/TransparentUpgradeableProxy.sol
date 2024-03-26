@@ -20,7 +20,7 @@ import "../ERC1967/ERC1967Proxy.sol";
  * "admin cannot fallback to proxy target".
  *
  * These properties mean that the admin account can only be used for admin actions like upgrading the proxy or changing
- * the admin, so it's best if it's a dedicated account that is not used for anything else. This will avoid headaches due
+ * the admin, so it"s best if it"s a dedicated account that is not used for anything else. This will avoid headaches due
  * to sudden errors when trying to call a function from the proxy implementation.
  *
  * Our recommendation is for the dedicated account to be an instance of the {ProxyAdmin} contract. If set up this way,

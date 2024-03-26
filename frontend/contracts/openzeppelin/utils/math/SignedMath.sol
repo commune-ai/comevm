@@ -26,7 +26,7 @@ library SignedMath {
      * The result is rounded towards zero.
      */
     function average(int256 a, int256 b) internal pure returns (int256) {
-        // Formula from the book "Hacker's Delight"
+        // Formula from the book "Hacker"s Delight"
         int256 x = (a & b) + ((a ^ b) >> 1);
         return x + (int256(uint256(x) >> 255) & (a ^ b));
     }

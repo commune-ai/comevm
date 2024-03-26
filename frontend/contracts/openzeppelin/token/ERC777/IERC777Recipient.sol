@@ -19,7 +19,7 @@ interface IERC777Recipient {
      * moved or created into a registered account (`to`). The type of operation
      * is conveyed by `from` being the zero address or not.
      *
-     * This call occurs _after_ the token contract's state is updated, so
+     * This call occurs _after_ the token contract"s state is updated, so
      * {IERC777-balanceOf}, etc., can be used to query the post-operation state.
      *
      * This function may revert to prevent the operation from being executed.

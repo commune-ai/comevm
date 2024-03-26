@@ -119,13 +119,13 @@ abstract contract IGovernor is IERC165 {
 
     /**
      * @notice module:core
-     * @dev Current state of a proposal, following Compound's convention
+     * @dev Current state of a proposal, following Compound"s convention
      */
     function state(uint256 proposalId) public view virtual returns (ProposalState);
 
     /**
      * @notice module:core
-     * @dev Block number used to retrieve user's votes and quorum. As per Compound's Comp and OpenZeppelin's
+     * @dev Block number used to retrieve user"s votes and quorum. As per Compound"s Comp and OpenZeppelin"s
      * ERC20Votes, the snapshot is performed at the end of this block. Hence, voting for this proposal starts at the
      * beginning of the following block.
      */
@@ -247,7 +247,7 @@ abstract contract IGovernor is IERC165 {
     ) public virtual returns (uint256 balance);
 
     /**
-     * @dev Cast a vote using the user's cryptographic signature.
+     * @dev Cast a vote using the user"s cryptographic signature.
      *
      * Emits a {VoteCast} event.
      */
@@ -260,7 +260,7 @@ abstract contract IGovernor is IERC165 {
     ) public virtual returns (uint256 balance);
 
     /**
-     * @dev Cast a vote with a reason and additional encoded parameters using the user's cryptographic signature.
+     * @dev Cast a vote with a reason and additional encoded parameters using the user"s cryptographic signature.
      *
      * Emits a {VoteCast} or {VoteCastWithParams} event depending on the length of params.
      */

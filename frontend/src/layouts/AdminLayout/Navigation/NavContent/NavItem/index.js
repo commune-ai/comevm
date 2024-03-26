@@ -1,14 +1,14 @@
-import PropTypes from 'prop-types';
-import React, { useContext } from 'react';
-import { ListGroup } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import PropTypes from "prop-types";
+import React, { useContext } from "react";
+import { ListGroup } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
-import NavIcon from '../NavIcon';
-import NavBadge from '../NavBadge';
+import NavIcon from "../NavIcon";
+import NavBadge from "../NavBadge";
 
-import { ConfigContext } from '../../../../../contexts/ConfigContext';
-import * as actionType from '../../../../../store/actions';
-import useWindowSize from '../../../../../hooks/useWindowSize';
+import { ConfigContext } from "../../../../../contexts/ConfigContext";
+import * as actionType from "../../../../../store/actions";
+import useWindowSize from "../../../../../hooks/useWindowSize";
 
 const NavItem = ({ item }) => {
   const windowSize = useWindowSize();
@@ -20,9 +20,9 @@ const NavItem = ({ item }) => {
     itemTitle = <span className="pcoded-mtext">{item.title}</span>;
   }
 
-  let itemTarget = '';
+  let itemTarget = "";
   if (item.target) {
-    itemTarget = '_blank';
+    itemTarget = "_blank";
   }
 
   let subContent;
@@ -43,7 +43,7 @@ const NavItem = ({ item }) => {
       </NavLink>
     );
   }
-  let mainContent = '';
+  let mainContent = "";
 
   if (windowSize.width < 992) {
     mainContent = (

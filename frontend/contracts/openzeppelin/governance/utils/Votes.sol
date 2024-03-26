@@ -120,7 +120,7 @@ abstract contract Votes is IVotes, Context, EIP712 {
     }
 
     /**
-     * @dev Delegate all of `account`'s voting units to `delegatee`.
+     * @dev Delegate all of `account`"s voting units to `delegatee`.
      *
      * Emits events {IVotes-DelegateChanged} and {IVotes-DelegateVotesChanged}.
      */
@@ -197,7 +197,7 @@ abstract contract Votes is IVotes, Context, EIP712 {
     }
 
     /**
-     * @dev Returns the contract's {EIP712} domain separator.
+     * @dev Returns the contract"s {EIP712} domain separator.
      */
     // solhint-disable-next-line func-name-mixedcase
     function DOMAIN_SEPARATOR() external view returns (bytes32) {

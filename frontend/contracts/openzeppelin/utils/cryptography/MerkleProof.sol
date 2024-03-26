@@ -14,7 +14,7 @@ pragma solidity ^0.8.0;
  * hashing, or use a hash function other than keccak256 for hashing leaves.
  * This is because the concatenation of a sorted pair of internal nodes in
  * the merkle tree could be reinterpreted as a leaf value.
- * OpenZeppelin's JavaScript library generates merkle trees that are safe
+ * OpenZeppelin"s JavaScript library generates merkle trees that are safe
  * against this attack out of the box.
  */
 library MerkleProof {
@@ -135,7 +135,7 @@ library MerkleProof {
         require(leavesLen + proof.length - 1 == totalHashes, "MerkleProof: invalid multiproof");
 
         // The xxxPos values are "pointers" to the next value to consume in each array. All accesses are done using
-        // `xxx[xxxPos++]`, which return the current value and increment the pointer, thus mimicking a queue's "pop".
+        // `xxx[xxxPos++]`, which return the current value and increment the pointer, thus mimicking a queue"s "pop".
         bytes32[] memory hashes = new bytes32[](totalHashes);
         uint256 leafPos = 0;
         uint256 hashPos = 0;
@@ -183,7 +183,7 @@ library MerkleProof {
         require(leavesLen + proof.length - 1 == totalHashes, "MerkleProof: invalid multiproof");
 
         // The xxxPos values are "pointers" to the next value to consume in each array. All accesses are done using
-        // `xxx[xxxPos++]`, which return the current value and increment the pointer, thus mimicking a queue's "pop".
+        // `xxx[xxxPos++]`, which return the current value and increment the pointer, thus mimicking a queue"s "pop".
         bytes32[] memory hashes = new bytes32[](totalHashes);
         uint256 leafPos = 0;
         uint256 hashPos = 0;

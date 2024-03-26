@@ -80,7 +80,7 @@ abstract contract ERC20FlashMint is ERC20, IERC3156FlashLender {
      * @param data An arbitrary datafield that is passed to the receiver.
      * @return `true` if the flash loan was successful.
      */
-    // This function can reenter, but it doesn't pose a risk because it always preserves the property that the amount
+    // This function can reenter, but it doesn"t pose a risk because it always preserves the property that the amount
     // minted at the beginning is always recovered and burned at the end, or else the entire function will revert.
     // slither-disable-next-line reentrancy-no-eth
     function flashLoan(

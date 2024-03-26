@@ -48,7 +48,7 @@ interface IOutbox {
 
     /**
      * @notice Executes a messages in an Outbox entry.
-     * @dev Reverts if dispute period hasn't expired, since the outbox entry
+     * @dev Reverts if dispute period hasn"t expired, since the outbox entry
      *      is only created once the rollup confirms the respective assertion.
      * @dev it is not possible to execute any L2-to-L1 transaction which contains data
      *      to a contract address without any code (as enforced by the Bridge contract).
@@ -77,9 +77,9 @@ interface IOutbox {
     /**
      *  @dev function used to simulate the result of a particular function call from the outbox
      *       it is useful for things such as gas estimates. This function includes all costs except for
-     *       proof validation (which can be considered offchain as a somewhat of a fixed cost - it's
+     *       proof validation (which can be considered offchain as a somewhat of a fixed cost - it"s
      *       not really a fixed cost, but can be treated as so with a fixed overhead for gas estimation).
-     *       We can't include the cost of proof validation since this is intended to be used to simulate txs
+     *       We can"t include the cost of proof validation since this is intended to be used to simulate txs
      *       that are included in yet-to-be confirmed merkle roots. The simulation entrypoint could instead pretend
      *       to confirm a pending merkle root, but that would be less practical for integrating with tooling.
      *       It is only possible to trigger it when the msg sender is address zero, which should be impossible

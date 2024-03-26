@@ -11,7 +11,7 @@ import "../../utils/math/Math.sol";
  * swaying a vote and triggering quorum at the last minute, by ensuring there is always time for other voters to react
  * and try to oppose the decision.
  *
- * If a vote causes quorum to be reached, the proposal's voting period may be extended so that it does not end before at
+ * If a vote causes quorum to be reached, the proposal"s voting period may be extended so that it does not end before at
  * least a given number of blocks have passed (the "vote extension" parameter). This parameter can be set by the
  * governance executor (e.g. through a governance proposal).
  *

@@ -5,7 +5,7 @@
 pragma solidity ^0.8.0;
 
 /**
- * @dev Wrappers over Solidity's uintXX/intXX casting operators with added overflow
+ * @dev Wrappers over Solidity"s uintXX/intXX casting operators with added overflow
  * checks.
  *
  * Downcasting from uint256/int256 in Solidity does not revert on overflow. This can
@@ -14,7 +14,7 @@ pragma solidity ^0.8.0;
  * reverting the transaction when such an operation overflows.
  *
  * Using this library instead of the unchecked operations eliminates an entire
- * class of bugs, so it's recommended to use it always.
+ * class of bugs, so it"s recommended to use it always.
  *
  * Can be combined with {SafeMath} and {SignedSafeMath} to extend it to smaller types, by performing
  * all math on `uint256` and `int256` and then downcasting.
@@ -24,7 +24,7 @@ library SafeCast {
      * @dev Returns the downcasted uint248 from uint256, reverting on
      * overflow (when the input is greater than largest uint248).
      *
-     * Counterpart to Solidity's `uint248` operator.
+     * Counterpart to Solidity"s `uint248` operator.
      *
      * Requirements:
      *
@@ -33,7 +33,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint248(uint256 value) internal pure returns (uint248) {
-        require(value <= type(uint248).max, "SafeCast: value doesn't fit in 248 bits");
+        require(value <= type(uint248).max, "SafeCast: value doesn"t fit in 248 bits");
         return uint248(value);
     }
 
@@ -41,7 +41,7 @@ library SafeCast {
      * @dev Returns the downcasted uint240 from uint256, reverting on
      * overflow (when the input is greater than largest uint240).
      *
-     * Counterpart to Solidity's `uint240` operator.
+     * Counterpart to Solidity"s `uint240` operator.
      *
      * Requirements:
      *
@@ -50,7 +50,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint240(uint256 value) internal pure returns (uint240) {
-        require(value <= type(uint240).max, "SafeCast: value doesn't fit in 240 bits");
+        require(value <= type(uint240).max, "SafeCast: value doesn"t fit in 240 bits");
         return uint240(value);
     }
 
@@ -58,7 +58,7 @@ library SafeCast {
      * @dev Returns the downcasted uint232 from uint256, reverting on
      * overflow (when the input is greater than largest uint232).
      *
-     * Counterpart to Solidity's `uint232` operator.
+     * Counterpart to Solidity"s `uint232` operator.
      *
      * Requirements:
      *
@@ -67,7 +67,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint232(uint256 value) internal pure returns (uint232) {
-        require(value <= type(uint232).max, "SafeCast: value doesn't fit in 232 bits");
+        require(value <= type(uint232).max, "SafeCast: value doesn"t fit in 232 bits");
         return uint232(value);
     }
 
@@ -75,7 +75,7 @@ library SafeCast {
      * @dev Returns the downcasted uint224 from uint256, reverting on
      * overflow (when the input is greater than largest uint224).
      *
-     * Counterpart to Solidity's `uint224` operator.
+     * Counterpart to Solidity"s `uint224` operator.
      *
      * Requirements:
      *
@@ -84,7 +84,7 @@ library SafeCast {
      * _Available since v4.2._
      */
     function toUint224(uint256 value) internal pure returns (uint224) {
-        require(value <= type(uint224).max, "SafeCast: value doesn't fit in 224 bits");
+        require(value <= type(uint224).max, "SafeCast: value doesn"t fit in 224 bits");
         return uint224(value);
     }
 
@@ -92,7 +92,7 @@ library SafeCast {
      * @dev Returns the downcasted uint216 from uint256, reverting on
      * overflow (when the input is greater than largest uint216).
      *
-     * Counterpart to Solidity's `uint216` operator.
+     * Counterpart to Solidity"s `uint216` operator.
      *
      * Requirements:
      *
@@ -101,7 +101,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint216(uint256 value) internal pure returns (uint216) {
-        require(value <= type(uint216).max, "SafeCast: value doesn't fit in 216 bits");
+        require(value <= type(uint216).max, "SafeCast: value doesn"t fit in 216 bits");
         return uint216(value);
     }
 
@@ -109,7 +109,7 @@ library SafeCast {
      * @dev Returns the downcasted uint208 from uint256, reverting on
      * overflow (when the input is greater than largest uint208).
      *
-     * Counterpart to Solidity's `uint208` operator.
+     * Counterpart to Solidity"s `uint208` operator.
      *
      * Requirements:
      *
@@ -118,7 +118,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint208(uint256 value) internal pure returns (uint208) {
-        require(value <= type(uint208).max, "SafeCast: value doesn't fit in 208 bits");
+        require(value <= type(uint208).max, "SafeCast: value doesn"t fit in 208 bits");
         return uint208(value);
     }
 
@@ -126,7 +126,7 @@ library SafeCast {
      * @dev Returns the downcasted uint200 from uint256, reverting on
      * overflow (when the input is greater than largest uint200).
      *
-     * Counterpart to Solidity's `uint200` operator.
+     * Counterpart to Solidity"s `uint200` operator.
      *
      * Requirements:
      *
@@ -135,7 +135,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint200(uint256 value) internal pure returns (uint200) {
-        require(value <= type(uint200).max, "SafeCast: value doesn't fit in 200 bits");
+        require(value <= type(uint200).max, "SafeCast: value doesn"t fit in 200 bits");
         return uint200(value);
     }
 
@@ -143,7 +143,7 @@ library SafeCast {
      * @dev Returns the downcasted uint192 from uint256, reverting on
      * overflow (when the input is greater than largest uint192).
      *
-     * Counterpart to Solidity's `uint192` operator.
+     * Counterpart to Solidity"s `uint192` operator.
      *
      * Requirements:
      *
@@ -152,7 +152,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint192(uint256 value) internal pure returns (uint192) {
-        require(value <= type(uint192).max, "SafeCast: value doesn't fit in 192 bits");
+        require(value <= type(uint192).max, "SafeCast: value doesn"t fit in 192 bits");
         return uint192(value);
     }
 
@@ -160,7 +160,7 @@ library SafeCast {
      * @dev Returns the downcasted uint184 from uint256, reverting on
      * overflow (when the input is greater than largest uint184).
      *
-     * Counterpart to Solidity's `uint184` operator.
+     * Counterpart to Solidity"s `uint184` operator.
      *
      * Requirements:
      *
@@ -169,7 +169,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint184(uint256 value) internal pure returns (uint184) {
-        require(value <= type(uint184).max, "SafeCast: value doesn't fit in 184 bits");
+        require(value <= type(uint184).max, "SafeCast: value doesn"t fit in 184 bits");
         return uint184(value);
     }
 
@@ -177,7 +177,7 @@ library SafeCast {
      * @dev Returns the downcasted uint176 from uint256, reverting on
      * overflow (when the input is greater than largest uint176).
      *
-     * Counterpart to Solidity's `uint176` operator.
+     * Counterpart to Solidity"s `uint176` operator.
      *
      * Requirements:
      *
@@ -186,7 +186,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint176(uint256 value) internal pure returns (uint176) {
-        require(value <= type(uint176).max, "SafeCast: value doesn't fit in 176 bits");
+        require(value <= type(uint176).max, "SafeCast: value doesn"t fit in 176 bits");
         return uint176(value);
     }
 
@@ -194,7 +194,7 @@ library SafeCast {
      * @dev Returns the downcasted uint168 from uint256, reverting on
      * overflow (when the input is greater than largest uint168).
      *
-     * Counterpart to Solidity's `uint168` operator.
+     * Counterpart to Solidity"s `uint168` operator.
      *
      * Requirements:
      *
@@ -203,7 +203,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint168(uint256 value) internal pure returns (uint168) {
-        require(value <= type(uint168).max, "SafeCast: value doesn't fit in 168 bits");
+        require(value <= type(uint168).max, "SafeCast: value doesn"t fit in 168 bits");
         return uint168(value);
     }
 
@@ -211,7 +211,7 @@ library SafeCast {
      * @dev Returns the downcasted uint160 from uint256, reverting on
      * overflow (when the input is greater than largest uint160).
      *
-     * Counterpart to Solidity's `uint160` operator.
+     * Counterpart to Solidity"s `uint160` operator.
      *
      * Requirements:
      *
@@ -220,7 +220,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint160(uint256 value) internal pure returns (uint160) {
-        require(value <= type(uint160).max, "SafeCast: value doesn't fit in 160 bits");
+        require(value <= type(uint160).max, "SafeCast: value doesn"t fit in 160 bits");
         return uint160(value);
     }
 
@@ -228,7 +228,7 @@ library SafeCast {
      * @dev Returns the downcasted uint152 from uint256, reverting on
      * overflow (when the input is greater than largest uint152).
      *
-     * Counterpart to Solidity's `uint152` operator.
+     * Counterpart to Solidity"s `uint152` operator.
      *
      * Requirements:
      *
@@ -237,7 +237,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint152(uint256 value) internal pure returns (uint152) {
-        require(value <= type(uint152).max, "SafeCast: value doesn't fit in 152 bits");
+        require(value <= type(uint152).max, "SafeCast: value doesn"t fit in 152 bits");
         return uint152(value);
     }
 
@@ -245,7 +245,7 @@ library SafeCast {
      * @dev Returns the downcasted uint144 from uint256, reverting on
      * overflow (when the input is greater than largest uint144).
      *
-     * Counterpart to Solidity's `uint144` operator.
+     * Counterpart to Solidity"s `uint144` operator.
      *
      * Requirements:
      *
@@ -254,7 +254,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint144(uint256 value) internal pure returns (uint144) {
-        require(value <= type(uint144).max, "SafeCast: value doesn't fit in 144 bits");
+        require(value <= type(uint144).max, "SafeCast: value doesn"t fit in 144 bits");
         return uint144(value);
     }
 
@@ -262,7 +262,7 @@ library SafeCast {
      * @dev Returns the downcasted uint136 from uint256, reverting on
      * overflow (when the input is greater than largest uint136).
      *
-     * Counterpart to Solidity's `uint136` operator.
+     * Counterpart to Solidity"s `uint136` operator.
      *
      * Requirements:
      *
@@ -271,7 +271,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint136(uint256 value) internal pure returns (uint136) {
-        require(value <= type(uint136).max, "SafeCast: value doesn't fit in 136 bits");
+        require(value <= type(uint136).max, "SafeCast: value doesn"t fit in 136 bits");
         return uint136(value);
     }
 
@@ -279,7 +279,7 @@ library SafeCast {
      * @dev Returns the downcasted uint128 from uint256, reverting on
      * overflow (when the input is greater than largest uint128).
      *
-     * Counterpart to Solidity's `uint128` operator.
+     * Counterpart to Solidity"s `uint128` operator.
      *
      * Requirements:
      *
@@ -288,7 +288,7 @@ library SafeCast {
      * _Available since v2.5._
      */
     function toUint128(uint256 value) internal pure returns (uint128) {
-        require(value <= type(uint128).max, "SafeCast: value doesn't fit in 128 bits");
+        require(value <= type(uint128).max, "SafeCast: value doesn"t fit in 128 bits");
         return uint128(value);
     }
 
@@ -296,7 +296,7 @@ library SafeCast {
      * @dev Returns the downcasted uint120 from uint256, reverting on
      * overflow (when the input is greater than largest uint120).
      *
-     * Counterpart to Solidity's `uint120` operator.
+     * Counterpart to Solidity"s `uint120` operator.
      *
      * Requirements:
      *
@@ -305,7 +305,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint120(uint256 value) internal pure returns (uint120) {
-        require(value <= type(uint120).max, "SafeCast: value doesn't fit in 120 bits");
+        require(value <= type(uint120).max, "SafeCast: value doesn"t fit in 120 bits");
         return uint120(value);
     }
 
@@ -313,7 +313,7 @@ library SafeCast {
      * @dev Returns the downcasted uint112 from uint256, reverting on
      * overflow (when the input is greater than largest uint112).
      *
-     * Counterpart to Solidity's `uint112` operator.
+     * Counterpart to Solidity"s `uint112` operator.
      *
      * Requirements:
      *
@@ -322,7 +322,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint112(uint256 value) internal pure returns (uint112) {
-        require(value <= type(uint112).max, "SafeCast: value doesn't fit in 112 bits");
+        require(value <= type(uint112).max, "SafeCast: value doesn"t fit in 112 bits");
         return uint112(value);
     }
 
@@ -330,7 +330,7 @@ library SafeCast {
      * @dev Returns the downcasted uint104 from uint256, reverting on
      * overflow (when the input is greater than largest uint104).
      *
-     * Counterpart to Solidity's `uint104` operator.
+     * Counterpart to Solidity"s `uint104` operator.
      *
      * Requirements:
      *
@@ -339,7 +339,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint104(uint256 value) internal pure returns (uint104) {
-        require(value <= type(uint104).max, "SafeCast: value doesn't fit in 104 bits");
+        require(value <= type(uint104).max, "SafeCast: value doesn"t fit in 104 bits");
         return uint104(value);
     }
 
@@ -347,7 +347,7 @@ library SafeCast {
      * @dev Returns the downcasted uint96 from uint256, reverting on
      * overflow (when the input is greater than largest uint96).
      *
-     * Counterpart to Solidity's `uint96` operator.
+     * Counterpart to Solidity"s `uint96` operator.
      *
      * Requirements:
      *
@@ -356,7 +356,7 @@ library SafeCast {
      * _Available since v4.2._
      */
     function toUint96(uint256 value) internal pure returns (uint96) {
-        require(value <= type(uint96).max, "SafeCast: value doesn't fit in 96 bits");
+        require(value <= type(uint96).max, "SafeCast: value doesn"t fit in 96 bits");
         return uint96(value);
     }
 
@@ -364,7 +364,7 @@ library SafeCast {
      * @dev Returns the downcasted uint88 from uint256, reverting on
      * overflow (when the input is greater than largest uint88).
      *
-     * Counterpart to Solidity's `uint88` operator.
+     * Counterpart to Solidity"s `uint88` operator.
      *
      * Requirements:
      *
@@ -373,7 +373,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint88(uint256 value) internal pure returns (uint88) {
-        require(value <= type(uint88).max, "SafeCast: value doesn't fit in 88 bits");
+        require(value <= type(uint88).max, "SafeCast: value doesn"t fit in 88 bits");
         return uint88(value);
     }
 
@@ -381,7 +381,7 @@ library SafeCast {
      * @dev Returns the downcasted uint80 from uint256, reverting on
      * overflow (when the input is greater than largest uint80).
      *
-     * Counterpart to Solidity's `uint80` operator.
+     * Counterpart to Solidity"s `uint80` operator.
      *
      * Requirements:
      *
@@ -390,7 +390,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint80(uint256 value) internal pure returns (uint80) {
-        require(value <= type(uint80).max, "SafeCast: value doesn't fit in 80 bits");
+        require(value <= type(uint80).max, "SafeCast: value doesn"t fit in 80 bits");
         return uint80(value);
     }
 
@@ -398,7 +398,7 @@ library SafeCast {
      * @dev Returns the downcasted uint72 from uint256, reverting on
      * overflow (when the input is greater than largest uint72).
      *
-     * Counterpart to Solidity's `uint72` operator.
+     * Counterpart to Solidity"s `uint72` operator.
      *
      * Requirements:
      *
@@ -407,7 +407,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint72(uint256 value) internal pure returns (uint72) {
-        require(value <= type(uint72).max, "SafeCast: value doesn't fit in 72 bits");
+        require(value <= type(uint72).max, "SafeCast: value doesn"t fit in 72 bits");
         return uint72(value);
     }
 
@@ -415,7 +415,7 @@ library SafeCast {
      * @dev Returns the downcasted uint64 from uint256, reverting on
      * overflow (when the input is greater than largest uint64).
      *
-     * Counterpart to Solidity's `uint64` operator.
+     * Counterpart to Solidity"s `uint64` operator.
      *
      * Requirements:
      *
@@ -424,7 +424,7 @@ library SafeCast {
      * _Available since v2.5._
      */
     function toUint64(uint256 value) internal pure returns (uint64) {
-        require(value <= type(uint64).max, "SafeCast: value doesn't fit in 64 bits");
+        require(value <= type(uint64).max, "SafeCast: value doesn"t fit in 64 bits");
         return uint64(value);
     }
 
@@ -432,7 +432,7 @@ library SafeCast {
      * @dev Returns the downcasted uint56 from uint256, reverting on
      * overflow (when the input is greater than largest uint56).
      *
-     * Counterpart to Solidity's `uint56` operator.
+     * Counterpart to Solidity"s `uint56` operator.
      *
      * Requirements:
      *
@@ -441,7 +441,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint56(uint256 value) internal pure returns (uint56) {
-        require(value <= type(uint56).max, "SafeCast: value doesn't fit in 56 bits");
+        require(value <= type(uint56).max, "SafeCast: value doesn"t fit in 56 bits");
         return uint56(value);
     }
 
@@ -449,7 +449,7 @@ library SafeCast {
      * @dev Returns the downcasted uint48 from uint256, reverting on
      * overflow (when the input is greater than largest uint48).
      *
-     * Counterpart to Solidity's `uint48` operator.
+     * Counterpart to Solidity"s `uint48` operator.
      *
      * Requirements:
      *
@@ -458,7 +458,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint48(uint256 value) internal pure returns (uint48) {
-        require(value <= type(uint48).max, "SafeCast: value doesn't fit in 48 bits");
+        require(value <= type(uint48).max, "SafeCast: value doesn"t fit in 48 bits");
         return uint48(value);
     }
 
@@ -466,7 +466,7 @@ library SafeCast {
      * @dev Returns the downcasted uint40 from uint256, reverting on
      * overflow (when the input is greater than largest uint40).
      *
-     * Counterpart to Solidity's `uint40` operator.
+     * Counterpart to Solidity"s `uint40` operator.
      *
      * Requirements:
      *
@@ -475,7 +475,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint40(uint256 value) internal pure returns (uint40) {
-        require(value <= type(uint40).max, "SafeCast: value doesn't fit in 40 bits");
+        require(value <= type(uint40).max, "SafeCast: value doesn"t fit in 40 bits");
         return uint40(value);
     }
 
@@ -483,7 +483,7 @@ library SafeCast {
      * @dev Returns the downcasted uint32 from uint256, reverting on
      * overflow (when the input is greater than largest uint32).
      *
-     * Counterpart to Solidity's `uint32` operator.
+     * Counterpart to Solidity"s `uint32` operator.
      *
      * Requirements:
      *
@@ -492,7 +492,7 @@ library SafeCast {
      * _Available since v2.5._
      */
     function toUint32(uint256 value) internal pure returns (uint32) {
-        require(value <= type(uint32).max, "SafeCast: value doesn't fit in 32 bits");
+        require(value <= type(uint32).max, "SafeCast: value doesn"t fit in 32 bits");
         return uint32(value);
     }
 
@@ -500,7 +500,7 @@ library SafeCast {
      * @dev Returns the downcasted uint24 from uint256, reverting on
      * overflow (when the input is greater than largest uint24).
      *
-     * Counterpart to Solidity's `uint24` operator.
+     * Counterpart to Solidity"s `uint24` operator.
      *
      * Requirements:
      *
@@ -509,7 +509,7 @@ library SafeCast {
      * _Available since v4.7._
      */
     function toUint24(uint256 value) internal pure returns (uint24) {
-        require(value <= type(uint24).max, "SafeCast: value doesn't fit in 24 bits");
+        require(value <= type(uint24).max, "SafeCast: value doesn"t fit in 24 bits");
         return uint24(value);
     }
 
@@ -517,7 +517,7 @@ library SafeCast {
      * @dev Returns the downcasted uint16 from uint256, reverting on
      * overflow (when the input is greater than largest uint16).
      *
-     * Counterpart to Solidity's `uint16` operator.
+     * Counterpart to Solidity"s `uint16` operator.
      *
      * Requirements:
      *
@@ -526,7 +526,7 @@ library SafeCast {
      * _Available since v2.5._
      */
     function toUint16(uint256 value) internal pure returns (uint16) {
-        require(value <= type(uint16).max, "SafeCast: value doesn't fit in 16 bits");
+        require(value <= type(uint16).max, "SafeCast: value doesn"t fit in 16 bits");
         return uint16(value);
     }
 
@@ -534,7 +534,7 @@ library SafeCast {
      * @dev Returns the downcasted uint8 from uint256, reverting on
      * overflow (when the input is greater than largest uint8).
      *
-     * Counterpart to Solidity's `uint8` operator.
+     * Counterpart to Solidity"s `uint8` operator.
      *
      * Requirements:
      *
@@ -543,7 +543,7 @@ library SafeCast {
      * _Available since v2.5._
      */
     function toUint8(uint256 value) internal pure returns (uint8) {
-        require(value <= type(uint8).max, "SafeCast: value doesn't fit in 8 bits");
+        require(value <= type(uint8).max, "SafeCast: value doesn"t fit in 8 bits");
         return uint8(value);
     }
 
@@ -566,7 +566,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int248 or
      * greater than largest int248).
      *
-     * Counterpart to Solidity's `int248` operator.
+     * Counterpart to Solidity"s `int248` operator.
      *
      * Requirements:
      *
@@ -576,7 +576,7 @@ library SafeCast {
      */
     function toInt248(int256 value) internal pure returns (int248 downcasted) {
         downcasted = int248(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 248 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 248 bits");
     }
 
     /**
@@ -584,7 +584,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int240 or
      * greater than largest int240).
      *
-     * Counterpart to Solidity's `int240` operator.
+     * Counterpart to Solidity"s `int240` operator.
      *
      * Requirements:
      *
@@ -594,7 +594,7 @@ library SafeCast {
      */
     function toInt240(int256 value) internal pure returns (int240 downcasted) {
         downcasted = int240(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 240 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 240 bits");
     }
 
     /**
@@ -602,7 +602,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int232 or
      * greater than largest int232).
      *
-     * Counterpart to Solidity's `int232` operator.
+     * Counterpart to Solidity"s `int232` operator.
      *
      * Requirements:
      *
@@ -612,7 +612,7 @@ library SafeCast {
      */
     function toInt232(int256 value) internal pure returns (int232 downcasted) {
         downcasted = int232(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 232 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 232 bits");
     }
 
     /**
@@ -620,7 +620,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int224 or
      * greater than largest int224).
      *
-     * Counterpart to Solidity's `int224` operator.
+     * Counterpart to Solidity"s `int224` operator.
      *
      * Requirements:
      *
@@ -630,7 +630,7 @@ library SafeCast {
      */
     function toInt224(int256 value) internal pure returns (int224 downcasted) {
         downcasted = int224(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 224 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 224 bits");
     }
 
     /**
@@ -638,7 +638,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int216 or
      * greater than largest int216).
      *
-     * Counterpart to Solidity's `int216` operator.
+     * Counterpart to Solidity"s `int216` operator.
      *
      * Requirements:
      *
@@ -648,7 +648,7 @@ library SafeCast {
      */
     function toInt216(int256 value) internal pure returns (int216 downcasted) {
         downcasted = int216(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 216 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 216 bits");
     }
 
     /**
@@ -656,7 +656,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int208 or
      * greater than largest int208).
      *
-     * Counterpart to Solidity's `int208` operator.
+     * Counterpart to Solidity"s `int208` operator.
      *
      * Requirements:
      *
@@ -666,7 +666,7 @@ library SafeCast {
      */
     function toInt208(int256 value) internal pure returns (int208 downcasted) {
         downcasted = int208(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 208 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 208 bits");
     }
 
     /**
@@ -674,7 +674,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int200 or
      * greater than largest int200).
      *
-     * Counterpart to Solidity's `int200` operator.
+     * Counterpart to Solidity"s `int200` operator.
      *
      * Requirements:
      *
@@ -684,7 +684,7 @@ library SafeCast {
      */
     function toInt200(int256 value) internal pure returns (int200 downcasted) {
         downcasted = int200(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 200 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 200 bits");
     }
 
     /**
@@ -692,7 +692,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int192 or
      * greater than largest int192).
      *
-     * Counterpart to Solidity's `int192` operator.
+     * Counterpart to Solidity"s `int192` operator.
      *
      * Requirements:
      *
@@ -702,7 +702,7 @@ library SafeCast {
      */
     function toInt192(int256 value) internal pure returns (int192 downcasted) {
         downcasted = int192(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 192 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 192 bits");
     }
 
     /**
@@ -710,7 +710,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int184 or
      * greater than largest int184).
      *
-     * Counterpart to Solidity's `int184` operator.
+     * Counterpart to Solidity"s `int184` operator.
      *
      * Requirements:
      *
@@ -720,7 +720,7 @@ library SafeCast {
      */
     function toInt184(int256 value) internal pure returns (int184 downcasted) {
         downcasted = int184(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 184 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 184 bits");
     }
 
     /**
@@ -728,7 +728,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int176 or
      * greater than largest int176).
      *
-     * Counterpart to Solidity's `int176` operator.
+     * Counterpart to Solidity"s `int176` operator.
      *
      * Requirements:
      *
@@ -738,7 +738,7 @@ library SafeCast {
      */
     function toInt176(int256 value) internal pure returns (int176 downcasted) {
         downcasted = int176(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 176 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 176 bits");
     }
 
     /**
@@ -746,7 +746,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int168 or
      * greater than largest int168).
      *
-     * Counterpart to Solidity's `int168` operator.
+     * Counterpart to Solidity"s `int168` operator.
      *
      * Requirements:
      *
@@ -756,7 +756,7 @@ library SafeCast {
      */
     function toInt168(int256 value) internal pure returns (int168 downcasted) {
         downcasted = int168(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 168 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 168 bits");
     }
 
     /**
@@ -764,7 +764,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int160 or
      * greater than largest int160).
      *
-     * Counterpart to Solidity's `int160` operator.
+     * Counterpart to Solidity"s `int160` operator.
      *
      * Requirements:
      *
@@ -774,7 +774,7 @@ library SafeCast {
      */
     function toInt160(int256 value) internal pure returns (int160 downcasted) {
         downcasted = int160(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 160 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 160 bits");
     }
 
     /**
@@ -782,7 +782,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int152 or
      * greater than largest int152).
      *
-     * Counterpart to Solidity's `int152` operator.
+     * Counterpart to Solidity"s `int152` operator.
      *
      * Requirements:
      *
@@ -792,7 +792,7 @@ library SafeCast {
      */
     function toInt152(int256 value) internal pure returns (int152 downcasted) {
         downcasted = int152(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 152 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 152 bits");
     }
 
     /**
@@ -800,7 +800,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int144 or
      * greater than largest int144).
      *
-     * Counterpart to Solidity's `int144` operator.
+     * Counterpart to Solidity"s `int144` operator.
      *
      * Requirements:
      *
@@ -810,7 +810,7 @@ library SafeCast {
      */
     function toInt144(int256 value) internal pure returns (int144 downcasted) {
         downcasted = int144(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 144 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 144 bits");
     }
 
     /**
@@ -818,7 +818,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int136 or
      * greater than largest int136).
      *
-     * Counterpart to Solidity's `int136` operator.
+     * Counterpart to Solidity"s `int136` operator.
      *
      * Requirements:
      *
@@ -828,7 +828,7 @@ library SafeCast {
      */
     function toInt136(int256 value) internal pure returns (int136 downcasted) {
         downcasted = int136(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 136 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 136 bits");
     }
 
     /**
@@ -836,7 +836,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int128 or
      * greater than largest int128).
      *
-     * Counterpart to Solidity's `int128` operator.
+     * Counterpart to Solidity"s `int128` operator.
      *
      * Requirements:
      *
@@ -846,7 +846,7 @@ library SafeCast {
      */
     function toInt128(int256 value) internal pure returns (int128 downcasted) {
         downcasted = int128(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 128 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 128 bits");
     }
 
     /**
@@ -854,7 +854,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int120 or
      * greater than largest int120).
      *
-     * Counterpart to Solidity's `int120` operator.
+     * Counterpart to Solidity"s `int120` operator.
      *
      * Requirements:
      *
@@ -864,7 +864,7 @@ library SafeCast {
      */
     function toInt120(int256 value) internal pure returns (int120 downcasted) {
         downcasted = int120(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 120 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 120 bits");
     }
 
     /**
@@ -872,7 +872,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int112 or
      * greater than largest int112).
      *
-     * Counterpart to Solidity's `int112` operator.
+     * Counterpart to Solidity"s `int112` operator.
      *
      * Requirements:
      *
@@ -882,7 +882,7 @@ library SafeCast {
      */
     function toInt112(int256 value) internal pure returns (int112 downcasted) {
         downcasted = int112(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 112 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 112 bits");
     }
 
     /**
@@ -890,7 +890,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int104 or
      * greater than largest int104).
      *
-     * Counterpart to Solidity's `int104` operator.
+     * Counterpart to Solidity"s `int104` operator.
      *
      * Requirements:
      *
@@ -900,7 +900,7 @@ library SafeCast {
      */
     function toInt104(int256 value) internal pure returns (int104 downcasted) {
         downcasted = int104(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 104 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 104 bits");
     }
 
     /**
@@ -908,7 +908,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int96 or
      * greater than largest int96).
      *
-     * Counterpart to Solidity's `int96` operator.
+     * Counterpart to Solidity"s `int96` operator.
      *
      * Requirements:
      *
@@ -918,7 +918,7 @@ library SafeCast {
      */
     function toInt96(int256 value) internal pure returns (int96 downcasted) {
         downcasted = int96(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 96 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 96 bits");
     }
 
     /**
@@ -926,7 +926,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int88 or
      * greater than largest int88).
      *
-     * Counterpart to Solidity's `int88` operator.
+     * Counterpart to Solidity"s `int88` operator.
      *
      * Requirements:
      *
@@ -936,7 +936,7 @@ library SafeCast {
      */
     function toInt88(int256 value) internal pure returns (int88 downcasted) {
         downcasted = int88(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 88 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 88 bits");
     }
 
     /**
@@ -944,7 +944,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int80 or
      * greater than largest int80).
      *
-     * Counterpart to Solidity's `int80` operator.
+     * Counterpart to Solidity"s `int80` operator.
      *
      * Requirements:
      *
@@ -954,7 +954,7 @@ library SafeCast {
      */
     function toInt80(int256 value) internal pure returns (int80 downcasted) {
         downcasted = int80(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 80 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 80 bits");
     }
 
     /**
@@ -962,7 +962,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int72 or
      * greater than largest int72).
      *
-     * Counterpart to Solidity's `int72` operator.
+     * Counterpart to Solidity"s `int72` operator.
      *
      * Requirements:
      *
@@ -972,7 +972,7 @@ library SafeCast {
      */
     function toInt72(int256 value) internal pure returns (int72 downcasted) {
         downcasted = int72(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 72 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 72 bits");
     }
 
     /**
@@ -980,7 +980,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int64 or
      * greater than largest int64).
      *
-     * Counterpart to Solidity's `int64` operator.
+     * Counterpart to Solidity"s `int64` operator.
      *
      * Requirements:
      *
@@ -990,7 +990,7 @@ library SafeCast {
      */
     function toInt64(int256 value) internal pure returns (int64 downcasted) {
         downcasted = int64(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 64 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 64 bits");
     }
 
     /**
@@ -998,7 +998,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int56 or
      * greater than largest int56).
      *
-     * Counterpart to Solidity's `int56` operator.
+     * Counterpart to Solidity"s `int56` operator.
      *
      * Requirements:
      *
@@ -1008,7 +1008,7 @@ library SafeCast {
      */
     function toInt56(int256 value) internal pure returns (int56 downcasted) {
         downcasted = int56(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 56 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 56 bits");
     }
 
     /**
@@ -1016,7 +1016,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int48 or
      * greater than largest int48).
      *
-     * Counterpart to Solidity's `int48` operator.
+     * Counterpart to Solidity"s `int48` operator.
      *
      * Requirements:
      *
@@ -1026,7 +1026,7 @@ library SafeCast {
      */
     function toInt48(int256 value) internal pure returns (int48 downcasted) {
         downcasted = int48(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 48 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 48 bits");
     }
 
     /**
@@ -1034,7 +1034,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int40 or
      * greater than largest int40).
      *
-     * Counterpart to Solidity's `int40` operator.
+     * Counterpart to Solidity"s `int40` operator.
      *
      * Requirements:
      *
@@ -1044,7 +1044,7 @@ library SafeCast {
      */
     function toInt40(int256 value) internal pure returns (int40 downcasted) {
         downcasted = int40(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 40 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 40 bits");
     }
 
     /**
@@ -1052,7 +1052,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int32 or
      * greater than largest int32).
      *
-     * Counterpart to Solidity's `int32` operator.
+     * Counterpart to Solidity"s `int32` operator.
      *
      * Requirements:
      *
@@ -1062,7 +1062,7 @@ library SafeCast {
      */
     function toInt32(int256 value) internal pure returns (int32 downcasted) {
         downcasted = int32(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 32 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 32 bits");
     }
 
     /**
@@ -1070,7 +1070,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int24 or
      * greater than largest int24).
      *
-     * Counterpart to Solidity's `int24` operator.
+     * Counterpart to Solidity"s `int24` operator.
      *
      * Requirements:
      *
@@ -1080,7 +1080,7 @@ library SafeCast {
      */
     function toInt24(int256 value) internal pure returns (int24 downcasted) {
         downcasted = int24(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 24 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 24 bits");
     }
 
     /**
@@ -1088,7 +1088,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int16 or
      * greater than largest int16).
      *
-     * Counterpart to Solidity's `int16` operator.
+     * Counterpart to Solidity"s `int16` operator.
      *
      * Requirements:
      *
@@ -1098,7 +1098,7 @@ library SafeCast {
      */
     function toInt16(int256 value) internal pure returns (int16 downcasted) {
         downcasted = int16(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 16 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 16 bits");
     }
 
     /**
@@ -1106,7 +1106,7 @@ library SafeCast {
      * overflow (when the input is less than smallest int8 or
      * greater than largest int8).
      *
-     * Counterpart to Solidity's `int8` operator.
+     * Counterpart to Solidity"s `int8` operator.
      *
      * Requirements:
      *
@@ -1116,7 +1116,7 @@ library SafeCast {
      */
     function toInt8(int256 value) internal pure returns (int8 downcasted) {
         downcasted = int8(value);
-        require(downcasted == value, "SafeCast: value doesn't fit in 8 bits");
+        require(downcasted == value, "SafeCast: value doesn"t fit in 8 bits");
     }
 
     /**
@@ -1130,7 +1130,7 @@ library SafeCast {
      */
     function toInt256(uint256 value) internal pure returns (int256) {
         // Note: Unsafe cast below is okay because `type(int256).max` is guaranteed to be positive
-        require(value <= uint256(type(int256).max), "SafeCast: value doesn't fit in an int256");
+        require(value <= uint256(type(int256).max), "SafeCast: value doesn"t fit in an int256");
         return int256(value);
     }
 }

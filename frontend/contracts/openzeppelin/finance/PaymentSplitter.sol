@@ -15,7 +15,7 @@ import "../utils/Context.sol";
  * The split can be in equal parts or in any other arbitrary proportion. The way this is specified is by assigning each
  * account to a number of shares. Of all the Ether that this contract receives, each account will then be able to claim
  * an amount proportional to the percentage of total shares they were assigned. The distribution of shares is set at the
- * time of contract deployment and can't be updated thereafter.
+ * time of contract deployment and can"t be updated thereafter.
  *
  * `PaymentSplitter` follows a _pull payment_ model. This means that payments are not automatically forwarded to the
  * accounts but kept in this contract, and the actual transfer is triggered as a separate step by calling the {release}
@@ -59,7 +59,7 @@ contract PaymentSplitter is Context {
 
     /**
      * @dev The Ether received will be logged with {PaymentReceived} events. Note that these events are not fully
-     * reliable: it's possible for a contract to receive Ether without triggering this function. This only affects the
+     * reliable: it"s possible for a contract to receive Ether without triggering this function. This only affects the
      * reliability of the events, and not the actual splitting of Ether.
      *
      * To learn more about this see the Solidity documentation for
@@ -122,7 +122,7 @@ contract PaymentSplitter is Context {
     }
 
     /**
-     * @dev Getter for the amount of payee's releasable Ether.
+     * @dev Getter for the amount of payee"s releasable Ether.
      */
     function releasable(address account) public view returns (uint256) {
         uint256 totalReceived = address(this).balance + totalReleased();
@@ -130,7 +130,7 @@ contract PaymentSplitter is Context {
     }
 
     /**
-     * @dev Getter for the amount of payee's releasable `token` tokens. `token` should be the address of an
+     * @dev Getter for the amount of payee"s releasable `token` tokens. `token` should be the address of an
      * IERC20 contract.
      */
     function releasable(IERC20 token, address account) public view returns (uint256) {

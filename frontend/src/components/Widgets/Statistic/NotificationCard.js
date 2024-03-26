@@ -1,15 +1,15 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import { Card, Row, Col } from 'react-bootstrap';
+import PropTypes from "prop-types";
+import React from "react";
+import { Card, Row, Col } from "react-bootstrap";
 
 const NotificationCard = ({ params }) => {
-  let cardClass = ['notification-card'];
+  let cardClass = ["notification-card"];
   if (params.class) {
     cardClass = [...cardClass, params.class];
   }
 
   return (
-    <Card className={cardClass.join(' ')}>
+    <Card className={cardClass.join(" ")}>
       <Card.Body>
         <Row className="align-items-center">
           <Col sm={4} className="notify-icon">

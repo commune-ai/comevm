@@ -8,7 +8,7 @@ import "../utils/escrow/Escrow.sol";
 /**
  * @dev Simple implementation of a
  * https://consensys.github.io/smart-contract-best-practices/development-recommendations/general/external-calls/#favor-pull-over-push-for-external-calls[pull-payment]
- * strategy, where the paying contract doesn't interact directly with the
+ * strategy, where the paying contract doesn"t interact directly with the
  * receiver account, which must withdraw its payments itself.
  *
  * Pull-payments are often considered the best practice when it comes to sending
@@ -20,7 +20,7 @@ import "../utils/escrow/Escrow.sol";
  * https://blog.openzeppelin.com/reentrancy-after-istanbul/[Reentrancy After Istanbul].
  *
  * To use, derive from the `PullPayment` contract, and use {_asyncTransfer}
- * instead of Solidity's `transfer` function. Payees can query their due
+ * instead of Solidity"s `transfer` function. Payees can query their due
  * payments with {payments}, and retrieve them with {withdrawPayments}.
  */
 abstract contract PullPayment {
@@ -52,7 +52,7 @@ abstract contract PullPayment {
 
     /**
      * @dev Returns the payments owed to an address.
-     * @param dest The creditor's address.
+     * @param dest The creditor"s address.
      */
     function payments(address dest) public view returns (uint256) {
         return _escrow.depositsOf(dest);
