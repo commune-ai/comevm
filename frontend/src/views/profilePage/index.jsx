@@ -28,7 +28,7 @@ function ProfilePage() {
             setLink(user.user.link)
             setBio(user.user.bio)
         }
-    }, [dispatch, isLoadingPost]);
+    }, [dispatch, isLoadingPost,user]);
 
     const handleBannerFile = (e) => {
         setBannerFile(URL.createObjectURL(e.target.files[0]));

@@ -62,6 +62,7 @@ function ModelPage() {
                                 if (model.key.toUpperCase().includes(value.toUpperCase())) {
                                     return model
                                 }
+                                return null;
                             })
                         }
                     </div>

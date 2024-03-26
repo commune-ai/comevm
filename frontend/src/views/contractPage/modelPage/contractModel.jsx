@@ -88,6 +88,7 @@ function ContractModel(props) {
             case "handleTransferModalShow": handleTransferModalShow(); break
             case "handleStakeModalShow": handleStakeModalShow(); break
             case "handleMintModalShow": handleMintModalShow(); break
+            default : console.log('default');
         }
     };
     return (

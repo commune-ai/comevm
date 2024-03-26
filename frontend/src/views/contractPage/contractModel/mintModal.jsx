@@ -2,21 +2,21 @@ import React from "react"
 // import CurrencyItem from "../CurrencyItem";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useContractWrite } from "wagmi";
-import { PRESALE_CONTRACT_ADDRESS, USDT_CONTRACT_ADDRESS } from "../../../utils/env";
+import { PRESALE_CONTRACT_ADDRESS } from "../../../utils/env";
 import * as  presaleContractABI from "../../../token_presale_abi.json";
-import * as  erc20ContractABI from "../../../token_abi.json";
+// import * as  erc20ContractABI from "../../../token_abi.json";
 import { useCallback } from "react";
 import { parseEther } from "viem";
 function MintModal() {
     const { abi } = presaleContractABI
-    const { abi: erc20ABI } = erc20ContractABI
+    // const { abi: erc20ABI } = erc20ContractABI
 
     // const [selectedCurrency, setSelectedCurrency] = React.useState(null);
-    const { write: buyWithUSDT } = useContractWrite({
-        address: PRESALE_CONTRACT_ADDRESS,
-        abi: abi,
-        functionName: "buyWithUSDT"
-    })
+    // const { write: buyWithUSDT } = useContractWrite({
+    //     address: PRESALE_CONTRACT_ADDRESS,
+    //     abi: abi,
+    //     functionName: "buyWithUSDT"
+    // })
 
     const { write: buyTokens } = useContractWrite({
         address: PRESALE_CONTRACT_ADDRESS,
@@ -24,11 +24,11 @@ function MintModal() {
         functionName: "buyTokens"
     })
 
-    const { writeAsync: approve } = useContractWrite({
-        address: USDT_CONTRACT_ADDRESS,
-        abi: erc20ABI,
-        functionName: "approve"
-    })
+    // const { writeAsync: approve } = useContractWrite({
+    //     address: USDT_CONTRACT_ADDRESS,
+    //     abi: erc20ABI,
+    //     functionName: "approve"
+    // })
 
 
     // const handleCurrencyClick = (currency) => {
@@ -60,7 +60,7 @@ function MintModal() {
         // }
 
 
-    }, [buyTokens, buyWithUSDT, approve, mintAmount])
+    }, [buyTokens, mintAmount])
 
     return (
         <React.Fragment>

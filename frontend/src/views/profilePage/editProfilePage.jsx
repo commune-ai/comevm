@@ -27,7 +27,7 @@ const EditProfilePage = () => {
             setLink(user.user.link)
             setBio(user.user.bio)
         }
-    }, [dispatch, isLoadingPost]);
+    }, [dispatch, isLoadingPost,user]);
 
     const saveProfile = () => {
         if (avatarFile || bannerFile || username || bio || email || link) {
