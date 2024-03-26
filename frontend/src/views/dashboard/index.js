@@ -20,7 +20,7 @@ const DashDefault = () => {
           return (
             <Col key={index} xl={6} xxl={4}>
               <Card>
-                <Card.Body className=' dark:tw-bg-[rgb(33,33,33)]'>
+                <Card.Body className=" dark:tw-bg-[rgb(33,33,33)]">
                   <h6 className="mb-4 dark:tw-text-white">{data.title}</h6>
                   <div className="row d-flex align-items-center">
                     <div className="col-9">
@@ -106,26 +106,28 @@ const DashDefault = () => {
         <Col md={6} xl={8}>
           <Card className="Recent-Users dark:tw-bg-[rgb(33,33,33)]">
             <Card.Header>
-              <Card.Title as="h5" className='dark:tw-text-white'><span className='dark:tw-text-white'>Recent Users</span></Card.Title>
+              <Card.Title as="h5" className="dark:tw-text-white">
+                <span className="dark:tw-text-white">Recent Users</span>
+              </Card.Title>
             </Card.Header>
             <Card.Body className="px-0 py-2 dark:tw-bg-[rgb(33,33,33)]">
               <Table responsive hover className="recent-users dark:tw-bg-[rgb(33,33,33)]">
                 <tbody>
                   <tr className="unread dark:tw-bg-[rgb(33,33,33)]">
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <img className="rounded-circle" style={{ width: '40px' }} src={avatar1} alt="activity-user" />
                     </td>
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <h6 className="mb-1 dark:tw-text-white">Isabella Christensen</h6>
                       <p className="m-0 dark:tw-text-white">Lorem Ipsum is simply dummy text of…</p>
                     </td>
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <h6 className="text-muted dark:tw-text-white">
                         <i className="fa fa-circle text-c-green f-10 m-r-15" />
                         11 MAY 12:56
                       </h6>
                     </td>
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <Link to="#" className="label theme-bg2 text-white f-12 ">
                         Reject
                       </Link>
@@ -135,42 +137,20 @@ const DashDefault = () => {
                     </td>
                   </tr>
                   <tr className="unread">
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <img className="rounded-circle" style={{ width: '40px' }} src={avatar2} alt="activity-user" />
                     </td>
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <h6 className="mb-1 dark:tw-text-white">Mathilde Andersen</h6>
                       <p className="m-0 dark:tw-text-white">Lorem Ipsum is simply dummy text of…</p>
                     </td>
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <h6 className="text-muted">
                         <i className="fa fa-circle text-c-red f-10 m-r-15" />
                         11 MAY 10:35
                       </h6>
                     </td>
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
-                      <Link to="#" className="label theme-bg2 text-white f-12 " >
-                        Reject
-                      </Link>
-                      <Link to="#" className="label theme-bg text-white f-12 ">
-                        Approve
-                      </Link>
-                    </td>
-                  </tr>
-                  <tr className="unread">
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
-                      <img className="rounded-circle" style={{ width: '40px' }} src={avatar3} alt="activity-user" />
-                    </td>
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
-                      <h6 className="mb-1 dark:tw-text-white">Karla Sorensen</h6>
-                      <p className="m-0 dark:tw-text-white">Lorem Ipsum is simply dummy text of…</p>
-                    </td>
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
-                      <h6 className="text-muted dark:tw-text-white">
-                        <i className="fa fa-circle text-c-green f-10 m-r-15" />9 MAY 17:38
-                      </h6>
-                    </td>
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <Link to="#" className="label theme-bg2 text-white f-12 ">
                         Reject
                       </Link>
@@ -180,20 +160,42 @@ const DashDefault = () => {
                     </td>
                   </tr>
                   <tr className="unread">
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
+                      <img className="rounded-circle" style={{ width: '40px' }} src={avatar3} alt="activity-user" />
+                    </td>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
+                      <h6 className="mb-1 dark:tw-text-white">Karla Sorensen</h6>
+                      <p className="m-0 dark:tw-text-white">Lorem Ipsum is simply dummy text of…</p>
+                    </td>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
+                      <h6 className="text-muted dark:tw-text-white">
+                        <i className="fa fa-circle text-c-green f-10 m-r-15" />9 MAY 17:38
+                      </h6>
+                    </td>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
+                      <Link to="#" className="label theme-bg2 text-white f-12 ">
+                        Reject
+                      </Link>
+                      <Link to="#" className="label theme-bg text-white f-12 ">
+                        Approve
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr className="unread">
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <img className="rounded-circle" style={{ width: '40px' }} src={avatar1} alt="activity-user" />
                     </td>
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <h6 className="mb-1 dark:tw-text-white">Ida Jorgensen</h6>
-                      <p className="m-0 dark:tw-text-white" >Lorem Ipsum is simply dummy text of…</p>
+                      <p className="m-0 dark:tw-text-white">Lorem Ipsum is simply dummy text of…</p>
                     </td>
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <h6 className="text-muted f-w-300 dark:tw-text-white">
                         <i className="fa fa-circle text-c-red f-10 m-r-15" />
                         19 MAY 12:56
                       </h6>
                     </td>
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <Link to="#" className="label theme-bg2 text-white f-12 ">
                         Reject
                       </Link>
@@ -203,20 +205,20 @@ const DashDefault = () => {
                     </td>
                   </tr>
                   <tr className="unread">
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <img className="rounded-circle" style={{ width: '40px' }} src={avatar2} alt="activity-user" />
                     </td>
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <h6 className="mb-1 dark:tw-text-white">Albert Andersen</h6>
                       <p className="m-0 dark:tw-text-white">Lorem Ipsum is simply dummy text of…</p>
                     </td>
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <h6 className="text-muted dark:tw-text-white">
                         <i className="fa fa-circle text-c-green f-10 m-r-15" />
                         21 July 12:56
                       </h6>
                     </td>
-                    <td className='dark:tw-bg-[rgb(33,33,33)]'>
+                    <td className="dark:tw-bg-[rgb(33,33,33)]">
                       <Link to="#" className="label theme-bg2 text-white f-12 ">
                         Reject
                       </Link>
@@ -254,13 +256,13 @@ const DashDefault = () => {
                 <div className="col-auto">
                   <i className="feather icon-zap f-30 text-c-green" />
                 </div>
-                <div className="col"> 
+                <div className="col">
                   <h3 className="f-w-300 dark:tw-text-white">235</h3>
                   <span className="d-block text-uppercase dark:tw-text-white">total ideas</span>
                 </div>
               </div>
             </Card.Body>
-            <Card.Body className='dark:tw-bg-[rgb(33,33,33)]'>
+            <Card.Body className="dark:tw-bg-[rgb(33,33,33)]">
               <div className="row d-flex align-items-center">
                 <div className="col-auto">
                   <i className="feather icon-map-pin f-30 text-c-blue" />
@@ -281,7 +283,7 @@ const DashDefault = () => {
                   <i className="fab fa-facebook-f text-primary f-36" />
                 </div>
                 <div className="col text-end">
-                  <h3 className=' dark:tw-text-white'>12,281</h3>
+                  <h3 className=" dark:tw-text-white">12,281</h3>
                   <h5 className="text-c-green mb-0">
                     +7.2% <span className="text-muted">Total Likes</span>
                   </h5>
@@ -332,7 +334,7 @@ const DashDefault = () => {
                   <i className="fab fa-twitter text-c-blue f-36" />
                 </div>
                 <div className="col text-end">
-                  <h3 className='tw-text-white'>11,200</h3>
+                  <h3 className="tw-text-white">11,200</h3>
                   <h5 className="text-c-purple mb-0">
                     +6.2% <span className="text-muted">Total Likes</span>
                   </h5>
@@ -383,7 +385,7 @@ const DashDefault = () => {
                   <i className="fab fa-google-plus-g text-c-red f-36" />
                 </div>
                 <div className="col text-end">
-                  <h3 className='tw-text-white'>10,500</h3>
+                  <h3 className="tw-text-white">10,500</h3>
                   <h5 className="text-c-blue mb-0">
                     +5.9% <span className="text-muted">Total Likes</span>
                   </h5>
@@ -427,11 +429,13 @@ const DashDefault = () => {
           </Card>
         </Col>
         <Col md={6} xl={4}>
-          <Card className='dark:tw-bg-[rgb(33,33,33)]'>
-            <Card.Header className='dark:tw-bg-[rgb(33,33,33)]'>
-              <Card.Title as="h5"><span className='dark:tw-text-white'>Rating</span></Card.Title>
+          <Card className="dark:tw-bg-[rgb(33,33,33)]">
+            <Card.Header className="dark:tw-bg-[rgb(33,33,33)]">
+              <Card.Title as="h5">
+                <span className="dark:tw-text-white">Rating</span>
+              </Card.Title>
             </Card.Header>
-            <Card.Body className='dark:tw-bg-[rgb(33,33,33)]'>
+            <Card.Body className="dark:tw-bg-[rgb(33,33,33)]">
               <div className="row align-items-center justify-content-center m-b-20">
                 <div className="col-6">
                   <h2 className="f-w-300 d-flex align-items-center float-start m-0 dark:tw-text-white">
@@ -533,10 +537,12 @@ const DashDefault = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={6} xl={8} className=''>
+        <Col md={6} xl={8} className="">
           <Card className="user-list dark:tw-bg-[rgb(30,30,30)]">
             <Card.Header className=" dark:tw-bg-[rgb(30,30,30)]">
-              <Card.Title as="h5"><span className='dark:tw-text-white'>User Project List</span></Card.Title>
+              <Card.Title as="h5">
+                <span className="dark:tw-text-white">User Project List</span>
+              </Card.Title>
             </Card.Header>
             <Card.Body className="p-0 ">
               <Table responsive hover>

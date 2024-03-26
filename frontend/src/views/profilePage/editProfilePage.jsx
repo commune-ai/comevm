@@ -1,11 +1,4 @@
 import React from 'react'
-import {
-    Card,
-    Typography,
-    List,
-    ListItem,
-    ListItemPrefix,
-} from "@material-tailwind/react";
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { createUser, getUser } from "../../redux/actions/usersAction";
@@ -220,13 +213,13 @@ const EditProfilePage = () => {
                             </div>
                         </div>
                         <div className=' tw-flex tw-justify-center tw-items-center  md:tw-justify-start md:tw-items-start tw-w-full tw-mt-[30px] tw-mb-[40px]'>
-                        <a onClick={saveProfile} style={{ fontFamily: 'Might', width: '200px', fontSize: '18px', transition: '0.1s' }} className="tw-relative tw-rounded-[0.5rem] tw-cursor-pointer tw-group tw-font-medium tw-no-underline tw-flex tw-p-2 tw-text-white tw-items-center tw-justify-center tw-content-center focus:tw-outline-none">
+                            <button tabIndex={0} onClick={saveProfile} style={{ fontFamily: 'Might', width: '200px', fontSize: '18px', transition: '0.1s' }} className="tw-relative tw-rounded-[0.5rem] tw-cursor-pointer tw-group tw-font-medium tw-no-underline tw-flex tw-p-2 tw-text-white tw-items-center tw-justify-center tw-content-center focus:tw-outline-none">
                                 <span className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-rounded tw-opacity-50 tw-filter tw-blur-sm tw-bg-gradient-to-br tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(30,30,30)] dark:tw-to-[rgb(30,30,30)]"  ></span>
                                 <span className="tw-h-full tw-w-full tw-inset-0 tw-absolute tw-mt-0.5 tw-ml-0.5 tw-bg-gradient-to-br tw-filter group-active:tw-opacity-0 tw-rounded tw-opacity-50 tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(30,30,30)] dark:tw-to-[rgb(30,30,30)]"></span>
                                 <span className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-transition-all tw-duration-200 tw-ease-out tw-rounded tw-shadow-xl tw-bg-gradient-to-br tw-filter group-active:tw-opacity-0 group-hover:tw-blur-sm tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(30,30,30)] dark:tw-to-[rgb(30,30,30)]"></span>
                                 <span className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-transition tw-duration-200 tw-ease-out tw-rounded tw-bg-gradient-to-br tw-to-[#256fc4] tw-from-[#256fc4] dark:tw-from-[rgb(30,30,30)] dark:tw-to-[rgb(30,30,30)]"></span>
                                 <span className="tw-relative">Save</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>

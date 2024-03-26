@@ -11,7 +11,7 @@ function MintModal() {
     const { abi } = presaleContractABI
     const { abi: erc20ABI } = erc20ContractABI
 
-    const [selectedCurrency, setSelectedCurrency] = React.useState(null);
+    // const [selectedCurrency, setSelectedCurrency] = React.useState(null);
     const { write: buyWithUSDT } = useContractWrite({
         address: PRESALE_CONTRACT_ADDRESS,
         abi: abi,
@@ -31,36 +31,36 @@ function MintModal() {
     })
 
 
-    const handleCurrencyClick = (currency) => {
-        setSelectedCurrency(currency);
-    };
+    // const handleCurrencyClick = (currency) => {
+    //     setSelectedCurrency(currency);
+    // };
 
-    const [value, setValue] = React.useState(0);
+    // const [value, setValue] = React.useState(0);
     // const [transferValue, setTransferValue] = React.useState(0);
     const [totalSupplyValue, setTotalSupplyValue] = React.useState(0);
     const [maxiumSupplyValue, setMaxiumSupplyValue] = React.useState(0);
-    const [stakeAmount, setStakeAmount] = React.useState(0);
-    // const [totalStakeAmount, setTotalStakeAmount] = React.useState(0);
+    const [mintAmount, setMintAmount] = React.useState(0);
+    // const [totalmintAmount, setTotalmintAmount] = React.useState(0);
     // const [address, setAddress] = React.useState('');
 
 
-    const handleBuyButton = useCallback(async (address, currency) => {
+    const handleBuyButton = useCallback(async (address) => {
 
-        if (currency === 'USDT') {
-            await approve({ args: [PRESALE_CONTRACT_ADDRESS, value * 1000000], from: address });
-            buyWithUSDT({ args: [value], from: address });
-        }
+        // if (currency === 'USDT') {
+        //     await approve({ args: [PRESALE_CONTRACT_ADDRESS, value * 1000000], from: address });
+        //     buyWithUSDT({ args: [value], from: address });
+        // }
 
-        if (currency === 'ETH') {
+        // if (currency === 'ETH') {
 
-            buyTokens({
-                value: parseEther(value.toString()),
-                from: address
-            })
-        }
+        buyTokens({
+            value: parseEther(mintAmount.toString()),
+            from: address
+        })
+        // }
 
 
-    }, [buyTokens, buyWithUSDT, approve, value])
+    }, [buyTokens, buyWithUSDT, approve, mintAmount])
 
     return (
         <React.Fragment>
@@ -87,6 +87,9 @@ function MintModal() {
 
                                 <div className='tw-flex tw-flex-row tw-items-center tw-justify-center'>
                                     <input value={totalSupplyValue} disabled className='tw-border-none dark:tw-bg-[rgb(30,31,34)]  dark:tw-text-white tw-outline-none tw-appearance-none tw-w-[90%]' type='text' inputMode='numeric' onChange={({ target: { value } }) => {
+                                        if (!isNaN(value)) {
+                                            setTotalSupplyValue(value);
+                                        }
                                     }} />
                                     <span className=' dark:tw-text-white' style={{ marginLeft: '0.5rem', fontFamily: 'Smack', height: '1.9rem' }}></span>
                                 </div>
@@ -98,6 +101,9 @@ function MintModal() {
 
                                 <div className='tw-flex tw-flex-row tw-items-center tw-justify-center'>
                                     <input value={maxiumSupplyValue} disabled className='tw-border-none dark:tw-bg-[rgb(30,31,34)] dark:tw-text-white tw-outline-none tw-appearance-none tw-w-[90%]' type='text' inputMode='numeric' onChange={({ target: { value } }) => {
+                                        if (!isNaN(value)) {
+                                            setMaxiumSupplyValue(value);
+                                        }
                                     }} />
                                     <span className=' dark:tw-text-white' style={{ marginLeft: '0.5rem', fontFamily: 'Smack', height: '1.9rem' }}></span>
                                 </div>
@@ -124,9 +130,9 @@ function MintModal() {
                             <div className='tw-flex tw-flex-col tw-rounded-[0.5rem] tw-bg-[#fff] dark:tw-bg-[rgb(30,31,34)] tw-py-1.5 tw-px-3' style={{ boxShadow: 'rgb(109 177 255 / 98%) 0.5px 0.5px 3.5px 0.5px' }}>
 
                                 <div className='tw-flex tw-flex-row tw-items-center tw-justify-center'>
-                                    <input value={stakeAmount} className='tw-border-none tw-outline-none tw-appearance-none tw-w-[90%] dark:tw-text-white dark:tw-bg-[rgb(30,31,34)]' type='text' inputMode='numeric' onChange={({ target: { value } }) => {
+                                    <input value={mintAmount} className='tw-border-none tw-outline-none tw-appearance-none tw-w-[90%] dark:tw-text-white dark:tw-bg-[rgb(30,31,34)]' type='text' inputMode='numeric' onChange={({ target: { value } }) => {
                                         if (!isNaN(value)) {
-                                            setStakeAmount(value);
+                                            setMintAmount(value);
                                         }
                                     }} />
                                     <span className=' dark:tw-text-white' style={{ marginLeft: '0.5rem', fontFamily: 'Smack', height: '1.9rem' }}></span>
@@ -194,13 +200,13 @@ function MintModal() {
                                                 //     <span className="absolute z-0 right-0 w-8 h-32 dark:hidden -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
                                                 //     <span className="relative">Button Text</span>
                                                 // </a>
-                                                <a onClick={openConnectModal} style={{ fontFamily: 'Might', width: '100%', fontSize: '20px', transition: '0.1s' }} className="tw-relative tw-rounded-[0.5rem] tw-cursor-pointer tw-group tw-font-medium tw-no-underline tw-flex tw-p-2 tw-text-white tw-items-center tw-justify-center tw-content-center focus:tw-outline-none">
+                                                <button tabIndex={0} onClick={openConnectModal} style={{ fontFamily: 'Might', width: '100%', fontSize: '20px', transition: '0.1s' }} className="tw-relative tw-rounded-[0.5rem] tw-cursor-pointer tw-group tw-font-medium tw-no-underline tw-flex tw-p-2 tw-text-white tw-items-center tw-justify-center tw-content-center focus:tw-outline-none">
                                                     <span className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-rounded tw-opacity-50 tw-filter tw-blur-sm tw-bg-gradient-to-br tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"  ></span>
                                                     <span className="tw-h-full tw-w-full tw-inset-0 tw-absolute tw-mt-0.5 tw-ml-0.5 tw-bg-gradient-to-br tw-filter group-active:tw-opacity-0 tw-rounded tw-opacity-50 tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"></span>
                                                     <span className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-transition-all tw-duration-200 tw-ease-out tw-rounded tw-shadow-xl tw-bg-gradient-to-br tw-filter group-active:tw-opacity-0 group-hover:tw-blur-sm tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"></span>
                                                     <span className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-transition tw-duration-200 tw-ease-out tw-rounded tw-bg-gradient-to-br tw-to-[#256fc4] tw-from-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"></span>
                                                     <span className="tw-relative">Connect Wallet</span>
-                                                </a>
+                                                </button>
                                             );
                                         }
 
@@ -209,13 +215,13 @@ function MintModal() {
                                                 // <button onClick={openChainModal} type="button">
                                                 //     Wrong network
                                                 // </button>
-                                                <a onClick={openChainModal} style={{ fontFamily: 'Might', width: '100%', fontSize: '20px', transition: '0.1s' }} className="tw-relative tw-rounded-[0.5rem] tw-cursor-pointer tw-group tw-font-medium tw-no-underline tw-flex tw-p-2 tw-text-white tw-items-center tw-justify-center tw-content-center focus:tw-outline-none">
+                                                <button tabIndex={0} onClick={openChainModal} style={{ fontFamily: 'Might', width: '100%', fontSize: '20px', transition: '0.1s' }} className="tw-relative tw-rounded-[0.5rem] tw-cursor-pointer tw-group tw-font-medium tw-no-underline tw-flex tw-p-2 tw-text-white tw-items-center tw-justify-center tw-content-center focus:tw-outline-none">
                                                     <span className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-rounded tw-opacity-50 tw-filter tw-blur-sm tw-bg-gradient-to-br tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"  ></span>
                                                     <span className="tw-h-full tw-w-full tw-inset-0 tw-absolute tw-mt-0.5 tw-ml-0.5 tw-bg-gradient-to-br tw-filter group-active:tw-opacity-0 tw-rounded tw-opacity-50 tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"></span>
                                                     <span className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-transition-all tw-duration-200 tw-ease-out tw-rounded tw-shadow-xl tw-bg-gradient-to-br tw-filter group-active:tw-opacity-0 group-hover:tw-blur-sm tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"></span>
                                                     <span className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-transition tw-duration-200 tw-ease-out tw-rounded tw-bg-gradient-to-br tw-to-[#256fc4] tw-from-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"></span>
                                                     <span className="tw-relative">Wrong network</span>
-                                                </a>
+                                                </button>
                                             );
                                         }
 
@@ -253,13 +259,13 @@ function MintModal() {
                                                 {/* <button onClick={() => handleBuyButton(account.address, selectedCurrency)} type="button" style={{ fontFamily: 'Might', fontSize: '20px', marginBottom: '1rem' }} className="flex p-2 bg-[#256fc4] text-white items-center justify-center focus:outline-none dark:bg-[rgb(18,18,18)] rounded-[0.5rem] w-full hover:bg-[#6db1ff]">
                                                                         Buy Now
                                                                     </button> */}
-                                                <a onClick={() => handleBuyButton(account.address, selectedCurrency)} style={{ fontFamily: 'Might', width: '100%', fontSize: '20px', transition: '0.1s' }} className="tw-relative tw-rounded-[0.5rem] tw-cursor-pointer tw-group tw-font-medium tw-no-underline tw-flex tw-p-2 tw-text-white tw-items-center tw-justify-center tw-content-center focus:tw-outline-none">
+                                                <button tabIndex={0} onClick={() => handleBuyButton(account.address)} style={{ fontFamily: 'Might', width: '100%', fontSize: '20px', transition: '0.1s' }} className="tw-relative tw-rounded-[0.5rem] tw-cursor-pointer tw-group tw-font-medium tw-no-underline tw-flex tw-p-2 tw-text-white tw-items-center tw-justify-center tw-content-center focus:tw-outline-none">
                                                     <span className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-rounded tw-opacity-50 tw-filter tw-blur-sm tw-bg-gradient-to-br tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"  ></span>
                                                     <span className="tw-h-full tw-w-full tw-inset-0 tw-absolute tw-mt-0.5 tw-ml-0.5 tw-bg-gradient-to-br tw-filter group-active:tw-opacity-0 tw-rounded tw-opacity-50 tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"></span>
                                                     <span className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-transition-all tw-duration-200 tw-ease-out tw-rounded tw-shadow-xl tw-bg-gradient-to-br tw-filter group-active:tw-opacity-0 group-hover:tw-blur-sm tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"></span>
                                                     <span className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-transition tw-duration-200 tw-ease-out tw-rounded tw-bg-gradient-to-br tw-to-[#256fc4] tw-from-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"></span>
                                                     <span className="tw-relative">Buy Now</span>
-                                                </a>
+                                                </button>
                                                 <button onClick={openAccountModal} className=' dark:tw-text-white' type="button">
                                                     {account.displayName}
                                                     {account.displayBalance

@@ -9,6 +9,7 @@ import MakerDaoModal from '../contractModel/MakerDaoModal';
 import AaveModal from '../contractModel/AaveModal';
 import * as antdModel from "../../../utils/antdmodal.css";
 import { Modal } from "antd";
+import PropTypes from 'prop-types';
 
 function ContractModel(props) {
 
@@ -135,7 +136,7 @@ function ContractModel(props) {
                                     {/* <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg> */}
-                                    <div className="tw-text-sm tw-text-white tw-ml-2" onClick={OpenModel}>Open Model</div>
+                                    <button tabIndex={0} className="tw-text-sm tw-text-white tw-ml-2" onClick={OpenModel}>Open Model</button>
                                 </a>
                             </div>
                         </div>
@@ -259,6 +260,12 @@ function ContractModel(props) {
 
     )
 }
-
+ContractModel.propTypes = {
+    imgSrc: PropTypes.string,
+    contractTitle: PropTypes.string,
+    contractName: PropTypes.string,
+    click: PropTypes.string,
+    contractDescription: PropTypes.string,
+  };
 export default ContractModel
 

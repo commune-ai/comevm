@@ -8,8 +8,8 @@ import {
   UPDATE_USERS_FAILURE,
   UPDATE_USERS_REQUEST,
   UPDATE_USERS_SUCCESS,
-  PUBKEY,
-} from "../constants/constant";
+  PUBKEY
+} from '../constants/constant';
 
 const initialState = {
   // initialState for get all users
@@ -17,7 +17,7 @@ const initialState = {
   users: [],
   user: null,
   error: null,
-  pubkey: "",
+  pubkey: '',
 
   // initialState for create a user
   isLoadingPost: false,
@@ -27,7 +27,7 @@ const initialState = {
   // initialState for update a user
   isLoadingUpdate: false,
   successUpdate: null,
-  errorUpdate: null,
+  errorUpdate: null
 };
 
 const usersReducer = (state = initialState, action) => {
@@ -36,71 +36,71 @@ const usersReducer = (state = initialState, action) => {
     case GET_USERS_REQUEST:
       return {
         ...state,
-        isLoading: true,
+        isLoading: true
       };
     case GET_USERS_SUCCESS:
       return {
         isLoading: false,
         user: action.payload,
-        error: null,
+        error: null
       };
     case GET_USERS_FAILURE:
       return {
         isLoading: false,
         user: null,
-        error: action.payload,
+        error: action.payload
       };
 
     // single user create reducers
     case POST_USERS_REQUEST:
       return {
         ...state,
-        isLoadingPost: true,
+        isLoadingPost: true
       };
     case POST_USERS_SUCCESS:
       return {
         ...state,
         isLoadingPost: false,
         successPost: action.payload,
-        errorPost: null,
+        errorPost: null
       };
     case POST_USERS_FAILURE:
       return {
         ...state,
         isLoadingPost: false,
         successPost: null,
-        errorPost: action.payload,
+        errorPost: action.payload
       };
 
     // single user update reducers
     case UPDATE_USERS_REQUEST:
       return {
         ...state,
-        isLoadingUpdate: true,
+        isLoadingUpdate: true
       };
     case UPDATE_USERS_SUCCESS:
       return {
         ...state,
         isLoadingUpdate: false,
         successUpdate: action.payload,
-        errorUpdate: null,
+        errorUpdate: null
       };
     case UPDATE_USERS_FAILURE:
       return {
         ...state,
         isLoadingUpdate: false,
         successUpdate: null,
-        errorUpdate: action.payload,
+        errorUpdate: action.payload
       };
     case PUBKEY:
       return {
         ...state,
-        pubkey: action.payload,
+        pubkey: action.payload
       };
-      
-      default:
-        return state;
-      }
+
+    default:
+      return state;
+  }
 };
 
 export default usersReducer;

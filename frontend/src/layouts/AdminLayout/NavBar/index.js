@@ -96,10 +96,11 @@ const NavBar = () => {
                             SignOut
                           </button> */}
 
-                      <div
+                      <button
                         className="tw-align-middle tw-select-none tw-font-sans tw-font-bold tw-text-center tw-uppercase tw-transition-all disabled:tw-opacity-50 disabled:tw-shadow-none disabled:tw-pointer-events-none tw-text-xs tw-py-2 tw-px-3 tw-rounded-lg tw-bg-gradient-to-tr tw-from-[#ffffff] dark:tw-from-[rgb(27,27,27)] dark:tw-to-[rgb(27,27,27)] tw-cursor-pointer tw-to-[#dedede] tw-text-[rgb(18,18,18)] dark:tw-text-white tw-shadow-md tw-shadow-gray-900/10 hover:tw-shadow-lg hover:tw-shadow-gray-900/20 active:tw-opacity-[0.85] tw-flex tw-items-center tw-gap-1"
                         onClick={openChainModal}
                         style={{ fontFamily: 'Smack' }}
+                        tabIndex={0}
                       >
                         <span>
                           {chain.hasIcon && (
@@ -134,8 +135,8 @@ const NavBar = () => {
                           {' '}
                           <path stroke="none" d="M0 0h24v24H0z" /> <polyline points="6 9 12 15 18 9" />
                         </svg>
-                      </div>
-                      <div
+                      </button>
+                      <button
                         className="tw-align-middle tw-select-none tw-cursor-pointer tw-font-sans tw-font-bold tw-text-center tw-uppercase tw-transition-all disabled:tw-opacity-50 disabled:tw-shadow-none disabled:tw-pointer-events-none tw-text-xs tw-py-[10px] tw-px-3 tw-rounded-lg tw-bg-gradient-to-tr tw-from-[#ffffff] dark:tw-from-[rgb(27,27,27)] dark:tw-to-[rgb(27,27,27)] tw-to-[#dedede] tw-text-[rgb(18,18,18)] dark:tw-text-white tw-shadow-md tw-shadow-gray-900/10 hover:tw-shadow-lg hover:tw-shadow-gray-900/20 active:tw-opacity-[0.85] tw-flex tw-items-center tw-gap-2"
                         onClick={openAccountModal}
                         style={{ fontFamily: 'Smack' }}
@@ -160,7 +161,7 @@ const NavBar = () => {
                           {' '}
                           <path stroke="none" d="M0 0h24v24H0z" /> <polyline points="6 9 12 15 18 9" />
                         </svg>
-                      </div>
+                      </button>
                     </div>
                   );
                 })()}

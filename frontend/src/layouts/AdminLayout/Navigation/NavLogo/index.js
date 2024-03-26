@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../../../assets/images/commune.gif'
+import logo from '../../../../assets/images/commune.gif';
 import { ConfigContext } from '../../../../contexts/ConfigContext';
 import * as actionType from '../../../../store/actions';
 
@@ -18,9 +18,9 @@ const NavLogo = () => {
     <React.Fragment>
       <div className="navbar-brand header-logo">
         <Link to="/app" className="b-brand">
-          <div className="tw-w-[50px] "> 
+          <div className="tw-w-[50px] ">
             {/* <i className="feather icon-trending-up" /> */}
-            <img className="feather tw-z-10 tw-relative sidebarLogo" src={logo} alt=''></img>
+            <img className="feather tw-z-10 tw-relative sidebarLogo" src={logo} alt=""></img>
           </div>
           <span className="b-title">Commune</span>
         </Link>

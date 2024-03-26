@@ -10,8 +10,7 @@ const NavSearch = (props) => {
   const searchOnHandler = () => {
     if (windowWidth < 600) {
       document.querySelector('#navbar-right').classList.add('d-none');
-    setSearchString('100px');
-
+      setSearchString('100px');
     }
     setIsOpen(true);
     setSearchString('130px');

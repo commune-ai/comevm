@@ -163,7 +163,7 @@ const menuItems = {
               type: 'item',
               icon: 'fa fa-history',
               url: '',
-              classes: 'nav-item',
+              classes: 'nav-item'
             },
             {
               id: 'wallet-info',

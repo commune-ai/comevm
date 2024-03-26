@@ -11,7 +11,7 @@ function StakingModal() {
     // const { abi } = presaleContractABI
     // const { abi: erc20ABI } = erc20ContractABI
 
-    const [selectedCurrency, setSelectedCurrency] = React.useState(null);
+    // const [selectedCurrency, setSelectedCurrency] = React.useState(null);
     // const { write: buyWithUSDT } = useContractWrite({
     //     address: PRESALE_CONTRACT_ADDRESS,
     //     abi: abi,
@@ -125,7 +125,7 @@ function StakingModal() {
                                             setStakeAmount(value);
                                         }
                                     }} />
-                                    <span className=' dark:tw-text-white' style={{ marginLeft: '0.5rem', fontFamily: 'Smack', height: '1.9rem' }}>{selectedCurrency === 'ETH' ? 'ETH' : 'USD'}</span>
+                                    <span className=' dark:tw-text-white' style={{ marginLeft: '0.5rem', fontFamily: 'Smack', height: '1.9rem' }}>ETH</span>
                                 </div>
                             </div>
                         </div>
@@ -190,13 +190,13 @@ function StakingModal() {
                                                 //     <span className="absolute z-0 right-0 w-8 h-32 dark:hidden -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
                                                 //     <span className="relative">Button Text</span>
                                                 // </a>
-                                                <a onClick={openConnectModal} style={{ fontFamily: 'Might', fontSize: '20px', transition: '0.1s' }} className="tw-relative tw-rounded-[0.5rem] tw-cursor-pointer tw-group tw-font-medium tw-no-underline tw-flex tw-p-2 tw-text-white tw-items-center tw-justify-center tw-content-center focus:tw-outline-none">
+                                                <button onClick={openConnectModal} tabIndex={0} style={{ fontFamily: 'Might', fontSize: '20px', transition: '0.1s' }} className="tw-relative tw-rounded-[0.5rem] tw-cursor-pointer tw-group tw-font-medium tw-no-underline tw-flex tw-p-2 tw-text-white tw-items-center tw-justify-center tw-content-center focus:tw-outline-none">
                                                     <span className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-rounded tw-opacity-50 tw-filter tw-blur-sm tw-bg-gradient-to-br tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"  ></span>
                                                     <span className="tw-h-full tw-w-full tw-inset-0 tw-absolute tw-mt-0.5 tw-ml-0.5 tw-bg-gradient-to-br tw-filter group-active:tw-opacity-0 tw-rounded tw-opacity-50 tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"></span>
                                                     <span className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-transition-all tw-duration-200 tw-ease-out tw-rounded tw-shadow-xl tw-bg-gradient-to-br tw-filter group-active:tw-opacity-0 group-hover:tw-blur-sm tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"></span>
                                                     <span className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-transition tw-duration-200 tw-ease-out tw-rounded tw-bg-gradient-to-br tw-to-[#256fc4] tw-from-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"></span>
                                                     <span className="tw-relative">Connect Wallet</span>
-                                                </a>
+                                                </button>
 
                                             );
                                         }
@@ -206,13 +206,13 @@ function StakingModal() {
                                                 // <button onClick={openChainModal} type="button">
                                                 //     Wrong network
                                                 // </button>
-                                                <a onClick={openChainModal} style={{ fontFamily: 'Might', width: '100%', fontSize: '20px', transition: '0.1s' }} className="tw-relative tw-rounded-[0.5rem] tw-cursor-pointer tw-group tw-font-medium tw-no-underline tw-flex tw-p-2 tw-text-white tw-items-center tw-justify-center tw-content-center focus:tw-outline-none">
+                                                <button tabIndex={0} onClick={openChainModal} style={{ fontFamily: 'Might', width: '100%', fontSize: '20px', transition: '0.1s' }} className="tw-relative tw-rounded-[0.5rem] tw-cursor-pointer tw-group tw-font-medium tw-no-underline tw-flex tw-p-2 tw-text-white tw-items-center tw-justify-center tw-content-center focus:tw-outline-none">
                                                     <span className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-rounded tw-opacity-50 tw-filter tw-blur-sm tw-bg-gradient-to-br tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"  ></span>
                                                     <span className="tw-h-full tw-w-full tw-inset-0 tw-absolute tw-mt-0.5 tw-ml-0.5 tw-bg-gradient-to-br tw-filter group-active:tw-opacity-0 tw-rounded tw-opacity-50 tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"></span>
                                                     <span className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-transition-all tw-duration-200 tw-ease-out tw-rounded tw-shadow-xl tw-bg-gradient-to-br tw-filter group-active:tw-opacity-0 group-hover:tw-blur-sm tw-from-[#256fc4] tw-to-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"></span>
                                                     <span className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-transition tw-duration-200 tw-ease-out tw-rounded tw-bg-gradient-to-br tw-to-[#256fc4] tw-from-[#256fc4] dark:tw-from-[rgb(18,18,18)] dark:tw-to-[rgb(18,18,18)]"></span>
                                                     <span className="tw-relative">Wrong network</span>
-                                                </a>
+                                                </button>
                                             );
                                         }
 

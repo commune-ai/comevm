@@ -40,11 +40,11 @@
   
 }
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
   .chatbot{
      right: 10px !important;
   }
-}
+} */
 
 .sidebarLogo{
   transform: rotateY(0deg) !important;
