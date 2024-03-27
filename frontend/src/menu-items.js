@@ -112,14 +112,14 @@ const menuItems = {
           title: 'Solana Contracts',
           type: 'item',
           icon: 'feather icon-box',
-          url: '/forms/form-basic'
+          url: ''
         },
         {
           id: 'chat',
           title: 'Chatting',
           type: 'item',
           icon: 'fa fa-comments',
-          url: '/tables/bootstrap'
+          url: ''
         }
       ]
     },
@@ -134,7 +134,7 @@ const menuItems = {
           title: 'Trade Detail',
           type: 'item',
           icon: 'fa fa-balance-scale',
-          url: '/charts/nvd3'
+          url: ''
         },
         {
           id: 'blog',
@@ -197,7 +197,7 @@ const menuItems = {
           id: 'setting',
           title: 'Setting',
           type: 'item',
-          url: '/sample-page',
+          url: '',
           classes: 'nav-item',
           icon: 'fa fa-cog'
         },
