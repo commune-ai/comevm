@@ -141,7 +141,7 @@ const menuItems = {
           title: 'Blog',
           type: 'item',
           icon: 'fa fa-comment',
-          url: '/maps/google-map'
+          url: ''
         }
       ]
     },
