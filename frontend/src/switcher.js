@@ -13,8 +13,8 @@ export default function Switcher() {
 
   return (
     <>
-      <div className=' tw-m-auto tw-flex tw-justify-center tw-items-center'>
-        <DarkModeSwitch checked={darkSide} onChange={toggleDarkMode} size='28' sunColor='#' moonColor='white' />
+      <div className="tw-m-auto tw-flex tw-justify-center tw-items-center">
+        <DarkModeSwitch checked={darkSide} onChange={toggleDarkMode} size="28" sunColor="#" moonColor="white" />
       </div>
     </>
   );

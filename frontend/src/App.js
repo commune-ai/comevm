@@ -32,7 +32,7 @@ const connectors = connectorsForWallets([
   {
     groupName: 'Recommended',
     wallets: [
-      metaMaskWallet({ projectId, chains }), // Metamask
+      projectId && metaMaskWallet({ projectId, chains }), // Metamask
       ...(projectId ? [walletConnectWallet({ projectId, chains })] : []),
       ...(projectId ? [trustWallet({ projectId, chains })] : [])
       // walletConnectWallet({ projectId, chains }),
