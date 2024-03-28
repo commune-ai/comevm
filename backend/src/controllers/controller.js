@@ -1,7 +1,7 @@
-// imports the todo model
+
 const UserModel = require("../models/user.model");
 
-// make a controller for get a todo
+
 exports.getAUser = async (req, res) => {
   try {
     const { id: pubkey } = req.params;
@@ -20,7 +20,6 @@ exports.getAUser = async (req, res) => {
   }
 };
 
-// make a controller for create a todo
 exports.createAUser = async (req, res) => {
   const user = await UserModel.findOne({ pubkey: req.body.payload.pubkey }, "");
   if (user) {
@@ -46,8 +45,6 @@ exports.createAUser = async (req, res) => {
   }
 };
 
-
-// make a controller for update a todo
 exports.updateAUser = async (req, res) => {
   try {
     const { id: userId } = req.params;
